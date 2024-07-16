@@ -1,0 +1,24 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ci": "playwright test --reporter=line,json --output=test-results",
+    "allure:generate": "allure generate test-results --clean -o allure-report",
+    "allure:open": "allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@testomatio/reporter": "^1.4.1",
+    "@types/node": "^20.11.24",
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^2.15.1",
+    "monocart-reporter": "^2.4.6",
+    "playwright-xray": "^0.6.1"
+  }
+}
