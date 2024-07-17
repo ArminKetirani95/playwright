@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  name: 'Default'  # Ensure this matches the name of your agent pool
+  name: 'Azure Pipelines'
 
 steps:
 - task: NodeTool@0
