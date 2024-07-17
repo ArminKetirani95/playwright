@@ -7,9 +7,6 @@ import { CONST_URL, CONST_ID_BUTTON_MAKE, CONST_ID_HEADER_MAKEAPPOINTMENT,   CON
   CONST_ID_RADIOBUTTON_MEDICARE, CONST_ID_DATE_VISITDATE, CONST_ID_TEXTFIELD_COMMENT, CONST_ID_BUTTON_BOOKAPPOINTMENT,
   CONST_ID_HEADER_APPOINTMENTCONFIRMATION } from '../lib/constants.js';
 
-// Define the path to the screenshots folder relative to the current script's location
-const screenshotsFolder = path.join(__dirname, '..', 'screenshots');
-
 // Define a test to make an appointment
 test.describe(`Demo - Herokuapp`, () => {
   // Before each test, navigate to the web application
@@ -48,10 +45,6 @@ test.describe(`Demo - Herokuapp`, () => {
 
       // Validate that the "Make Appointment" header is visible on the page
       expect(await page.isVisible(CONST_ID_HEADER_MAKEAPPOINTMENT)).toBeTruthy();
-
-      // Take a screenshot after logging in
-      const loginScreenshot = await page.screenshot();
-      await allure.attachment('Logged In', loginScreenshot, 'image/png');
     });
 
     await test.step('Step 2: Fill out the relevant fields and book appointment', async () => {
@@ -77,10 +70,6 @@ test.describe(`Demo - Herokuapp`, () => {
 
       // Validate Appointment Confirmation
       expect(await page.isVisible(CONST_ID_HEADER_APPOINTMENTCONFIRMATION)).toBeTruthy();
-
-      // Take a screenshot to confirm appointment
-      const appointmentConfirmationScreenshot = await page.screenshot();
-      await allure.attachment('Appointment Confirmation', appointmentConfirmationScreenshot, 'image/png');
     });
   });
 });
