@@ -1,41 +1,41 @@
 trigger:
-  branches:
-    include:
-      - main
-      - master
+- main
 
-pr:
-  branches:
-    include:
-      - main
-      - master
+pool:
+  name: 'Default'
+  
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '18'
+  displayName: 'Install Node.js'
 
-jobs:
-- job: test
-  timeoutInMinutes: 60
-  pool:
-    name: 'Default'
-  steps:
-  - checkout: self
+- script: npm ci
+  displayName: 'npm ci'
 
-  - task: UseNode@1
-    inputs:
-      version: '18.x'
+- script: npx playwright install --with-deps
+  displayName: 'Install Playwright browsers'
 
-  - script: npm ci
-    displayName: 'Install dependencies'
+- script: npx playwright test
+  displayName: 'Run Playwright tests'
+  env:
+    CI: 'true'
 
-  - script: npx playwright install --with-deps
-    displayName: 'Install Playwright Browsers'
+- task: PublishTestResults@2
+  displayName: 'Publish test results'
+  inputs:
+    searchFolder: 'test-results'
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'e2e-junit-results.xml'
+    mergeTestResults: true
+    failTaskOnFailedTests: true
+    testRunTitle: 'My End-To-End Tests'
+  condition: succeededOrFailed()
 
-  - script: npx playwright test --reporter=line,allure-playwright --output=allure-results
-    displayName: 'Run Playwright tests'
-
-  - script: npx allure generate allure-results --clean -o allure-report
-    displayName: 'Generate Allure report'
-
-  - task: PublishBuildArtifacts@1
-    inputs:
-      PathtoPublish: 'allure-report'
-      ArtifactName: 'allure-report'
-      retentionPolicy: '30'
+- task: PublishPipelineArtifact@1
+  displayName: 'Publish Playwright report'
+  inputs:
+    targetPath: 'playwright-report'
+    artifact: 'playwright-report'
+    publishLocation: 'pipeline'
+  condition: succeededOrFailed()
