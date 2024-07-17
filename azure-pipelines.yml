@@ -2,9 +2,9 @@ trigger:
 - main
 
 pool:
-  name: 'Default'
+  name: 'Default'  # Ensure this matches the name of your agent pool
   demands:
-    - Agent.Name -equals NNIT_JW31HW3 
+    - Agent.Name -equals NNIT-JW31HW3  # Specify the exact agent name if needed
 
 steps:
 - task: NodeTool@0
