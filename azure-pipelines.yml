@@ -2,11 +2,8 @@ trigger:
 - main
 
 pool:
-  name: 'Azure Pipelines'
-  demands: 
-    - npm
-    - playwright
-
+  name: 'Default'
+  
 steps:
 - task: NodeTool@0
   inputs:
