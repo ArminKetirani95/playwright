@@ -3,6 +3,9 @@ trigger:
 
 pool:
   name: 'Azure Pipelines'
+  demands: 
+    - npm
+    - playwright
 
 steps:
 - task: NodeTool@0
