@@ -16,7 +16,7 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
   steps:
-  - task: Checkout@v2
+  - task: Checkout@2
 
   - task: UseNode@1
     inputs:
