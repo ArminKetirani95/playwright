@@ -1,0 +1,4 @@
+START -> Make appointment
+User logged in successfully.
+DONE -> Make appointment
+Test results -> passed

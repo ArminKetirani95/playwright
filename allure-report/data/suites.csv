@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed May 29 13:39:30 CEST 2024","Wed May 29 13:39:34 CEST 2024","3853","chromium","appointment_example.spec.js","","","","Make appointment",""
+"passed","Mon Jul 15 13:50:22 CEST 2024","Mon Jul 15 13:50:30 CEST 2024","7866","webkit","appointment_example.spec.js","Demo - Herokuapp","","","Make appointment",""
+"passed","Mon Jul 15 13:50:22 CEST 2024","Mon Jul 15 13:50:28 CEST 2024","6539","chromium","appointment_example.spec.js","Demo - Herokuapp","","","Make appointment",""
+"passed","Mon Jul 15 13:50:22 CEST 2024","Mon Jul 15 13:50:28 CEST 2024","6411","firefox","appointment_example.spec.js","Demo - Herokuapp","","","Make appointment",""
+"passed","Wed May 29 13:39:31 CEST 2024","Wed May 29 13:39:36 CEST 2024","5263","webkit","appointment_example.spec.js","","","","Make appointment",""
+"passed","Wed May 29 13:39:31 CEST 2024","Wed May 29 13:39:35 CEST 2024","4545","firefox","appointment_example.spec.js","","","","Make appointment",""
