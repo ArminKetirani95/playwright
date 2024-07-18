@@ -1,3 +1,6 @@
+[![Build Status](https://dev.azure.com/sandbox-arke/Playwright/_apis/build/status%2FPlaywrightAzureDevops?branchName=main)](https://dev.azure.com/sandbox-arke/Playwright/_build/latest?definitionId=2&branchName=main)
+
+
 # 🎭 Playwright
 
 - [About the Project](#about-the-project)
