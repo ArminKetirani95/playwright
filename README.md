@@ -1,10 +1,16 @@
-[![Build Status](https://dev.azure.com/sandbox-arke/Playwright/_apis/build/status%2FPlaywrightAzureDevops?branchName=main)](https://dev.azure.com/sandbox-arke/Playwright/_build/latest?definitionId=2&branchName=main)
-
-
 # 🎭 Playwright
 
+## Table of Contents
+- [Build Status](#build-status)
 - [About the Project](#about-the-project)
   - [Built With](#built-with)
+- [Installation](#installation)
+  - [Prerequisites](#prerequisites)
+  - [Install Dependencies](#install-dependencies)
+  - [Install Playwright](#install-playwright)
+  - [Clone Repository](#clone-repository)
+- [CI-CD](#cicd-pipeline)
+  - [Pipeline Configuration](#pipeline-configuration)
 - [Usage](#usage)
   - [Run tests](#1-run-tests)
   - [Run tests in UI mode](#2-run-tests-in-ui-mode)
@@ -12,6 +18,9 @@
   - [Run specific tests](#4-run-specific-tests)
   - [HTML test report](#5-html-test-report)
   - [Allure Report generation](#6-allure-report-generation)
+
+## Build Status
+[![Build Status](https://dev.azure.com/sandbox-arke/Playwright/_apis/build/status%2FPlaywrightAzureDevops?branchName=main)](https://dev.azure.com/sandbox-arke/Playwright/_build/latest?definitionId=2&branchName=main)
 
 ## About the Project
 This project is based on Microsoft [Playwright](https://playwright.dev/) 🎭 which enables reliable end-to-end testing for modern web applications. Playwright is a Node.js library that provides a high-level API to automate web browsers, allowing developers to write tests that simulate user interactions and verify that their web applications function correctly.
@@ -27,6 +36,42 @@ Top Features:
 ### Built With
 - [Playwright](https://playwright.dev): A Node.js library for browser automation.
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/): A strongly typed programming language that builds on JavaScript.
+
+## Installation
+To set up the project locally, follow these steps:
+
+### Install Dependencies
+Install all necessary dependencies by running:
+    ```JS
+    npm install
+    ```
+### Install Playwright
+Install Playwright and its dependencies by running:
+    ```JS
+    npx playwright install
+    ```
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (version 16.x)
+- [npm](https://www.npmjs.com/)
+- [Git](https://git-scm.com/)
+
+### Installer Afhængigheder
+Kør følgende kommando for at installere alle nødvendige afhængigheder:
+
+### Clone Repository
+    ```JS
+    git clone https://sandbox-arke@dev.azure.com/sandbox-arke/Playwright/_git/PlaywrightAzureDevops
+    cd PlaywrightAzureDevops
+    ```
+
+## CI/CD Pipeline
+This project features a CI/CD pipeline set up in Azure DevOps. The pipeline runs tests on pull requests and prevents merging if any tests fail.
+
+### Pipeline Configuration
+- The pipeline is defined in the `azure-pipelines.yml` file.
+- It installs dependencies, runs tests and publishes test results.
+- Pull requests to `main`-branch are blocked unless all tests pass.
 
 ## Usage
 This section explains how to run and manage tests using Playwright.
@@ -52,7 +97,7 @@ To run your tests in headed mode, use the --headed flag. This will give you the 
 ### 4. Run specific tests
 To run a single test file, pass in the name of the test file that you want to run.
     ```JS
-    npx playwright test landing-page.spec.ts
+    npx playwright test tests/your-test-file.spec.ts
     ```
 
 ### 5. HTML test rapport

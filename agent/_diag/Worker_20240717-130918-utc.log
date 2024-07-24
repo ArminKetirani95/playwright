@@ -1,0 +1,1440 @@
+[2024-07-17 13:09:18Z INFO Program] Version: 3.241.0
+[2024-07-17 13:09:18Z INFO Program] Commit: 1a1c1a162a1410f3b637a39e7b8172c8ea1cf2a0
+[2024-07-17 13:09:18Z INFO Program] Culture: en-DK
+[2024-07-17 13:09:18Z INFO Program] UI Culture: en-GB
+[2024-07-17 13:09:18Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:18Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:18Z INFO HostContext] Well known config file 'Proxy': 'C:\Users\ArminHøjbergKetirani\Downloads\.proxy'
+[2024-07-17 13:09:18Z INFO VstsAgentWebProxy] No proxy setting found.
+[2024-07-17 13:09:18Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:18Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:18Z INFO HostContext] Well known config file 'Certificates': 'C:\Users\ArminHøjbergKetirani\Downloads\.certificates'
+[2024-07-17 13:09:18Z INFO AgentCertificateManager] No certificate setting found.
+[2024-07-17 13:09:18Z INFO Worker] Waiting to receive the job message from the channel.
+[2024-07-17 13:09:18Z INFO Worker] Message received.
+[2024-07-17 13:09:18Z INFO Worker] Deactivating vso commands in job message variables.
+[2024-07-17 13:09:18Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-07-17 13:09:18Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-07-17 13:09:18Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-07-17 13:09:18Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-07-17 13:09:18Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-07-17 13:09:18Z INFO HostContext] Setting up value for origin: UserSuppliedSecret
+[2024-07-17 13:09:18Z INFO HostContext] Setting up regex for origin: Worker_AddingMaskHint.
+[2024-07-17 13:09:18Z INFO HostContext] Setting up value for origin: AddingMaskHint
+[2024-07-17 13:09:18Z INFO HostContext] Setting up regex for origin: Worker_AddingMaskHint.
+[2024-07-17 13:09:18Z INFO HostContext] Setting up value for origin: AddingMaskHint
+[2024-07-17 13:09:18Z INFO HostContext] Setting up value for origin: Worker_EndpointAuthorizationParameters_AccessToken
+[2024-07-17 13:09:19Z INFO Worker] Job message:
+ {
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "inputs": {
+        "repository": "self",
+        "fetchDepth": "1"
+      },
+      "type": "task",
+      "reference": {
+        "id": "6d15af64-176c-496d-b583-fd2ae21d4df4",
+        "name": "Checkout",
+        "version": "1.0.0",
+        "buildConfig": "Default"
+      },
+      "isServerOwned": false,
+      "id": "63e8042a-f367-5aec-692c-fcc654be55e4",
+      "name": "__system_1",
+      "displayName": "Checkout"
+    },
+    {
+      "inputs": {
+        "versionSpec": "18"
+      },
+      "type": "task",
+      "reference": {
+        "id": "31c75bbb-bcdf-4706-8d7c-4da6a1959bc2",
+        "name": "NodeTool",
+        "version": "0.235.1",
+        "buildConfig": "Node20-225"
+      },
+      "isServerOwned": true,
+      "id": "b29e13d3-e02a-52ad-12be-2be01aa38374",
+      "name": "NodeTool",
+      "displayName": "Install Node.js"
+    },
+    {
+      "inputs": {
+        "script": "npm ci"
+      },
+      "type": "task",
+      "reference": {
+        "id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+        "name": "CmdLine",
+        "version": "2.237.1",
+        "buildConfig": "Node20-225"
+      },
+      "isServerOwned": true,
+      "id": "f8ed7bd8-2a7f-56f6-9385-7fc29a8b5b7b",
+      "name": "CmdLine1",
+      "displayName": "npm ci"
+    },
+    {
+      "inputs": {
+        "script": "npx playwright install --with-deps"
+      },
+      "type": "task",
+      "reference": {
+        "id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+        "name": "CmdLine",
+        "version": "2.237.1",
+        "buildConfig": "Node20-225"
+      },
+      "isServerOwned": true,
+      "id": "5caf77c8-9b10-50ef-b5c7-ca89c63e1c86",
+      "name": "CmdLine2",
+      "displayName": "Install Playwright browsers"
+    },
+    {
+      "environment": {
+        "CI": "true"
+      },
+      "inputs": {
+        "script": "npx playwright test"
+      },
+      "type": "task",
+      "reference": {
+        "id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+        "name": "CmdLine",
+        "version": "2.237.1",
+        "buildConfig": "Node20-225"
+      },
+      "isServerOwned": true,
+      "id": "bd05475d-acb5-5619-3ccb-c46842dbc997",
+      "name": "CmdLine3",
+      "displayName": "Run Playwright tests"
+    },
+    {
+      "inputs": {
+        "path": "playwright-report",
+        "artifactName": "playwright-report",
+        "artifactType": "pipeline"
+      },
+      "type": "task",
+      "reference": {
+        "id": "ecdc45f6-832d-4ad9-b52b-ee49e94659be",
+        "name": "PublishPipelineArtifact",
+        "version": "1.242.0",
+        "buildConfig": "Default"
+      },
+      "isServerOwned": true,
+      "condition": "succeededOrFailed()",
+      "id": "a6453dc2-c13f-50dd-7490-386079329673",
+      "name": "PublishPipelineArtifact",
+      "displayName": "Publish Playwright report"
+    }
+  ],
+  "variables": {
+    "resources.triggeringCategory": {
+      "value": ""
+    },
+    "resources.triggeringAlias": {
+      "value": ""
+    },
+    "system": {
+      "value": "build",
+      "isReadOnly": true
+    },
+    "system.hosttype": {
+      "value": "build",
+      "isReadOnly": true
+    },
+    "system.servertype": {
+      "value": "Hosted",
+      "isReadOnly": true
+    },
+    "system.culture": {
+      "value": "en-US",
+      "isReadOnly": true
+    },
+    "system.collectionId": {
+      "value": "29dfeac8-743f-4b6f-975d-7a4da20c1981",
+      "isReadOnly": true
+    },
+    "system.collectionUri": {
+      "value": "https://dev.azure.com/sandbox-arke/",
+      "isReadOnly": true
+    },
+    "system.teamFoundationCollectionUri": {
+      "value": "https://dev.azure.com/sandbox-arke/",
+      "isReadOnly": true
+    },
+    "system.taskDefinitionsUri": {
+      "value": "https://dev.azure.com/sandbox-arke/",
+      "isReadOnly": true
+    },
+    "system.pipelineStartTime": {
+      "value": "2024-07-17 13:09:16+00:00",
+      "isReadOnly": true
+    },
+    "system.teamProject": {
+      "value": "Playwright",
+      "isReadOnly": true
+    },
+    "system.teamProjectId": {
+      "value": "8973b0c5-42ad-4cce-9c5d-8ac33717b354",
+      "isReadOnly": true
+    },
+    "system.definitionId": {
+      "value": "2",
+      "isReadOnly": true
+    },
+    "build.definitionName": {
+      "value": "PlaywrightAzureDevops",
+      "isReadOnly": true
+    },
+    "build.repository.id": {
+      "value": "119e4a38-ef78-4a82-aa7f-10b93fb60dcf",
+      "isReadOnly": true
+    },
+    "build.repository.name": {
+      "value": "PlaywrightAzureDevops",
+      "isReadOnly": true
+    },
+    "build.repository.uri": {
+      "value": "https://sandbox-arke@dev.azure.com/sandbox-arke/Playwright/_git/PlaywrightAzureDevops",
+      "isReadOnly": true
+    },
+    "build.definitionVersion": {
+      "value": "2",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.AgentEnablePipelineArtifactLargeChunkSize": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.CleanupPsModulesInPowershell": {
+      "value": "False",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.ContinueAfterCancelProcessTreeKillAttempt": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.DockerActionRetries": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.EnableAdditionalMaskingRegexes": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.EnableIssueSourceValidation": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.EnableResourceUtilizationWarnings": {
+      "value": "False",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.FailDeprecatedBuildTask": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.FailDeprecatedTask": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.FailJobWhenAgentDies": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.FixPossibleGitOutOfMemoryProblem": {
+      "value": "False",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.ForceUpdateToLatest2Version": {
+      "value": "False",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.IgnoreVSTSTaskLib": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.LogTaskNameInUserAgent": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.LogToBlobstorageService": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.MountWorkspace": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.ReadOnlyVariables": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.Rosetta2Warning": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseDockerComposeV2CompatibleMode": {
+      "value": "False",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseFetchFilterInCheckoutTask": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseGitLongPaths": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseInteropToFindParentProcess": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseLatestGitVersion": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseMsalLibrary": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseMsdeployTokenAuth": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.USENEWNODEHANDLERTELEMETRY": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Agent.UseWorkspaceId": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "DistributedTask.Tasks.RetireAzureRMPowerShellModule": {
+      "value": "True",
+      "isReadOnly": true
+    },
+    "build.definitionFolderPath": {
+      "value": "\\",
+      "isReadOnly": true
+    },
+    "VSTSAGENT_CONTINUE_AFTER_CANCEL_PROCESSTREEKILL_ATTEMPT": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "VSTSAGENT_DOCKER_ACTION_RETRIES": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "USE_MSAL": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_75787_ENABLE_COLLECT": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_75787_ENABLE_NEW_PH_LOGIC": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_AGENT_CHECK_FOR_TASK_DEPRECATION": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_AGENT_MOUNT_WORKSPACE": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_AGENT_IGNORE_VSTSTASKLIB": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_PS_ENABLE_INVOKE_PROCESS": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "FAIL_DEPRECATED_TASK": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_AGENT_LOG_TASKNAME_IN_USERAGENT": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AGENT_USE_FETCH_FILTER_IN_CHECKOUT_TASK": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_75787_ENABLE_NEW_LOGIC": {
+      "value": "false",
+      "isReadOnly": true
+    },
+    "AZP_75787_ENABLE_NEW_LOGIC_LOG": {
+      "value": "false",
+      "isReadOnly": true
+    },
+    "AGENT_ENABLE_PIPELINEARTIFACT_LARGE_CHUNK_SIZE": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "FAIL_JOB_WHEN_AGENT_DIES": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "USE_MSDEPLOY_TOKEN_AUTH": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "USE_LATEST_GIT_VERSION": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "USE_GIT_LONG_PATHS": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "ENABLE_ISSUE_SOURCE_VALIDATION": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "RETIRE_AZURERM_POWERSHELL_MODULE": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "FAIL_DEPRECATED_BUILD_TASK": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "AZP_AGENT_USE_INTEROP_TO_FIND_PARENT_PROCESS": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "ROSETTA2_WARNING": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "build.queuedBy": {
+      "value": "[PII]",
+      "isReadOnly": true
+    },
+    "build.queuedById": {
+      "value": "00000002-0000-8888-8000-000000000000",
+      "isReadOnly": true
+    },
+    "build.requestedFor": {
+      "value": "[PII]",
+      "isReadOnly": true
+    },
+    "build.requestedForId": {
+      "value": "25bcf5ec-d092-65a4-84bd-038afd43d30d",
+      "isReadOnly": true
+    },
+    "build.requestedForEmail": {
+      "value": "[PII]",
+      "isReadOnly": true
+    },
+    "build.sourceVersionMessage": {
+      "value": "Test report 11",
+      "isReadOnly": true
+    },
+    "build.sourceVersion": {
+      "value": "[PII]",
+      "isReadOnly": true
+    },
+    "build.sourceBranch": {
+      "value": "[PII]",
+      "isReadOnly": true
+    },
+    "build.sourceBranchName": {
+      "value": "[PII]",
+      "isReadOnly": true
+    },
+    "build.reason": {
+      "value": "IndividualCI",
+      "isReadOnly": true
+    },
+    "system.pullRequest.isFork": {
+      "value": "False",
+      "isReadOnly": true
+    },
+    "system.jobParallelismTag": {
+      "value": "Private",
+      "isReadOnly": true
+    },
+    "system.enableAccessToken": {
+      "value": "SecretVariable",
+      "isReadOnly": true
+    },
+    "MSDEPLOY_HTTP_USER_AGENT": {
+      "value": "VSTS_29dfeac8-743f-4b6f-975d-7a4da20c1981_build_2_0",
+      "isReadOnly": true
+    },
+    "AZURE_HTTP_USER_AGENT": {
+      "value": "VSTS_29dfeac8-743f-4b6f-975d-7a4da20c1981_build_2_0",
+      "isReadOnly": true
+    },
+    "build.buildId": {
+      "value": "20",
+      "isReadOnly": true
+    },
+    "build.buildUri": {
+      "value": "vstfs:///Build/Build/20",
+      "isReadOnly": true
+    },
+    "build.buildNumber": {
+      "value": "20240717.17",
+      "isReadOnly": true
+    },
+    "build.containerId": {
+      "value": "68909278",
+      "isReadOnly": true
+    },
+    "system.isScheduled": {
+      "value": "False",
+      "isReadOnly": true
+    },
+    "system.definitionName": {
+      "value": "PlaywrightAzureDevops",
+      "isReadOnly": true
+    },
+    "system.planId": {
+      "value": "5bd98906-3255-4acf-9bd2-a14452d57f79",
+      "isReadOnly": true
+    },
+    "system.timelineId": {
+      "value": "5bd98906-3255-4acf-9bd2-a14452d57f79",
+      "isReadOnly": true
+    },
+    "system.stageDisplayName": {
+      "value": "__default",
+      "isReadOnly": true
+    },
+    "system.stageId": {
+      "value": "96ac2280-8cb4-5df5-99de-dd2da759617d",
+      "isReadOnly": true
+    },
+    "system.stageName": {
+      "value": "__default",
+      "isReadOnly": true
+    },
+    "system.stageAttempt": {
+      "value": "1",
+      "isReadOnly": true
+    },
+    "system.phaseDisplayName": {
+      "value": "Job",
+      "isReadOnly": true
+    },
+    "system.phaseId": {
+      "value": "3a3a2a60-14c7-570b-14a4-fa42ad92f52a",
+      "isReadOnly": true
+    },
+    "system.phaseName": {
+      "value": "Job",
+      "isReadOnly": true
+    },
+    "system.phaseAttempt": {
+      "value": "1",
+      "isReadOnly": true
+    },
+    "system.jobIdentifier": {
+      "value": "Job.__default",
+      "isReadOnly": true
+    },
+    "system.jobAttempt": {
+      "value": "1",
+      "isReadOnly": true
+    },
+    "System.JobPositionInPhase": {
+      "value": "1",
+      "isReadOnly": true
+    },
+    "System.TotalJobsInPhase": {
+      "value": "1",
+      "isReadOnly": true
+    },
+    "system.jobDisplayName": {
+      "value": "Job",
+      "isReadOnly": true
+    },
+    "system.jobId": {
+      "value": "12f1170f-54f2-53f3-20dd-22fc7dff55f9",
+      "isReadOnly": true
+    },
+    "system.jobName": {
+      "value": "__default",
+      "isReadOnly": true
+    },
+    "system.jobTimeout": {
+      "value": "60",
+      "isReadOnly": true
+    },
+    "system.accessToken": {
+      "value": ***,
+      "isSecret": true
+    },
+    "agent.retainDefaultEncoding": {
+      "value": "false",
+      "isReadOnly": true
+    },
+    "agent.LogToBlobstorageService": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "agent.readOnlyVariables": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "agent.useWorkspaceId": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "system.postLinesSpeed": {
+      "value": "10000",
+      "isReadOnly": true
+    },
+    "system.preferRedirectGetContainerItem": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "agent.taskRestrictionsEnforcementMode": {
+      "value": "Enabled",
+      "isReadOnly": true
+    },
+    "System.OidcRequestUri": {
+      "value": "https://dev.azure.com/sandbox-arke/8973b0c5-42ad-4cce-9c5d-8ac33717b354/_apis/distributedtask/hubs/build/plans/5bd98906-3255-4acf-9bd2-a14452d57f79/jobs/12f1170f-54f2-53f3-20dd-22fc7dff55f9/oidctoken",
+      "isReadOnly": true
+    },
+    "agent.disablelogplugin.TestResultLogPlugin": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "agent.disablelogplugin.TestFilePublisherPlugin": {
+      "value": "true",
+      "isReadOnly": true
+    },
+    "build.sourceVersionAuthor": {
+      "value": "[PII]",
+      "isReadOnly": true
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "8973b0c5-42ad-4cce-9c5d-8ac33717b354",
+    "planType": "Build",
+    "version": 18,
+    "planId": "5bd98906-3255-4acf-9bd2-a14452d57f79",
+    "planGroup": "Build:8973b0c5-42ad-4cce-9c5d-8ac33717b354:20",
+    "artifactUri": "vstfs:///Build/Build/20",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {
+        "web": {
+          "href": "https://dev.azure.com/sandbox-arke/8973b0c5-42ad-4cce-9c5d-8ac33717b354/_build/definition?definitionId=2"
+        },
+        "self": {
+          "href": "https://dev.azure.com/sandbox-arke/8973b0c5-42ad-4cce-9c5d-8ac33717b354/_apis/build/Definitions/2"
+        }
+      },
+      "id": 2,
+      "name": "PlaywrightAzureDevops"
+    },
+    "owner": {
+      "_links": {
+        "web": {
+          "href": "https://dev.azure.com/sandbox-arke/8973b0c5-42ad-4cce-9c5d-8ac33717b354/_build/results?buildId=20"
+        },
+        "self": {
+          "href": "https://dev.azure.com/sandbox-arke/8973b0c5-42ad-4cce-9c5d-8ac33717b354/_apis/build/Builds/20"
+        }
+      },
+      "id": 20,
+      "name": "20240717.17"
+    }
+  },
+  "timeline": {
+    "id": "5bd98906-3255-4acf-9bd2-a14452d57f79",
+    "changeId": 5,
+    "location": null
+  },
+  "jobId": "12f1170f-54f2-53f3-20dd-22fc7dff55f9",
+  "jobDisplayName": "Job",
+  "jobName": "__default",
+  "jobContainer": null,
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "29dfeac8-743f-4b6f-975d-7a4da20c1981",
+          "ServerName": "sandbox-arke"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://dev.azure.com/sandbox-arke/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ],
+    "repositories": [
+      {
+        "properties": {
+          "id": "119e4a38-ef78-4a82-aa7f-10b93fb60dcf",
+          "type": "Git",
+          "version": "bf8b05e4edc78584969d1bdc1f22f006f5808d00",
+          "name": "PlaywrightAzureDevops",
+          "project": "8973b0c5-42ad-4cce-9c5d-8ac33717b354",
+          "defaultBranch": "refs/heads/main",
+          "ref": "refs/heads/main",
+          "url": "https://sandbox-arke@dev.azure.com/sandbox-arke/Playwright/_git/PlaywrightAzureDevops",
+          "hasReadAccess": false,
+          "versionInfo": {
+            "author": "[PII]"
+          },
+          "checkoutOptions": {
+            "fetchDepth": "1"
+          },
+          "system.istriggeringrepository": true
+        },
+        "alias": "self",
+        "endpoint": {
+          "name": "SystemVssConnection"
+        }
+      }
+    ]
+  },
+  "workspace": {}
+}
+[2024-07-17 13:09:19Z INFO JobRunner] Job ID 12f1170f-54f2-53f3-20dd-22fc7dff55f9
+[2024-07-17 13:09:19Z INFO JobRunner] Creating job server with URL: https://dev.azure.com/sandbox-arke/
+[2024-07-17 13:09:19Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:09:19Z INFO Worker] Listening for cancel message from the channel.
+[2024-07-17 13:09:19Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2024-07-17 13:09:19Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:09:19Z INFO JobServerQueue] Start process web console line queue.
+[2024-07-17 13:09:19Z INFO JobServerQueue] Start process file upload queue.
+[2024-07-17 13:09:19Z INFO JobServerQueue] Start process timeline update queue.
+[2024-07-17 13:09:19Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\ArminHøjbergKetirani\Downloads\bin\Agent.Worker.dll
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO ConfigurationStore] binPath: C:\Users\ArminHøjbergKetirani\Downloads\bin
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO ConfigurationStore] RootFolder: C:\Users\ArminHøjbergKetirani\Downloads
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known config file 'Agent': 'C:\Users\ArminHøjbergKetirani\Downloads\.agent'
+[2024-07-17 13:09:19Z INFO ConfigurationStore] ConfigFilePath: C:\Users\ArminHøjbergKetirani\Downloads\.agent
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\ArminHøjbergKetirani\Downloads\.credentials'
+[2024-07-17 13:09:19Z INFO ConfigurationStore] CredFilePath: C:\Users\ArminHøjbergKetirani\Downloads\.credentials
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known config file 'Service': 'C:\Users\ArminHøjbergKetirani\Downloads\.service'
+[2024-07-17 13:09:19Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\ArminHøjbergKetirani\Downloads\.service
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known config file 'Autologon': 'C:\Users\ArminHøjbergKetirani\Downloads\.autologon'
+[2024-07-17 13:09:19Z INFO ConfigurationStore] AutoLogonSettingsFilePath: C:\Users\ArminHøjbergKetirani\Downloads\.autologon
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known config file 'Options': 'C:\Users\ArminHøjbergKetirani\Downloads\.options'
+[2024-07-17 13:09:19Z INFO ConfigurationStore] RuntimeOptionsFilePath: C:\Users\ArminHøjbergKetirani\Downloads\.options
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known config file 'SetupInfo': 'C:\Users\ArminHøjbergKetirani\Downloads\.setup_info'
+[2024-07-17 13:09:19Z INFO ConfigurationStore] SetupInfoFilePath: C:\Users\ArminHøjbergKetirani\Downloads\.setup_info
+[2024-07-17 13:09:19Z INFO ConfigurationStore] Read setting file: 176 chars
+[2024-07-17 13:09:19Z INFO ExecutionContext] WorkspaceIdentifier '27c55e058ad584ede5fa88a08d0dbaa4643093ea' created for repos Microsoft.VisualStudio.Services.Agent.Worker.Build.RepositoryTrackingInfo
+[2024-07-17 13:09:19Z INFO HostContext] Removing short secrets from masking dictionary
+[2024-07-17 13:09:19Z INFO JobRunner] Starting the job execution context.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO JobRunner] Validating directory permissions for: 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Externals': 'C:\Users\ArminHøjbergKetirani\Downloads\externals'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'ServerOM': 'C:\Users\ArminHøjbergKetirani\Downloads\externals\vstsom'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Tools': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tool'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Temp': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_temp'
+[2024-07-17 13:09:19Z INFO JobRunner] Creating task server with https://dev.azure.com/sandbox-arke/
+[2024-07-17 13:09:19Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:09:19Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:09:19Z INFO JobRunner] Getting job extension.
+[2024-07-17 13:09:19Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.IJobExtension'
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.BuildJobExtension, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Release.ReleaseJobExtension, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Release.DeploymentJobExtension, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Maintenance.MaintenanceJobExtension, Agent.Worker
+[2024-07-17 13:09:19Z INFO JobRunner] Initialize job. Getting all job steps.
+[2024-07-17 13:09:19Z INFO BuildJobExtension] Run initial step from extension BuildJobExtension.
+[2024-07-17 13:09:19Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.Build.ISourceProvider'
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.ExternalGitSourceProvider, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.GitHubSourceProvider, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.GitHubEnterpriseSourceProvider, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.BitbucketSourceProvider, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.SvnSourceProvider, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.TfsGitSourceProvider, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.TfsVCSourceProvider, Agent.Worker
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO BuildDirectoryManager] Checking if artifacts directory exists: 'C:\Users\ArminHøjbergKetirani\Downloads\_work\1\a'
+[2024-07-17 13:09:19Z INFO BuildDirectoryManager] Creating artifacts directory.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO BuildDirectoryManager] Checking if test results directory exists: 'C:\Users\ArminHøjbergKetirani\Downloads\_work\1\TestResults'
+[2024-07-17 13:09:19Z INFO BuildDirectoryManager] Creating test results directory.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO BuildDirectoryManager] Set repository path for repository self to 'C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO BuildJobExtension] Checking repository name self
+[2024-07-17 13:09:19Z INFO BuildJobExtension] Downloading task definitions.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known config file 'TaskExceptionList': 'C:\Users\ArminHøjbergKetirani\Downloads\bin\tasks-exception-list.json'
+[2024-07-17 13:09:19Z INFO TaskManager] Skip download checkout task.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:19Z INFO TaskManager] Ensuring task exists: ID '31c75bbb-bcdf-4706-8d7c-4da6a1959bc2', version '0.235.1', name 'NodeTool', directory 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\NodeTool_31c75bbb-bcdf-4706-8d7c-4da6a1959bc2\0.235.1'.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:19Z INFO TaskManager] Ensuring task exists: ID 'd9bafed4-0b18-4f58-968d-86655b4d2ce9', version '2.237.1', name 'CmdLine', directory 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1'.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:19Z INFO TaskManager] Ensuring task exists: ID 'ecdc45f6-832d-4ad9-b52b-ee49e94659be', version '1.242.0', name 'PublishPipelineArtifact', directory 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\PublishPipelineArtifact_ecdc45f6-832d-4ad9-b52b-ee49e94659be\1.242.0'.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:19Z INFO BuildJobExtension] Downloading Node 6 runner.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Externals': 'C:\Users\ArminHøjbergKetirani\Downloads\externals'
+[2024-07-17 13:09:19Z INFO NodeJsUtil] Node 6 runner already exist.
+[2024-07-17 13:09:19Z INFO BuildJobExtension] Parsing all task's condition inputs.
+[2024-07-17 13:09:19Z INFO ExpressionManager] Parsing expression: <succeededOrFailed()>
+[2024-07-17 13:09:19Z INFO AsyncCommandContext] Start flush buffered output.
+[2024-07-17 13:09:19Z INFO AsyncCommandContext] Finsh flush buffered output.
+[2024-07-17 13:09:19Z INFO AsyncCommandContext] Wait till async command task to finish.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'TaskZips': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_taskzips'
+[2024-07-17 13:09:19Z INFO TaskManager] Loading task definition 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\NodeTool_31c75bbb-bcdf-4706-8d7c-4da6a1959bc2\0.235.1\task.json'.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'TaskZips': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_taskzips'
+[2024-07-17 13:09:19Z INFO TaskManager] Loading task definition 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1\task.json'.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'TaskZips': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_taskzips'
+[2024-07-17 13:09:19Z INFO TaskManager] Loading task definition 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1\task.json'.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'TaskZips': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_taskzips'
+[2024-07-17 13:09:19Z INFO TaskManager] Loading task definition 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1\task.json'.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'TaskZips': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_taskzips'
+[2024-07-17 13:09:19Z INFO TaskManager] Loading task definition 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\PublishPipelineArtifact_ecdc45f6-832d-4ad9-b52b-ee49e94659be\1.242.0\task.json'.
+[2024-07-17 13:09:19Z INFO BuildJobExtension] Adding pre-job step from extension.
+[2024-07-17 13:09:19Z INFO BuildJobExtension] Adding post-job step from extension.
+[2024-07-17 13:09:19Z INFO BuildJobExtension] Adding post-job steps from tasks.
+[2024-07-17 13:09:19Z INFO BuildJobExtension] Total accessible running process: 293.
+[2024-07-17 13:09:19Z INFO JobRunner] Total job steps: 7.
+[2024-07-17 13:09:19Z INFO JobRunner] Run all job steps.
+[2024-07-17 13:09:19Z INFO AsyncCommandContext] Start flush buffered output.
+[2024-07-17 13:09:19Z INFO AsyncCommandContext] Finsh flush buffered output.
+[2024-07-17 13:09:19Z INFO AsyncCommandContext] Wait till async command task to finish.
+[2024-07-17 13:09:19Z INFO AsyncCommandContext] Start flush buffered output.
+[2024-07-17 13:09:19Z INFO AsyncCommandContext] Finsh flush buffered output.
+[2024-07-17 13:09:19Z INFO AsyncCommandContext] Wait till async command task to finish.
+[2024-07-17 13:09:19Z INFO AsyncCommandContext] Start flush buffered output.
+[2024-07-17 13:09:19Z INFO AsyncCommandContext] Finsh flush buffered output.
+[2024-07-17 13:09:19Z INFO AsyncCommandContext] Wait till async command task to finish.
+[2024-07-17 13:09:19Z INFO StepsRunner] Processing step: DisplayName='Checkout PlaywrightAzureDevops@main to s', ContinueOnError=False, Enabled=True
+[2024-07-17 13:09:19Z INFO ExpressionManager] Evaluating: SucceededNode()
+[2024-07-17 13:09:19Z INFO ExpressionManager] Result: True
+[2024-07-17 13:09:19Z INFO StepsRunner] Starting the step.
+[2024-07-17 13:09:19Z INFO TaskRunner] Allow publishing telemetry for Checkout@1.0.0 task: True
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:19Z INFO TaskRunner] Get handler data for target platform Windows
+[2024-07-17 13:09:19Z INFO TaskRunner] Handler data is of type Microsoft.VisualStudio.Services.Agent.Worker.AgentPluginHandlerData
+[2024-07-17 13:09:19Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.IWorkerCommandExtension'
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.TaskCommandExtension, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.ArtifactCommandExtension, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Build.BuildCommandExtension, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.CodeCoverage.CodeCoverageCommandExtension, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.TestResults.ResultsCommandExtension, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Telemetry.TelemetryCommandExtension, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.Release.ReleaseCommandExtension, Agent.Worker
+[2024-07-17 13:09:19Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Worker.PluginInternalCommandExtension, Agent.Worker
+[2024-07-17 13:09:19Z INFO WorkerCommandManager] Register command extension for area task
+[2024-07-17 13:09:19Z INFO WorkerCommandManager] Register command extension for area artifact
+[2024-07-17 13:09:19Z INFO WorkerCommandManager] Register command extension for area build
+[2024-07-17 13:09:19Z INFO WorkerCommandManager] Register command extension for area codecoverage
+[2024-07-17 13:09:19Z INFO WorkerCommandManager] Register command extension for area results
+[2024-07-17 13:09:19Z INFO WorkerCommandManager] Register command extension for area telemetry
+[2024-07-17 13:09:19Z INFO WorkerCommandManager] Register command extension for area release
+[2024-07-17 13:09:19Z INFO WorkerCommandManager] Register command extension for area plugininternal
+[2024-07-17 13:09:19Z INFO AgentPluginHandler] Handler.AfterExecutionContextInitialized _continueAfterCancelProcessTreeKillAttempt = True
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.Repository.CheckoutTask, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id '6d15af64-176c-496d-b583-fd2ae21d4df4' (main).
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.Repository.CleanupTask, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id '6d15af64-176c-496d-b583-fd2ae21d4df4' (post).
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.DownloadPipelineArtifactTask, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id '61f2a582-95ae-4948-b34d-a1b3c4f6a737' (main).
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.PublishPipelineArtifactTask, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id 'ecdc45f6-832d-4ad9-b52b-ee49e94659be' (main).
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.PublishPipelineArtifactTaskV1, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id 'ecdc45f6-832d-4ad9-b52b-ee49e94659be' (main).
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.DownloadPipelineArtifactTaskV1, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id '61f2a582-95ae-4948-b34d-a1b3c4f6a737' (main).
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.DownloadPipelineArtifactTaskV1_1_0, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id '61f2a582-95ae-4948-b34d-a1b3c4f6a737' (main).
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineCache.SavePipelineCacheV0, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id 'd53ccab4-555e-4494-9d06-11db043fb4a9' (post).
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineCache.RestorePipelineCacheV0, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id 'd53ccab4-555e-4494-9d06-11db043fb4a9' (main).
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.DownloadPipelineArtifactTaskV1_1_1, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id '61f2a582-95ae-4948-b34d-a1b3c4f6a737' (main).
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.DownloadPipelineArtifactTaskV1_1_2, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id '61f2a582-95ae-4948-b34d-a1b3c4f6a737' (main).
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.DownloadPipelineArtifactTaskV1_1_3, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id '61f2a582-95ae-4948-b34d-a1b3c4f6a737' (main).
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.DownloadPipelineArtifactTaskV2_0_0, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id '61f2a582-95ae-4948-b34d-a1b3c4f6a737' (main).
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.PipelineArtifact.PublishPipelineArtifactTaskV0_140_0, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id 'ecdc45f6-832d-4ad9-b52b-ee49e94659be' (main).
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Load task plugin from 'Agent.Plugins.BuildArtifacts.DownloadBuildArtifactTaskV1_0_0, Agent.Plugins'.
+[2024-07-17 13:09:19Z INFO AgentPluginManager] Loaded task plugin id 'a433f589-fce1-4460-9ee6-44a624aeb1fb' (main).
+[2024-07-17 13:09:19Z INFO WorkerCommandManager] Enable plugin internal command extension.
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper] Starting process:
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\ArminHøjbergKetirani\Downloads\bin\Agent.PluginHost.exe'
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper]   Arguments: 'task "Agent.Plugins.Repository.CheckoutTask, Agent.Plugins"'
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'True'
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-07-17 13:09:19Z INFO ProcessInvokerWrapper] Process started with process id 10896, waiting for process exit.
+[2024-07-17 13:09:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '12f1170f-54f2-53f3-20dd-22fc7dff55f9', success rate: 1/1.
+[2024-07-17 13:09:20Z INFO ProcessInvokerWrapper] Close STDIN after the first redirect finished.
+[2024-07-17 13:09:20Z INFO ProcessInvokerWrapper] STDIN stream write finished.
+[2024-07-17 13:09:20Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:09:20Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:09:20Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:09:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a745dbb9-fb3f-4018-ab98-82d93c3b0f38', success rate: 1/1.
+[2024-07-17 13:09:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '12f1170f-54f2-53f3-20dd-22fc7dff55f9', success rate: 1/1.
+[2024-07-17 13:09:20Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:09:20Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:09:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '63e8042a-f367-5aec-692c-fcc654be55e4', success rate: 1/1.
+[2024-07-17 13:09:20Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:09:20Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:09:20Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:09:21Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:09:21Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:09:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '63e8042a-f367-5aec-692c-fcc654be55e4', success rate: 1/1.
+[2024-07-17 13:09:21Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2024-07-17 13:09:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record '63e8042a-f367-5aec-692c-fcc654be55e4', success rate: 1/1.
+[2024-07-17 13:09:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '63e8042a-f367-5aec-692c-fcc654be55e4', success rate: 1/1.
+[2024-07-17 13:09:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '63e8042a-f367-5aec-692c-fcc654be55e4', success rate: 1/1.
+[2024-07-17 13:09:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record '63e8042a-f367-5aec-692c-fcc654be55e4', success rate: 1/1.
+[2024-07-17 13:09:27Z INFO JobServerQueue] Try to append 2 batches web console lines for record '63e8042a-f367-5aec-692c-fcc654be55e4', success rate: 2/2.
+[2024-07-17 13:09:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record '63e8042a-f367-5aec-692c-fcc654be55e4', success rate: 1/1.
+[2024-07-17 13:09:28Z INFO HostContext] Setting up value for origin: Variables_Set_repoUrlWithCred
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper] Exited process 10896 with exit code 0
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper] Finished process 10896 with exit code 0, and elapsed time 00:00:08.6762907.
+[2024-07-17 13:09:28Z INFO WorkerCommandManager] Disable plugin internal command extension.
+[2024-07-17 13:09:28Z INFO StepsRunner] Step result: 
+[2024-07-17 13:09:28Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2024-07-17 13:09:28Z INFO StepsRunner] Current state: job state = ''
+[2024-07-17 13:09:28Z INFO StepsRunner] Processing step: DisplayName='Install Node.js', ContinueOnError=False, Enabled=True
+[2024-07-17 13:09:28Z INFO ExpressionManager] Evaluating: SucceededNode()
+[2024-07-17 13:09:28Z INFO ExpressionManager] Result: True
+[2024-07-17 13:09:28Z INFO StepsRunner] Starting the step.
+[2024-07-17 13:09:28Z INFO TaskRunner] Allow publishing telemetry for NodeTool@0.235.1 task: True
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'TaskZips': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_taskzips'
+[2024-07-17 13:09:28Z INFO TaskManager] Loading task definition 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\NodeTool_31c75bbb-bcdf-4706-8d7c-4da6a1959bc2\0.235.1\task.json'.
+[2024-07-17 13:09:28Z INFO TaskRunner] Get handler data for target platform Windows
+[2024-07-17 13:09:28Z INFO TaskRunner] Handler data is of type Microsoft.VisualStudio.Services.Agent.Worker.Node20_1HandlerData
+[2024-07-17 13:09:28Z INFO NodeHandler] Handler.AfterExecutionContextInitialized _continueAfterCancelProcessTreeKillAttempt = True
+[2024-07-17 13:09:28Z INFO TaskRunner] Current handler is Node. Trying to determing the SDK version.
+[2024-07-17 13:09:28Z INFO TaskRunner] Node SDK version: 5.0.0-test. Correlation ID is required: False.
+[2024-07-17 13:09:28Z INFO NodeHandler] AZP_AGENT_IGNORE_VSTSTASKLIB enabled, ignoring fix
+[2024-07-17 13:09:28Z INFO NodeHandler] Task.json has node20_1 handler data: True node20ResultsInGlibCError = False
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Externals': 'C:\Users\ArminHøjbergKetirani\Downloads\externals'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Externals': 'C:\Users\ArminHøjbergKetirani\Downloads\externals'
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper] Starting process:
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\ArminHøjbergKetirani\Downloads\externals\node20_1\bin\node.exe'
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\NodeTool_31c75bbb-bcdf-4706-8d7c-4da6a1959bc2\0.235.1\nodetool.js"'
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s'
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'True'
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-07-17 13:09:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record '63e8042a-f367-5aec-692c-fcc654be55e4', success rate: 1/1.
+[2024-07-17 13:09:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b29e13d3-e02a-52ad-12be-2be01aa38374', success rate: 1/1.
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper] Process started with process id 23444, waiting for process exit.
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper] Exited process 23444 with exit code 0
+[2024-07-17 13:09:28Z INFO ProcessInvokerWrapper] Finished process 23444 with exit code 0, and elapsed time 00:00:00.3990395.
+[2024-07-17 13:09:28Z INFO StepsRunner] Step result: 
+[2024-07-17 13:09:28Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2024-07-17 13:09:28Z INFO StepsRunner] Current state: job state = ''
+[2024-07-17 13:09:28Z INFO StepsRunner] Processing step: DisplayName='npm ci', ContinueOnError=False, Enabled=True
+[2024-07-17 13:09:28Z INFO ExpressionManager] Evaluating: SucceededNode()
+[2024-07-17 13:09:28Z INFO ExpressionManager] Result: True
+[2024-07-17 13:09:28Z INFO StepsRunner] Starting the step.
+[2024-07-17 13:09:28Z INFO TaskRunner] Allow publishing telemetry for CmdLine@2.237.1 task: True
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:28Z INFO HostContext] Well known directory 'TaskZips': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_taskzips'
+[2024-07-17 13:09:28Z INFO TaskManager] Loading task definition 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1\task.json'.
+[2024-07-17 13:09:28Z INFO TaskRunner] Get handler data for target platform Windows
+[2024-07-17 13:09:28Z INFO TaskRunner] Handler data is of type Microsoft.VisualStudio.Services.Agent.Worker.PowerShell3HandlerData
+[2024-07-17 13:09:29Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.IJobExtension'
+[2024-07-17 13:09:29Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.Build.ISourceProvider'
+[2024-07-17 13:09:29Z INFO BuildJobExtension] Build JobExtension resolving path use source provide: 
+[2024-07-17 13:09:29Z INFO BuildJobExtension] The Default Path Root of Build JobExtension is repository.path: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s
+[2024-07-17 13:09:29Z INFO BuildJobExtension] After prefix Default Path Root provide by JobExtension: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s
+[2024-07-17 13:09:29Z INFO BuildJobExtension] Return absolute path after prefix DefaultPathRoot: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s
+[2024-07-17 13:09:29Z INFO TaskRunner] Build JobExtension resolved a rooted path:: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s
+[2024-07-17 13:09:29Z INFO PowerShell3Handler] Handler.AfterExecutionContextInitialized _continueAfterCancelProcessTreeKillAttempt = True
+[2024-07-17 13:09:29Z INFO TaskRunner] Current handler is PowerShell3. Trying to determing the SDK version.
+[2024-07-17 13:09:29Z INFO TaskRunner] PowerShell SDK version: 0.20.1. Correlation ID is required: True.
+[2024-07-17 13:09:29Z INFO PowerShellExeUtil] Generation: '1'
+[2024-07-17 13:09:29Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\1\PowerShellEngine', value name 'PowerShellVersion': '2.0'
+[2024-07-17 13:09:29Z INFO PowerShellExeUtil] Unsupported version. Skipping.
+[2024-07-17 13:09:29Z INFO PowerShellExeUtil] Generation: '3'
+[2024-07-17 13:09:29Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine', value name 'PowerShellVersion': '5.1.22621.1'
+[2024-07-17 13:09:29Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine', value name 'ApplicationBase': 'C:\Windows\System32\WindowsPowerShell\v1.0'
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper] Starting process:
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe'
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper]   Arguments: '-NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command ". ([scriptblock]::Create('if ([Console]::InputEncoding -is [Text.UTF8Encoding] -and [Console]::InputEncoding.GetPreamble().Length -ne 0) { [Console]::InputEncoding = New-Object Text.UTF8Encoding $false } if (!$PSHOME) { $null = Get-Item -LiteralPath ''variable:PSHOME'' } else { Import-Module -Name ([System.IO.Path]::Combine($PSHOME, ''Modules\Microsoft.PowerShell.Management\Microsoft.PowerShell.Management.psd1'')) ; Import-Module -Name ([System.IO.Path]::Combine($PSHOME, ''Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psd1'')) }')) 2>&1 | ForEach-Object { Write-Verbose $_.Exception.Message -Verbose } ; Import-Module -Name 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1\ps_modules\VstsTaskSdk\VstsTaskSdk.psd1' -ArgumentList @{ NonInteractive = $true } -ErrorAction Stop ; $VerbosePreference = 'SilentlyContinue' ; $DebugPreference = 'SilentlyContinue' ; Invoke-VstsTaskScript -ScriptBlock ([scriptblock]::Create('. ''C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1\cmdline.ps1'''))"'
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1'
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'True'
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-07-17 13:09:29Z INFO ProcessInvokerWrapper] Process started with process id 472, waiting for process exit.
+[2024-07-17 13:09:29Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2024-07-17 13:09:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b29e13d3-e02a-52ad-12be-2be01aa38374', success rate: 1/1.
+[2024-07-17 13:09:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f8ed7bd8-2a7f-56f6-9385-7fc29a8b5b7b', success rate: 1/1.
+[2024-07-17 13:09:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f8ed7bd8-2a7f-56f6-9385-7fc29a8b5b7b', success rate: 1/1.
+[2024-07-17 13:09:30Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2024-07-17 13:09:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f8ed7bd8-2a7f-56f6-9385-7fc29a8b5b7b', success rate: 1/1.
+[2024-07-17 13:09:36Z INFO JobServerQueue] Stop aggressive process web console line queue.
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper] Exited process 472 with exit code 0
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper] Finished process 472 with exit code 0, and elapsed time 00:00:10.8226864.
+[2024-07-17 13:09:39Z INFO StepsRunner] Step result: 
+[2024-07-17 13:09:39Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2024-07-17 13:09:39Z INFO StepsRunner] Current state: job state = ''
+[2024-07-17 13:09:39Z INFO StepsRunner] Processing step: DisplayName='Install Playwright browsers', ContinueOnError=False, Enabled=True
+[2024-07-17 13:09:39Z INFO ExpressionManager] Evaluating: SucceededNode()
+[2024-07-17 13:09:39Z INFO ExpressionManager] Result: True
+[2024-07-17 13:09:39Z INFO StepsRunner] Starting the step.
+[2024-07-17 13:09:39Z INFO TaskRunner] Allow publishing telemetry for CmdLine@2.237.1 task: True
+[2024-07-17 13:09:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:39Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:39Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:39Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:39Z INFO HostContext] Well known directory 'TaskZips': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_taskzips'
+[2024-07-17 13:09:39Z INFO TaskManager] Loading task definition 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1\task.json'.
+[2024-07-17 13:09:39Z INFO TaskRunner] Get handler data for target platform Windows
+[2024-07-17 13:09:39Z INFO TaskRunner] Handler data is of type Microsoft.VisualStudio.Services.Agent.Worker.PowerShell3HandlerData
+[2024-07-17 13:09:39Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.IJobExtension'
+[2024-07-17 13:09:39Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.Build.ISourceProvider'
+[2024-07-17 13:09:39Z INFO BuildJobExtension] Build JobExtension resolving path use source provide: 
+[2024-07-17 13:09:39Z INFO BuildJobExtension] The Default Path Root of Build JobExtension is repository.path: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s
+[2024-07-17 13:09:39Z INFO BuildJobExtension] After prefix Default Path Root provide by JobExtension: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s
+[2024-07-17 13:09:39Z INFO BuildJobExtension] Return absolute path after prefix DefaultPathRoot: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s
+[2024-07-17 13:09:39Z INFO TaskRunner] Build JobExtension resolved a rooted path:: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s
+[2024-07-17 13:09:39Z INFO PowerShell3Handler] Handler.AfterExecutionContextInitialized _continueAfterCancelProcessTreeKillAttempt = True
+[2024-07-17 13:09:39Z INFO TaskRunner] Current handler is PowerShell3. Trying to determing the SDK version.
+[2024-07-17 13:09:39Z INFO TaskRunner] PowerShell SDK version: 0.20.1. Correlation ID is required: True.
+[2024-07-17 13:09:39Z INFO PowerShellExeUtil] Generation: '1'
+[2024-07-17 13:09:39Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\1\PowerShellEngine', value name 'PowerShellVersion': '2.0'
+[2024-07-17 13:09:39Z INFO PowerShellExeUtil] Unsupported version. Skipping.
+[2024-07-17 13:09:39Z INFO PowerShellExeUtil] Generation: '3'
+[2024-07-17 13:09:39Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine', value name 'PowerShellVersion': '5.1.22621.1'
+[2024-07-17 13:09:39Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine', value name 'ApplicationBase': 'C:\Windows\System32\WindowsPowerShell\v1.0'
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper] Starting process:
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe'
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper]   Arguments: '-NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command ". ([scriptblock]::Create('if ([Console]::InputEncoding -is [Text.UTF8Encoding] -and [Console]::InputEncoding.GetPreamble().Length -ne 0) { [Console]::InputEncoding = New-Object Text.UTF8Encoding $false } if (!$PSHOME) { $null = Get-Item -LiteralPath ''variable:PSHOME'' } else { Import-Module -Name ([System.IO.Path]::Combine($PSHOME, ''Modules\Microsoft.PowerShell.Management\Microsoft.PowerShell.Management.psd1'')) ; Import-Module -Name ([System.IO.Path]::Combine($PSHOME, ''Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psd1'')) }')) 2>&1 | ForEach-Object { Write-Verbose $_.Exception.Message -Verbose } ; Import-Module -Name 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1\ps_modules\VstsTaskSdk\VstsTaskSdk.psd1' -ArgumentList @{ NonInteractive = $true } -ErrorAction Stop ; $VerbosePreference = 'SilentlyContinue' ; $DebugPreference = 'SilentlyContinue' ; Invoke-VstsTaskScript -ScriptBlock ([scriptblock]::Create('. ''C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1\cmdline.ps1'''))"'
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1'
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'True'
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-07-17 13:09:39Z INFO ProcessInvokerWrapper] Process started with process id 17144, waiting for process exit.
+[2024-07-17 13:09:41Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper] Exited process 17144 with exit code 0
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper] Finished process 17144 with exit code 0, and elapsed time 00:00:03.2836000.
+[2024-07-17 13:09:43Z INFO StepsRunner] Step result: 
+[2024-07-17 13:09:43Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2024-07-17 13:09:43Z INFO StepsRunner] Current state: job state = ''
+[2024-07-17 13:09:43Z INFO StepsRunner] Processing step: DisplayName='Run Playwright tests', ContinueOnError=False, Enabled=True
+[2024-07-17 13:09:43Z INFO ExpressionManager] Evaluating: SucceededNode()
+[2024-07-17 13:09:43Z INFO ExpressionManager] Result: True
+[2024-07-17 13:09:43Z INFO StepsRunner] Starting the step.
+[2024-07-17 13:09:43Z INFO TaskRunner] Allow publishing telemetry for CmdLine@2.237.1 task: True
+[2024-07-17 13:09:43Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:43Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:43Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:43Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:09:43Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:43Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:09:43Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:09:43Z INFO HostContext] Well known directory 'TaskZips': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_taskzips'
+[2024-07-17 13:09:43Z INFO TaskManager] Loading task definition 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1\task.json'.
+[2024-07-17 13:09:43Z INFO TaskRunner] Get handler data for target platform Windows
+[2024-07-17 13:09:43Z INFO TaskRunner] Handler data is of type Microsoft.VisualStudio.Services.Agent.Worker.PowerShell3HandlerData
+[2024-07-17 13:09:43Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.IJobExtension'
+[2024-07-17 13:09:43Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.Build.ISourceProvider'
+[2024-07-17 13:09:43Z INFO BuildJobExtension] Build JobExtension resolving path use source provide: 
+[2024-07-17 13:09:43Z INFO BuildJobExtension] The Default Path Root of Build JobExtension is repository.path: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s
+[2024-07-17 13:09:43Z INFO BuildJobExtension] After prefix Default Path Root provide by JobExtension: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s
+[2024-07-17 13:09:43Z INFO BuildJobExtension] Return absolute path after prefix DefaultPathRoot: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s
+[2024-07-17 13:09:43Z INFO TaskRunner] Build JobExtension resolved a rooted path:: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s
+[2024-07-17 13:09:43Z INFO PowerShell3Handler] Handler.AfterExecutionContextInitialized _continueAfterCancelProcessTreeKillAttempt = True
+[2024-07-17 13:09:43Z INFO TaskRunner] Current handler is PowerShell3. Trying to determing the SDK version.
+[2024-07-17 13:09:43Z INFO TaskRunner] PowerShell SDK version: 0.20.1. Correlation ID is required: True.
+[2024-07-17 13:09:43Z INFO PowerShellExeUtil] Generation: '1'
+[2024-07-17 13:09:43Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\1\PowerShellEngine', value name 'PowerShellVersion': '2.0'
+[2024-07-17 13:09:43Z INFO PowerShellExeUtil] Unsupported version. Skipping.
+[2024-07-17 13:09:43Z INFO PowerShellExeUtil] Generation: '3'
+[2024-07-17 13:09:43Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine', value name 'PowerShellVersion': '5.1.22621.1'
+[2024-07-17 13:09:43Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine', value name 'ApplicationBase': 'C:\Windows\System32\WindowsPowerShell\v1.0'
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper] Starting process:
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe'
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper]   Arguments: '-NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command ". ([scriptblock]::Create('if ([Console]::InputEncoding -is [Text.UTF8Encoding] -and [Console]::InputEncoding.GetPreamble().Length -ne 0) { [Console]::InputEncoding = New-Object Text.UTF8Encoding $false } if (!$PSHOME) { $null = Get-Item -LiteralPath ''variable:PSHOME'' } else { Import-Module -Name ([System.IO.Path]::Combine($PSHOME, ''Modules\Microsoft.PowerShell.Management\Microsoft.PowerShell.Management.psd1'')) ; Import-Module -Name ([System.IO.Path]::Combine($PSHOME, ''Modules\Microsoft.PowerShell.Utility\Microsoft.PowerShell.Utility.psd1'')) }')) 2>&1 | ForEach-Object { Write-Verbose $_.Exception.Message -Verbose } ; Import-Module -Name 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1\ps_modules\VstsTaskSdk\VstsTaskSdk.psd1' -ArgumentList @{ NonInteractive = $true } -ErrorAction Stop ; $VerbosePreference = 'SilentlyContinue' ; $DebugPreference = 'SilentlyContinue' ; Invoke-VstsTaskScript -ScriptBlock ([scriptblock]::Create('. ''C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1\cmdline.ps1'''))"'
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\CmdLine_d9bafed4-0b18-4f58-968d-86655b4d2ce9\2.237.1'
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'True'
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-07-17 13:09:43Z INFO ProcessInvokerWrapper] Process started with process id 19800, waiting for process exit.
+[2024-07-17 13:09:43Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2024-07-17 13:09:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f8ed7bd8-2a7f-56f6-9385-7fc29a8b5b7b', success rate: 1/1.
+[2024-07-17 13:09:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5caf77c8-9b10-50ef-b5c7-ca89c63e1c86', success rate: 1/1.
+[2024-07-17 13:09:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bd05475d-acb5-5619-3ccb-c46842dbc997', success rate: 1/1.
+[2024-07-17 13:09:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bd05475d-acb5-5619-3ccb-c46842dbc997', success rate: 1/1.
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper] Exited process 19800 with exit code 0
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper] Finished process 19800 with exit code 0, and elapsed time 00:00:17.8816407.
+[2024-07-17 13:10:01Z INFO StepsRunner] Step result: 
+[2024-07-17 13:10:01Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2024-07-17 13:10:01Z INFO StepsRunner] Current state: job state = ''
+[2024-07-17 13:10:01Z INFO StepsRunner] Processing step: DisplayName='Publish Playwright report', ContinueOnError=False, Enabled=True
+[2024-07-17 13:10:01Z INFO ExpressionManager] Evaluating: succeededOrFailed()
+[2024-07-17 13:10:01Z INFO ExpressionManager] Result: True
+[2024-07-17 13:10:01Z INFO StepsRunner] Starting the step.
+[2024-07-17 13:10:01Z INFO TaskRunner] Allow publishing telemetry for PublishPipelineArtifact@1.242.0 task: True
+[2024-07-17 13:10:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:10:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:10:01Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:10:01Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:10:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:10:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:10:01Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:10:01Z INFO HostContext] Well known directory 'TaskZips': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_taskzips'
+[2024-07-17 13:10:01Z INFO TaskManager] Loading task definition 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks\PublishPipelineArtifact_ecdc45f6-832d-4ad9-b52b-ee49e94659be\1.242.0\task.json'.
+[2024-07-17 13:10:01Z INFO TaskRunner] Get handler data for target platform Windows
+[2024-07-17 13:10:01Z INFO TaskRunner] Handler data is of type Microsoft.VisualStudio.Services.Agent.Worker.AgentPluginHandlerData
+[2024-07-17 13:10:01Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.IJobExtension'
+[2024-07-17 13:10:01Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Worker.Build.ISourceProvider'
+[2024-07-17 13:10:01Z INFO BuildJobExtension] Build JobExtension resolving path use source provide: playwright-report
+[2024-07-17 13:10:01Z INFO BuildJobExtension] The Default Path Root of Build JobExtension is repository.path: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s
+[2024-07-17 13:10:01Z INFO BuildJobExtension] After prefix Default Path Root provide by JobExtension: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s\playwright-report
+[2024-07-17 13:10:01Z INFO BuildJobExtension] Return absolute path after prefix DefaultPathRoot: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s\playwright-report
+[2024-07-17 13:10:01Z INFO TaskRunner] Build JobExtension resolved a rooted path:: C:\Users\ArminHøjbergKetirani\Downloads\_work\1\s\playwright-report
+[2024-07-17 13:10:01Z INFO AgentPluginHandler] Handler.AfterExecutionContextInitialized _continueAfterCancelProcessTreeKillAttempt = True
+[2024-07-17 13:10:01Z INFO TaskRunner] Current handler is Microsoft.VisualStudio.Services.Agent.Worker.Handlers.AgentPluginHandler. Correlation ID is not allowed.
+[2024-07-17 13:10:01Z INFO WorkerCommandManager] Enable plugin internal command extension.
+[2024-07-17 13:10:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:10:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:10:01Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:10:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper] Starting process:
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\ArminHøjbergKetirani\Downloads\bin\Agent.PluginHost.exe'
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper]   Arguments: 'task "Agent.Plugins.PipelineArtifact.PublishPipelineArtifactTaskV1, Agent.Plugins"'
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'True'
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper] Process started with process id 19068, waiting for process exit.
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper] Close STDIN after the first redirect finished.
+[2024-07-17 13:10:01Z INFO ProcessInvokerWrapper] STDIN stream write finished.
+[2024-07-17 13:10:01Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper] Exited process 19068 with exit code 0
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper] Finished process 19068 with exit code 0, and elapsed time 00:00:02.7725073.
+[2024-07-17 13:10:03Z INFO WorkerCommandManager] Disable plugin internal command extension.
+[2024-07-17 13:10:03Z INFO StepsRunner] Step result: 
+[2024-07-17 13:10:03Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2024-07-17 13:10:03Z INFO StepsRunner] Current state: job state = ''
+[2024-07-17 13:10:03Z INFO StepsRunner] Processing step: DisplayName='Checkout PlaywrightAzureDevops@main to s', ContinueOnError=False, Enabled=True
+[2024-07-17 13:10:03Z INFO ExpressionManager] Evaluating: AlwaysNode()
+[2024-07-17 13:10:03Z INFO ExpressionManager] Result: True
+[2024-07-17 13:10:03Z INFO StepsRunner] Starting the step.
+[2024-07-17 13:10:03Z INFO TaskRunner] Allow publishing telemetry for Checkout@1.0.0 task: True
+[2024-07-17 13:10:03Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:10:03Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:10:03Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:10:03Z INFO HostContext] Well known directory 'Tasks': 'C:\Users\ArminHøjbergKetirani\Downloads\_work\_tasks'
+[2024-07-17 13:10:03Z INFO TaskRunner] Get handler data for target platform Windows
+[2024-07-17 13:10:03Z INFO TaskRunner] Handler data is of type Microsoft.VisualStudio.Services.Agent.Worker.AgentPluginHandlerData
+[2024-07-17 13:10:03Z INFO AgentPluginHandler] Handler.AfterExecutionContextInitialized _continueAfterCancelProcessTreeKillAttempt = True
+[2024-07-17 13:10:03Z INFO WorkerCommandManager] Enable plugin internal command extension.
+[2024-07-17 13:10:03Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:10:03Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:10:03Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:10:03Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper] Starting process:
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\ArminHøjbergKetirani\Downloads\bin\Agent.PluginHost.exe'
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper]   Arguments: 'task "Agent.Plugins.Repository.CleanupTask, Agent.Plugins"'
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'True'
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-07-17 13:10:03Z INFO ProcessInvokerWrapper] Process started with process id 16872, waiting for process exit.
+[2024-07-17 13:10:04Z INFO ProcessInvokerWrapper] Close STDIN after the first redirect finished.
+[2024-07-17 13:10:04Z INFO ProcessInvokerWrapper] STDIN stream write finished.
+[2024-07-17 13:10:04Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:10:04Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:10:04Z INFO ProcessInvokerWrapper] Exited process 16872 with exit code 0
+[2024-07-17 13:10:04Z INFO ProcessInvokerWrapper] Finished process 16872 with exit code 0, and elapsed time 00:00:00.3271594.
+[2024-07-17 13:10:04Z INFO WorkerCommandManager] Disable plugin internal command extension.
+[2024-07-17 13:10:04Z INFO StepsRunner] Step result: 
+[2024-07-17 13:10:04Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2024-07-17 13:10:04Z INFO StepsRunner] Current state: job state = ''
+[2024-07-17 13:10:04Z INFO JobRunner] Finalize job.
+[2024-07-17 13:10:04Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:10:04Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:10:04Z INFO HostContext] Well known directory 'Work': 'C:\Users\ArminHøjbergKetirani\Downloads\_work'
+[2024-07-17 13:10:04Z INFO BuildJobExtension] Total accessible running process: 288.
+[2024-07-17 13:10:04Z INFO BuildJobExtension] Inspecting process environment variables. PID: 9980 (backgroundTaskHost)
+[2024-07-17 13:10:04Z INFO BuildJobExtension] Inspecting process environment variables. PID: 4968 (WmiPrvSE)
+[2024-07-17 13:10:04Z INFO BuildJobExtension] Inspecting process environment variables. PID: 13336 (WmiApSrv)
+[2024-07-17 13:10:04Z INFO BuildJobExtension] Inspecting process environment variables. PID: 15784 (chrome)
+[2024-07-17 13:10:04Z INFO JobRunner] Job result after all job steps finish: Succeeded
+[2024-07-17 13:10:04Z INFO JobRunner] Completing the job execution context.
+[2024-07-17 13:10:04Z INFO JobRunner] Shutting down the job server queue.
+[2024-07-17 13:10:04Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2024-07-17 13:10:06Z INFO JobServerQueue] All queue process task stopped.
+[2024-07-17 13:10:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bd05475d-acb5-5619-3ccb-c46842dbc997', success rate: 1/1.
+[2024-07-17 13:10:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a6453dc2-c13f-50dd-7490-386079329673', success rate: 1/1.
+[2024-07-17 13:10:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '34802286-2e39-40c0-ac62-a9a088030a7f', success rate: 1/1.
+[2024-07-17 13:10:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '613039dc-3dd7-470e-8d4c-9ef2a3a9b88c', success rate: 1/1.
+[2024-07-17 13:10:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '12f1170f-54f2-53f3-20dd-22fc7dff55f9', success rate: 1/1.
+[2024-07-17 13:10:06Z INFO JobServerQueue] Web console line queue drained.
+[2024-07-17 13:10:06Z INFO JobServerQueue] Uploading 4 files in one shot.
+[2024-07-17 13:10:08Z INFO JobServerQueue] Try to upload 4 log files or attachments, success rate: 4/4.
+[2024-07-17 13:10:08Z INFO JobServerQueue] File upload queue drained.
+[2024-07-17 13:10:08Z INFO JobServerQueue] Timeline update queue drained.
+[2024-07-17 13:10:08Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2024-07-17 13:10:08Z INFO TempDirectoryManager] Cleaning agent temp folder: C:\Users\ArminHøjbergKetirani\Downloads\_work\_temp
+[2024-07-17 13:10:08Z INFO JobRunner] Raising job completed event.
+[2024-07-17 13:10:08Z INFO Worker] Job completed.

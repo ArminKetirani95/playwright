@@ -1,0 +1,1400 @@
+[2024-07-17 13:00:59Z INFO AgentProcess] Agent package win-x64.
+[2024-07-17 13:00:59Z INFO AgentProcess] Running on Windows (X64).
+[2024-07-17 13:00:59Z INFO AgentProcess] RuntimeInformation: Microsoft Windows 10.0.22631.
+[2024-07-17 13:00:59Z INFO AgentProcess] Version: 3.241.0
+[2024-07-17 13:00:59Z INFO AgentProcess] Commit: 1a1c1a162a1410f3b637a39e7b8172c8ea1cf2a0
+[2024-07-17 13:00:59Z INFO AgentProcess] Culture: en-DK
+[2024-07-17 13:00:59Z INFO AgentProcess] UI Culture: en-GB
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:00:59Z INFO AgentProcess] Validating directory permissions for: 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:00:59Z INFO PowerShellExeUtil] Generation: '1'
+[2024-07-17 13:00:59Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\1\PowerShellEngine', value name 'PowerShellVersion': '2.0'
+[2024-07-17 13:00:59Z INFO PowerShellExeUtil] Unsupported version. Skipping.
+[2024-07-17 13:00:59Z INFO PowerShellExeUtil] Generation: '3'
+[2024-07-17 13:00:59Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine', value name 'PowerShellVersion': '5.1.22621.1'
+[2024-07-17 13:00:59Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine', value name 'ApplicationBase': 'C:\Windows\System32\WindowsPowerShell\v1.0'
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework', value name 'InstallRoot': 'C:\Windows\Microsoft.NET\Framework64\'
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'SOFTWARE\Microsoft\NET Framework Setup\NDP' contains sub keys:
+[2024-07-17 13:00:59Z INFO AgentProcess]  'CDF'
+[2024-07-17 13:00:59Z INFO AgentProcess]  'v2.0.50727'
+[2024-07-17 13:00:59Z INFO AgentProcess]  'v3.0'
+[2024-07-17 13:00:59Z INFO AgentProcess]  'v3.5'
+[2024-07-17 13:00:59Z INFO AgentProcess]  'v4'
+[2024-07-17 13:00:59Z INFO AgentProcess]  'v4.0'
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v2.0.50727', value name 'Version': '2.0.50727.4927'
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v2.0.50727', value name 'Install': '1'
+[2024-07-17 13:00:59Z INFO AgentProcess] Testing directory: 'C:\Windows\Microsoft.NET\Framework64\v2.0.50727'
+[2024-07-17 13:00:59Z INFO AgentProcess] Found version: 2.0.50727
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0', value name 'Version': '3.0.30729.4926'
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0', value name 'Install': '1'
+[2024-07-17 13:00:59Z INFO AgentProcess] Testing directory: 'C:\Windows\Microsoft.NET\Framework64\v3.0'
+[2024-07-17 13:00:59Z INFO AgentProcess] Found version: 3.0
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5', value name 'Version': '3.5.30729.4926'
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5', value name 'Install': '1'
+[2024-07-17 13:00:59Z INFO AgentProcess] Testing directory: 'C:\Windows\Microsoft.NET\Framework64\v3.5'
+[2024-07-17 13:00:59Z INFO AgentProcess] Found version: 3.5
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4', value name 'Version' is null.
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4', value name '' is null.
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'SOFTWARE\Microsoft\NET Framework Setup\NDP\v4' contains sub keys:
+[2024-07-17 13:00:59Z INFO AgentProcess]  'Client'
+[2024-07-17 13:00:59Z INFO AgentProcess]  'Full'
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'Version': '4.8.09032'
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'Install': '1'
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'InstallPath': 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\'
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'Release': '533320'
+[2024-07-17 13:00:59Z INFO AgentProcess] Type is System.Int32
+[2024-07-17 13:00:59Z INFO AgentProcess] Interpreted version: 4.7.0
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'Version': '4.8.09032'
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'Install': '1'
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'InstallPath': 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\'
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'Release': '533320'
+[2024-07-17 13:00:59Z INFO AgentProcess] Type is System.Int32
+[2024-07-17 13:00:59Z INFO AgentProcess] Interpreted version: 4.7.0
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4.0', value name 'Version' is null.
+[2024-07-17 13:00:59Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4.0', value name '': 'deprecated'
+[2024-07-17 13:00:59Z INFO AgentProcess] Found 5 versions:
+[2024-07-17 13:00:59Z INFO AgentProcess]  2.0.50727
+[2024-07-17 13:00:59Z INFO AgentProcess]  3.0
+[2024-07-17 13:00:59Z INFO AgentProcess]  3.5
+[2024-07-17 13:00:59Z INFO AgentProcess]  4.7.0
+[2024-07-17 13:00:59Z INFO AgentProcess]  4.7.0
+[2024-07-17 13:00:59Z INFO AgentProcess] Testing for min NET Framework version: '4.5'
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:00:59Z INFO CommandSettings] Run {
+  "Commit": false,
+  "Diagnostics": false,
+  "RunOnce": false,
+  "StartupType": null,
+  "Help": false,
+  "Version": false
+}
+[2024-07-17 13:00:59Z INFO AgentProcess] Arguments parsed
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:00:59Z INFO HostContext] Well known config file 'Proxy': 'C:\Users\ArminHøjbergKetirani\Downloads\.proxy'
+[2024-07-17 13:00:59Z INFO VstsAgentWebProxy] No proxy setting found.
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:00:59Z INFO HostContext] Well known config file 'Certificates': 'C:\Users\ArminHøjbergKetirani\Downloads\.certificates'
+[2024-07-17 13:00:59Z INFO AgentCertificateManager] No certificate setting found.
+[2024-07-17 13:00:59Z INFO Agent] ExecuteCommand
+[2024-07-17 13:00:59Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\ArminHøjbergKetirani\Downloads\bin\Agent.Listener.dll
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:00:59Z INFO ConfigurationStore] binPath: C:\Users\ArminHøjbergKetirani\Downloads\bin
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:00:59Z INFO ConfigurationStore] RootFolder: C:\Users\ArminHøjbergKetirani\Downloads
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:00:59Z INFO HostContext] Well known config file 'Agent': 'C:\Users\ArminHøjbergKetirani\Downloads\.agent'
+[2024-07-17 13:00:59Z INFO ConfigurationStore] ConfigFilePath: C:\Users\ArminHøjbergKetirani\Downloads\.agent
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:00:59Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\ArminHøjbergKetirani\Downloads\.credentials'
+[2024-07-17 13:00:59Z INFO ConfigurationStore] CredFilePath: C:\Users\ArminHøjbergKetirani\Downloads\.credentials
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:00:59Z INFO HostContext] Well known config file 'Service': 'C:\Users\ArminHøjbergKetirani\Downloads\.service'
+[2024-07-17 13:00:59Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\ArminHøjbergKetirani\Downloads\.service
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:00:59Z INFO HostContext] Well known config file 'Autologon': 'C:\Users\ArminHøjbergKetirani\Downloads\.autologon'
+[2024-07-17 13:00:59Z INFO ConfigurationStore] AutoLogonSettingsFilePath: C:\Users\ArminHøjbergKetirani\Downloads\.autologon
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:00:59Z INFO HostContext] Well known config file 'Options': 'C:\Users\ArminHøjbergKetirani\Downloads\.options'
+[2024-07-17 13:00:59Z INFO ConfigurationStore] RuntimeOptionsFilePath: C:\Users\ArminHøjbergKetirani\Downloads\.options
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:00:59Z INFO HostContext] Well known config file 'SetupInfo': 'C:\Users\ArminHøjbergKetirani\Downloads\.setup_info'
+[2024-07-17 13:00:59Z INFO ConfigurationStore] SetupInfoFilePath: C:\Users\ArminHøjbergKetirani\Downloads\.setup_info
+[2024-07-17 13:00:59Z INFO ConfigurationManager] LoadSettings
+[2024-07-17 13:00:59Z INFO ConfigurationStore] IsConfigured()
+[2024-07-17 13:00:59Z INFO ConfigurationStore] IsConfigured: True
+[2024-07-17 13:00:59Z INFO ConfigurationManager] Is configured: True
+[2024-07-17 13:00:59Z INFO ConfigurationStore] Read setting file: 176 chars
+[2024-07-17 13:00:59Z INFO ConfigurationManager] Settings Loaded
+[2024-07-17 13:00:59Z INFO ConfigurationStore] IsServiceConfigured()
+[2024-07-17 13:00:59Z INFO ConfigurationStore] IsServiceConfigured: True
+[2024-07-17 13:00:59Z INFO ConfigurationStore] IsConfigured()
+[2024-07-17 13:00:59Z INFO ConfigurationStore] IsConfigured: True
+[2024-07-17 13:00:59Z INFO ConfigurationManager] Is configured: True
+[2024-07-17 13:00:59Z INFO Agent] Try determine agent startup type base on console redirects.
+[2024-07-17 13:00:59Z INFO Agent] Set agent startup type - Manual
+[2024-07-17 13:00:59Z INFO ConfigurationStore] IsAutoLogonConfigured: False
+[2024-07-17 13:00:59Z INFO ConfigurationStore] HasCredentials()
+[2024-07-17 13:00:59Z INFO ConfigurationStore] stored True
+[2024-07-17 13:00:59Z INFO CredentialManager] GetCredentialProvider
+[2024-07-17 13:00:59Z INFO CredentialManager] Creating type OAuth
+[2024-07-17 13:00:59Z INFO CredentialManager] Creating credential type: OAuth
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:00:59Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:00:59Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams'
+[2024-07-17 13:00:59Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:00:59Z INFO ConfigurationManager] LoadSettings
+[2024-07-17 13:00:59Z INFO ConfigurationStore] IsConfigured()
+[2024-07-17 13:00:59Z INFO ConfigurationStore] IsConfigured: True
+[2024-07-17 13:00:59Z INFO ConfigurationManager] Is configured: True
+[2024-07-17 13:00:59Z INFO ConfigurationManager] Settings Loaded
+[2024-07-17 13:01:00Z WARN VisualStudioServices] Authentication failed with status code 401.
+Cache-Control: no-cache
+Pragma: no-cache
+P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+WWW-Authenticate: Bearer authorization_uri=https://login.microsoftonline.com/8a70a03e-1cc9-4c92-9ec6-6c584cb69a31, Basic realm="https://tfsprodneu1.visualstudio.com/", TFS-Federated
+X-TFS-ProcessId: 1e2f5db6-9348-44c7-ac03-951e2ba6aca8
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+ActivityId: 44a1fd95-c487-40bf-8ecc-4ac382dacc83
+X-TFS-Session: 678a1cb4-00fe-4799-a5a3-b6094c428adb
+X-VSS-E2EID: 017144c6-580b-4008-9047-3758fcb3ad80
+X-VSS-SenderDeploymentId: 1f18445b-609a-73c1-2ae2-521b74b4c11d
+X-Frame-Options: SAMEORIGIN
+X-TFS-FedAuthRealm: https://tfsprodneu1.visualstudio.com/
+X-TFS-FedAuthIssuer: https://dev.azure.com/sandbox-arke/
+X-VSS-AuthorizationEndpoint: https://vssps.dev.azure.com/sandbox-arke/
+X-VSS-ResourceTenant: 8a70a03e-1cc9-4c92-9ec6-6c584cb69a31
+X-VSS-S2STargetService: 00000002-0000-8888-8000-000000000000/visualstudio.com
+X-TFS-FedAuthRedirect: https://spsprodneu1.vssps.visualstudio.com/_signin?realm=dev.azure.com&reply_to=https%3A%2F%2Fdev.azure.com%2Fsandbox-arke%2F_apis%2FCustomerIntelligence%2FEvents&redirect=1&mkt=en-GB&hid=29dfeac8-743f-4b6f-975d-7a4da20c1981&context=eyJodCI6MiwiaGlkIjoiZWM0ZDhmMzYtNjI0NS00MzUxLWIyOTQtMjUyODMxYmJmMzI1IiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2
+Request-Context: appId=cid-v1:0cc0e688-cf14-42b5-9911-f427a40700f1
+Access-Control-Expose-Headers: Request-Context
+X-Content-Type-Options: nosniff
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: CB8BC3192DBE4BDFA9DF1EEDEFC5A772 Ref B: CPH30EDGE0319 Ref C: 2024-07-17T13:00:59Z
+Date: Wed, 17 Jul 2024 13:00:59 GMT
+
+[2024-07-17 13:01:00Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:01:00Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:01:00Z INFO VisualStudioServices] AAD Correlation ID for this token request: Unknown
+[2024-07-17 13:01:00Z INFO CommandSettings] Flag 'once': 'False'
+[2024-07-17 13:01:00Z INFO CommandSettings] Flag 'once': 'False'
+[2024-07-17 13:01:00Z INFO Agent] RunAsync
+[2024-07-17 13:01:00Z INFO ConfigurationManager] LoadSettings
+[2024-07-17 13:01:00Z INFO ConfigurationStore] IsConfigured()
+[2024-07-17 13:01:00Z INFO ConfigurationStore] IsConfigured: True
+[2024-07-17 13:01:00Z INFO ConfigurationManager] Is configured: True
+[2024-07-17 13:01:00Z INFO ConfigurationManager] Settings Loaded
+[2024-07-17 13:01:00Z INFO MessageListener] {
+  "AgentId": 12,
+  "AgentName": "NNIT-JW31HW3",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://dev.azure.com/sandbox-arke/",
+  "WorkFolder": "_work"
+}
+[2024-07-17 13:01:00Z INFO Terminal] WRITE LINE: Scanning for tool capabilities.
+[2024-07-17 13:01:00Z INFO ExtensionManager] Getting extensions for interface: 'Microsoft.VisualStudio.Services.Agent.Capabilities.ICapabilitiesProvider'
+[2024-07-17 13:01:00Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Capabilities.AgentCapabilitiesProvider, Microsoft.VisualStudio.Services.Agent
+[2024-07-17 13:01:00Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Capabilities.EnvironmentCapabilitiesProvider, Microsoft.VisualStudio.Services.Agent
+[2024-07-17 13:01:00Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Capabilities.PowerShellCapabilitiesProvider, Microsoft.VisualStudio.Services.Agent
+[2024-07-17 13:01:00Z INFO ExtensionManager] Creating instance: Microsoft.VisualStudio.Services.Agent.Capabilities.UserCapabilitiesProvider, Microsoft.VisualStudio.Services.Agent
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'ALLUSERSPROFILE': 'C:\ProgramData'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'APPDATA': 'C:\Users\ArminHøjbergKetirani\AppData\Roaming'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'CommonProgramFiles': 'C:\Program Files\Common Files'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'CommonProgramFiles(x86)': 'C:\Program Files (x86)\Common Files'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'CommonProgramW6432': 'C:\Program Files\Common Files'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'COMPUTERNAME': 'NNIT-JW31HW3'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'ComSpec': 'C:\WINDOWS\system32\cmd.exe'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'DriverData': 'C:\Windows\System32\Drivers\DriverData'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'HOMEDRIVE': 'C:'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'HOMEPATH': '\Users\ArminHøjbergKetirani'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'IGCCSVC_DB': 'AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAaoMLDqOJ30eX4XqB1D3D6wQAAAACAAAAAAAQZgAAAAEAACAAAABbzQwId7/qK35RW5YtELJ1qMa0SY8uk4QDCDnJbZfh/wAAAAAOgAAAAAIAACAAAAB07TcXcxQNnqawGZYYdwXJPQ2s7BIPWKIK3viMl6Avf2AAAAAJfMs+Rj5hOZow8LLxX44sE0pRivoswLJ5hmREog7sN+yS/EQ52g7F65XXPrTXY+EEoWALkh5cRfarHTonYanCj8D0ONgYnYI/5CQ0iUaIzQ+e7wgUJ1eRFJ4fyoLwy+VAAAAAeyXPD31bU4uDUWxKSNSniM0hcdBH0SQWc39XHWhFtOKkWBAlTW4lEqYNDmK9ZY6lVbI8usCfAh6XN/mQ5bPcDw=='
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'JAVA_HOME': 'C:\Program Files\Java\jre-1.8'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'LOCALAPPDATA': 'C:\Users\ArminHøjbergKetirani\AppData\Local'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'LOGONSERVER': '\\NNIT-JW31HW3'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'NODE_HOME': 'C:\Program Files\nodejs'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'NUMBER_OF_PROCESSORS': '12'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'OneDrive': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'OneDriveCommercial': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'OS': 'Windows_NT'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'Path': 'C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Users\ArminHøjbergKetirani\AppData\Local\Programs\Python\Launcher\;C:\Users\ArminHøjbergKetirani\AppData\Local\Microsoft\WindowsApps;C:\Users\ArminHøjbergKetirani\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ArminHøjbergKetirani\AppData\Local\GitHubDesktop\bin;C:\Users\ArminHøjbergKetirani\AppData\Local\Programs\Git\cmd;C:\Users\ArminHøjbergKetirani\AppData\Roaming\npm'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'PROCESSOR_ARCHITECTURE': 'AMD64'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 154 Stepping 4, GenuineIntel'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'PROCESSOR_LEVEL': '6'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'PROCESSOR_REVISION': '9a04'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'ProgramData': 'C:\ProgramData'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'ProgramFiles': 'C:\Program Files'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'ProgramFiles(x86)': 'C:\Program Files (x86)'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'ProgramW6432': 'C:\Program Files'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'PROMPT': '$P$G'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Skipping: 'PSModulePath'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'PUBLIC': 'C:\Users\Public'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'SYSTEM_32': 'C:\WINDOWS\system32'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'SystemDrive': 'C:'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'SystemRoot': 'C:\WINDOWS'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'TEMP': 'C:\Users\ARMINH~1\AppData\Local\Temp'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'TMP': 'C:\Users\ARMINH~1\AppData\Local\Temp'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'USERDOMAIN': 'AzureAD'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'USERDOMAIN_ROAMINGPROFILE': 'AzureAD'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'USERNAME': 'ArminHøjbergKetirani'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'USERPROFILE': 'C:\Users\ArminHøjbergKetirani'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'VERBOSE_ARG': ''SilentlyContinue''
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'windir': 'C:\WINDOWS'
+[2024-07-17 13:01:00Z INFO EnvironmentCapabilitiesProvider] Adding 'ZES_ENABLE_SYSMAN': '1'
+[2024-07-17 13:01:00Z INFO PowerShellExeUtil] Generation: '1'
+[2024-07-17 13:01:00Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\1\PowerShellEngine', value name 'PowerShellVersion': '2.0'
+[2024-07-17 13:01:00Z INFO PowerShellExeUtil] Unsupported version. Skipping.
+[2024-07-17 13:01:00Z INFO PowerShellExeUtil] Generation: '3'
+[2024-07-17 13:01:00Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine', value name 'PowerShellVersion': '5.1.22621.1'
+[2024-07-17 13:01:00Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine', value name 'ApplicationBase': 'C:\Windows\System32\WindowsPowerShell\v1.0'
+[2024-07-17 13:01:00Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper] Starting process:
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe'
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper]   Arguments: '-NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy RemoteSigned -Command ". 'C:\Users\ArminHøjbergKetirani\Downloads\bin\powershell\Add-Capabilities.ps1'"'
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\ArminHøjbergKetirani\Downloads\bin\powershell'
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper] OOM score adjustment is Linux-only.
+[2024-07-17 13:01:00Z INFO ProcessInvokerWrapper] Process started with process id 21664, waiting for process exit.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-AndroidSdkCapabilities.ps1
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'CurrentUser', view 'Default', key name 'SOFTWARE\Android SDK Tools', value name 'Path'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'SOFTWARE\Android SDK Tools', value name 'Path'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'SOFTWARE\Android SDK Tools', value name 'Path'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-AntCapabilities.ps1
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: 'env:ANT_HOME'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Value not found or is empty.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-ApplicationCapabilities.ps1
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking for application: 'npm'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=npm]C:\Program Files\nodejs\npm.cmd
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'npm': 'C:\Program Files\nodejs\npm.cmd'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking for application: 'gulp'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking for application: 'node'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=node.js]C:\Program Files\nodejs\node.exe
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'node.js': 'C:\Program Files\nodejs\node.exe'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking for application: 'bower'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking for application: 'grunt'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking for application: 'svn'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking for application: 'cmake'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking for application: 'docker'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-AzureGuestAgentCapabilities.ps1
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-AzurePowerShellCapabilities.ps1
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Env:PSModulePath: 'C:\Users\ArminHojbergKetirani\OneDrive - NNITGroup (Corporate)\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files\MicrosoftManagedDesktop\Powershell'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Attempting to find the module 'Az.Accounts' from the module path.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Attempting to find the module 'AzureRM' from the module path.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking if path exists: C:\Program Files (x86)\Microsoft SDKs\Azure\PowerShell\ResourceManager\AzureResourceManager\AzureRM.Profile\AzureRM.Profile.psd1
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking if path exists: C:\Program Files\Microsoft SDKs\Azure\PowerShell\ResourceManager\AzureResourceManager\AzureRM.Profile\AzureRM.Profile.psd1
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Attempting to find the module 'Azure' from the module path.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking if path exists: C:\Program Files (x86)\Microsoft SDKs\Azure\PowerShell\ServiceManagement\Azure\Azure.psd1
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking if path exists: C:\Program Files\Microsoft SDKs\Azure\PowerShell\ServiceManagement\Azure\Azure.psd1
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-ChefCapabilities.ps1
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-DotNetFrameworkCapabilities.ps1
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\.NETFramework', value name 'InstallRoot'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'C:\Windows\Microsoft.NET\Framework\'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Sub keys:
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'CDF'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'v2.0.50727'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'v3.0'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'v3.5'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'v4'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'v4.0'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v2.0.50727', value name 'Version'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: '2.0.50727.4927'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v2.0.50727', value name 'Install'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found Int32 value: '1'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: 2.0.50727.4927
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Testing container: 'C:\Windows\Microsoft.NET\Framework\v2.0.50727'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Exists.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=DotNetFramework_2.0]C:\Windows\Microsoft.NET\Framework\v2.0.50727
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'DotNetFramework_2.0': 'C:\Windows\Microsoft.NET\Framework\v2.0.50727'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v3.0', value name 'Version'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: '3.0.30729.4926'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v3.0', value name 'Install'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found Int32 value: '1'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: 3.0.30729.4926
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Testing container: 'C:\Windows\Microsoft.NET\Framework\v3.0'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Exists.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=DotNetFramework_3.0]C:\Windows\Microsoft.NET\Framework\v3.0
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'DotNetFramework_3.0': 'C:\Windows\Microsoft.NET\Framework\v3.0'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v3.5', value name 'Version'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: '3.5.30729.4926'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v3.5', value name 'Install'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found Int32 value: '1'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: 3.5.30729.4926
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Testing container: 'C:\Windows\Microsoft.NET\Framework\v3.5'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Exists.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=DotNetFramework_3.5]C:\Windows\Microsoft.NET\Framework\v3.5
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'DotNetFramework_3.5': 'C:\Windows\Microsoft.NET\Framework\v3.5'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v4', value name 'Version'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Value not found or is empty.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v4', value name ''
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Value not found or is empty.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v4'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Sub keys:
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'Client'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'Full'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'Version'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: '4.8.09032'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'Install'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found Int32 value: '1'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'InstallPath'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'Release'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found Int32 value: '533320'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=DotNetFramework_4.8.0]C:\Windows\Microsoft.NET\Framework\v4.0.30319
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'DotNetFramework_4.8.0': 'C:\Windows\Microsoft.NET\Framework\v4.0.30319'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'Version'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: '4.8.09032'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'Install'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found Int32 value: '1'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'InstallPath'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'Release'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found Int32 value: '533320'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=DotNetFramework_4.8.0]C:\Windows\Microsoft.NET\Framework\v4.0.30319
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'DotNetFramework_4.8.0': 'C:\Windows\Microsoft.NET\Framework\v4.0.30319'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v4.0', value name 'Version'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Value not found or is empty.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\NET Framework Setup\NDP\v4.0', value name ''
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'deprecated'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\.NETFramework', value name 'InstallRoot'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'C:\Windows\Microsoft.NET\Framework64\'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Sub keys:
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'CDF'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'v2.0.50727'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'v3.0'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'v3.5'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'v4'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'v4.0'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v2.0.50727', value name 'Version'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: '2.0.50727.4927'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v2.0.50727', value name 'Install'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found Int32 value: '1'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: 2.0.50727.4927
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Testing container: 'C:\Windows\Microsoft.NET\Framework64\v2.0.50727'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Exists.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=DotNetFramework_2.0_x64]C:\Windows\Microsoft.NET\Framework64\v2.0.50727
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'DotNetFramework_2.0_x64': 'C:\Windows\Microsoft.NET\Framework64\v2.0.50727'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v3.0', value name 'Version'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: '3.0.30729.4926'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v3.0', value name 'Install'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found Int32 value: '1'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: 3.0.30729.4926
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Testing container: 'C:\Windows\Microsoft.NET\Framework64\v3.0'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Exists.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=DotNetFramework_3.0_x64]C:\Windows\Microsoft.NET\Framework64\v3.0
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'DotNetFramework_3.0_x64': 'C:\Windows\Microsoft.NET\Framework64\v3.0'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v3.5', value name 'Version'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: '3.5.30729.4926'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v3.5', value name 'Install'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found Int32 value: '1'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: 3.5.30729.4926
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Testing container: 'C:\Windows\Microsoft.NET\Framework64\v3.5'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Exists.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=DotNetFramework_3.5_x64]C:\Windows\Microsoft.NET\Framework64\v3.5
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'DotNetFramework_3.5_x64': 'C:\Windows\Microsoft.NET\Framework64\v3.5'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v4', value name 'Version'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Value not found or is empty.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v4', value name ''
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Value not found or is empty.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v4'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Sub keys:
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'Client'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   'Full'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'Version'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: '4.8.09032'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'Install'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found Int32 value: '1'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'InstallPath'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'Release'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found Int32 value: '533320'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=DotNetFramework_4.8.0_x64]C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'DotNetFramework_4.8.0_x64': 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'Version'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: '4.8.09032'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'Install'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found Int32 value: '1'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'InstallPath'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'Release'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found Int32 value: '533320'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=DotNetFramework_4.8.0_x64]C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'DotNetFramework_4.8.0_x64': 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v4.0', value name 'Version'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Value not found or is empty.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\NET Framework Setup\NDP\v4.0', value name ''
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'deprecated'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=DotNetFramework]C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'DotNetFramework': 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-JavaCapabilities.ps1
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\JavaSoft\Java Runtime Environment\1.6', value name 'JavaHome'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\JavaSoft\Java Runtime Environment\1.7', value name 'JavaHome'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\JavaSoft\Java Runtime Environment\1.8', value name 'JavaHome'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\JavaSoft\Java Runtime Environment\1.6', value name 'JavaHome'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\JavaSoft\Java Runtime Environment\1.7', value name 'JavaHome'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\JavaSoft\Java Runtime Environment\1.8', value name 'JavaHome'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'C:\Program Files\Java\jre-1.8'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=java_8_x64]C:\Program Files\Java\jre-1.8
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'java_8_x64': 'C:\Program Files\Java\jre-1.8'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\JavaSoft\Java Runtime Environment'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: An error occured while trying to sort subkeys for capability as versions:  java_ + <version> + 
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Cannot index into a null array.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\JavaSoft\JRE'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: An error occured while trying to sort subkeys for capability as versions:  java_ + <version> + 
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Cannot index into a null array.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\JavaSoft\Java Runtime Environment'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Sub keys:
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   '1.8'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT:   '1.8.0_411'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: 1
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: 1 9
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: An error occured while trying to get last available version for capability:  java_ + <version> + _x64
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: 
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: 0 9
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: An error occured while trying to set capability for first found subkey:  1.8.0_411
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: 
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\JavaSoft\JRE'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: An error occured while trying to sort subkeys for capability as versions:  java_ + <version> + _x64
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Cannot index into a null array.
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=java]C:\Program Files\Java\jre-1.8
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] Adding 'java': 'C:\Program Files\Java\jre-1.8'
+[2024-07-17 13:01:01Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\JavaSoft\Java Development Kit\1.6', value name 'JavaHome'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\JavaSoft\Java Development Kit\1.7', value name 'JavaHome'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\JavaSoft\Java Development Kit\1.8', value name 'JavaHome'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\JavaSoft\Java Development Kit\1.6', value name 'JavaHome'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\JavaSoft\Java Development Kit\1.7', value name 'JavaHome'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\JavaSoft\Java Development Kit\1.8', value name 'JavaHome'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\JavaSoft\Java Development Kit'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: An error occured while trying to sort subkeys for capability as versions:  jdk_ + <version> + 
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Cannot index into a null array.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\JavaSoft\JDK'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: An error occured while trying to sort subkeys for capability as versions:  jdk_ + <version> + 
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Cannot index into a null array.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\JavaSoft\Java Development Kit'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: An error occured while trying to sort subkeys for capability as versions:  jdk_ + <version> + _x64
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Cannot index into a null array.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\JavaSoft\JDK'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: An error occured while trying to sort subkeys for capability as versions:  jdk_ + <version> + _x64
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Cannot index into a null array.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\AdoptOpenJDK\JDK'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: An error occured while trying to sort subkeys for capability as versions:  jdk_ + <version> + _x64
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Cannot index into a null array.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\AdoptOpenJDK\JDK'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: An error occured while trying to sort subkeys for capability as versions:  jdk_ + <version> + _x64
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Cannot index into a null array.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Eclipse Adoptium\JDK'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: An error occured while trying to sort subkeys for capability as versions:  jdk_ + <version> + _x64
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Cannot index into a null array.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Eclipse Foundation\JDK'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: An error occured while trying to sort subkeys for capability as versions:  jdk_ + <version> + _x64
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Cannot index into a null array.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Semeru\JDK'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: An error occured while trying to sort subkeys for capability as versions:  jdk_ + <version> + _x64
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Cannot index into a null array.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-MavenCapabilities.ps1
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: env:JAVA_HOME
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: M2_HOME not set. Checking in PATH
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking for application: 'mvn'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-MSBuildCapabilities.ps1
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\MSBuild\ToolsVersions\2.0', value name 'MSBuildToolsPath'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=MSBuild_2.0]C:\Windows\Microsoft.NET\Framework\v2.0.50727\
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] Adding 'MSBuild_2.0': 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\MSBuild\ToolsVersions\3.5', value name 'MSBuildToolsPath'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'C:\Windows\Microsoft.NET\Framework\v3.5\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=MSBuild_3.5]C:\Windows\Microsoft.NET\Framework\v3.5\
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] Adding 'MSBuild_3.5': 'C:\Windows\Microsoft.NET\Framework\v3.5\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\MSBuild\ToolsVersions\4.0', value name 'MSBuildToolsPath'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=MSBuild_4.0]C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] Adding 'MSBuild_4.0': 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\MSBuild\ToolsVersions\12.0', value name 'MSBuildToolsPath'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\MSBuild\ToolsVersions\14.0', value name 'MSBuildToolsPath'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest Visual Studio 15 setup instance.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[15.0,16.0)' -latest  -format json
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest BuildTools 15 setup instance.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[15.0,16.0)' -products Microsoft.VisualStudio.Product.BuildTools -latest  -format json
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest Visual Studio 16 setup instance.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[16.0,17.0)' -latest  -format json
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest BuildTools 16 setup instance.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[16.0,17.0)' -products Microsoft.VisualStudio.Product.BuildTools -latest  -format json
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=MSBuild]C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] Adding 'MSBuild': 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest Visual Studio 17 setup instance.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[17.0,18.0)' -latest  -format json
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: [
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:   {
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "instanceId": "5d78af9e",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installDate": "2024-01-26T07:26:26Z",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installationName": "VisualStudio/17.8.5+34511.84",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installationPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installationVersion": "17.8.34511.84",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "productId": "Microsoft.VisualStudio.Product.Community",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "productPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\devenv.exe",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "state": 4294967295,
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isComplete": true,
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isLaunchable": true,
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isPrerelease": false,
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isRebootRequired": false,
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "displayName": "Visual Studio Community 2022",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "description": "Powerful IDE, free for students, open-source contributors, and individuals",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "channelId": "VisualStudio.17.Release",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "channelUri": "https://aka.ms/vs/17/release/channel",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "enginePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\resources\\app\\ServiceHub\\Services\\Microsoft.VisualStudio.Setup.Service",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installedChannelId": "VisualStudio.17.Release",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installedChannelUri": "https://aka.ms/vs/17/release/channel",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "releaseNotes": "https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.8#17.8.5",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "resolvedInstallationPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "thirdPartyNotices": "https://go.microsoft.com/fwlink/?LinkId=661288",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "updateDate": "2024-01-26T07:26:26.5706453Z",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "catalog": {
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "buildBranch": "d17.8",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "buildVersion": "17.8.34511.84",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "id": "VisualStudio/17.8.5+34511.84",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "localBuild": "build-lab",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "manifestName": "VisualStudio",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "manifestType": "installer",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productDisplayVersion": "17.8.5",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productLine": "Dev17",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productLineVersion": "2022",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productMilestone": "RTW",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productMilestoneIsPreRelease": "False",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productName": "Visual Studio",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productPatchVersion": "5",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productPreReleaseMilestoneSuffix": "1.0",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productSemanticVersion": "17.8.5+34511.84",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "requiredEngineVersion": "3.8.2122.37638"
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     },
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     "properties": {
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "campaignId": "3601:ded0bf3909864cd9bb3ebd4d3c7b1972",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "channelManifestId": "VisualStudio.17.Release/17.8.5+34511.84",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "nickname": "",
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:       "setupEngineFilePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\setup.exe"
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:     }
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT:   }
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: ]
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Testing leaf: 'C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Exists.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=MSBuild_17.0]C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] Adding 'MSBuild_17.0': 'C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=MSBuild]C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] Adding 'MSBuild': 'C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\MSBuild\ToolsVersions\2.0', value name 'MSBuildToolsPath'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'C:\Windows\Microsoft.NET\Framework64\v2.0.50727\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=MSBuild_2.0_x64]C:\Windows\Microsoft.NET\Framework64\v2.0.50727\
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] Adding 'MSBuild_2.0_x64': 'C:\Windows\Microsoft.NET\Framework64\v2.0.50727\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\MSBuild\ToolsVersions\3.5', value name 'MSBuildToolsPath'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'C:\Windows\Microsoft.NET\Framework64\v3.5\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=MSBuild_3.5_x64]C:\Windows\Microsoft.NET\Framework64\v3.5\
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] Adding 'MSBuild_3.5_x64': 'C:\Windows\Microsoft.NET\Framework64\v3.5\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\MSBuild\ToolsVersions\4.0', value name 'MSBuildToolsPath'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Found String value: 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=MSBuild_4.0_x64]C:\Windows\Microsoft.NET\Framework64\v4.0.30319\
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] Adding 'MSBuild_4.0_x64': 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\MSBuild\ToolsVersions\12.0', value name 'MSBuildToolsPath'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\MSBuild\ToolsVersions\14.0', value name 'MSBuildToolsPath'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest Visual Studio 16 setup instance.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[16.0,17.0)' -latest  -format json
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest BuildTools 16 setup instance.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[16.0,17.0)' -products Microsoft.VisualStudio.Product.BuildTools -latest  -format json
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=MSBuild_x64]C:\Windows\Microsoft.NET\Framework64\v4.0.30319\
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] Adding 'MSBuild_x64': 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\'
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest Visual Studio 17 setup instance.
+[2024-07-17 13:01:02Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[17.0,18.0)' -latest  -format json
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: [
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:   {
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "instanceId": "5d78af9e",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installDate": "2024-01-26T07:26:26Z",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installationName": "VisualStudio/17.8.5+34511.84",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installationPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installationVersion": "17.8.34511.84",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "productId": "Microsoft.VisualStudio.Product.Community",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "productPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\devenv.exe",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "state": 4294967295,
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isComplete": true,
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isLaunchable": true,
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isPrerelease": false,
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isRebootRequired": false,
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "displayName": "Visual Studio Community 2022",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "description": "Powerful IDE, free for students, open-source contributors, and individuals",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "channelId": "VisualStudio.17.Release",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "channelUri": "https://aka.ms/vs/17/release/channel",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "enginePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\resources\\app\\ServiceHub\\Services\\Microsoft.VisualStudio.Setup.Service",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installedChannelId": "VisualStudio.17.Release",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installedChannelUri": "https://aka.ms/vs/17/release/channel",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "releaseNotes": "https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.8#17.8.5",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "resolvedInstallationPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "thirdPartyNotices": "https://go.microsoft.com/fwlink/?LinkId=661288",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "updateDate": "2024-01-26T07:26:26.5706453Z",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "catalog": {
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "buildBranch": "d17.8",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "buildVersion": "17.8.34511.84",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "id": "VisualStudio/17.8.5+34511.84",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "localBuild": "build-lab",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "manifestName": "VisualStudio",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "manifestType": "installer",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productDisplayVersion": "17.8.5",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productLine": "Dev17",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productLineVersion": "2022",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productMilestone": "RTW",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productMilestoneIsPreRelease": "False",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productName": "Visual Studio",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productPatchVersion": "5",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productPreReleaseMilestoneSuffix": "1.0",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productSemanticVersion": "17.8.5+34511.84",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "requiredEngineVersion": "3.8.2122.37638"
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     },
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     "properties": {
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "campaignId": "3601:ded0bf3909864cd9bb3ebd4d3c7b1972",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "channelManifestId": "VisualStudio.17.Release/17.8.5+34511.84",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "nickname": "",
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:       "setupEngineFilePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\setup.exe"
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:     }
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:   }
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: ]
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Testing leaf: 'C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Exists.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=MSBuild_17.0_x64]C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] Adding 'MSBuild_17.0_x64': 'C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=MSBuild_x64]C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] Adding 'MSBuild_x64': 'C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-PowerShellCapabilities.ps1
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=PowerShell]5.1.22621.3880
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] Adding 'PowerShell': '5.1.22621.3880'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-ScvmmAdminConsoleCapabilities.ps1
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\Microsoft System Center Virtual Machine Manager Administrator Console\Setup', value name 'InstallPath'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\Microsoft System Center Virtual Machine Manager Administrator Console\Setup', value name 'InstallPath'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-SqlPackageCapabilities.ps1
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\Microsoft SQL Server'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\Microsoft SQL Server'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\Microsoft SQL Server\Data-Tier Application Framework'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\Microsoft SQL Server\Data-Tier Application Framework'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\VisualStudio'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Sub keys:
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:   '14.0'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:   '17.0'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:   '7.1'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:   '8.0'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:   'Designers'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\VisualStudio\17.0', value name 'InstallDir'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Value not found or is empty.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\VisualStudio\14.0', value name 'InstallDir'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Value not found or is empty.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\VisualStudio\8.0', value name 'InstallDir'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Value not found or is empty.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\VisualStudio\7.1', value name 'InstallDir'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Value not found or is empty.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\VisualStudio'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Sub keys:
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:   '14.0'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:   'Designers'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT:   'Setup'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry64', key name 'Software\Microsoft\VisualStudio\14.0', value name 'InstallDir'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Value not found or is empty.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest Visual Studio 15 setup instance.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[15.0,16.0)' -latest  -format json
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest BuildTools 15 setup instance.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[15.0,16.0)' -products Microsoft.VisualStudio.Product.BuildTools -latest  -format json
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest Visual Studio 16 setup instance.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[16.0,17.0)' -latest  -format json
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest BuildTools 16 setup instance.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[16.0,17.0)' -products Microsoft.VisualStudio.Product.BuildTools -latest  -format json
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-VisualStudioCapabilities.ps1
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\VisualStudio\10.0', value name 'ShellFolder'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\VisualStudio\10.0', value name 'InstallDir'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\VisualStudio\11.0', value name 'ShellFolder'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\VisualStudio\11.0', value name 'InstallDir'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\VisualStudio\12.0', value name 'ShellFolder'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\VisualStudio\14.0', value name 'ShellFolder'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Value not found or is empty.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest Visual Studio 15 setup instance.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[15.0,16.0)' -latest  -format json
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest BuildTools 15 setup instance.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[15.0,16.0)' -products Microsoft.VisualStudio.Product.BuildTools -latest  -format json
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\VisualStudio\15.0', value name 'ShellFolder'
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest Visual Studio 16 setup instance.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[16.0,17.0)' -latest  -format json
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest BuildTools 16 setup instance.
+[2024-07-17 13:01:03Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[16.0,17.0)' -products Microsoft.VisualStudio.Product.BuildTools -latest  -format json
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\VisualStudio\16.0', value name 'ShellFolder'
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest Visual Studio 17 setup instance.
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[17.0,18.0)' -latest  -format json
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: [
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:   {
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "instanceId": "5d78af9e",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installDate": "2024-01-26T07:26:26Z",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installationName": "VisualStudio/17.8.5+34511.84",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installationPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installationVersion": "17.8.34511.84",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "productId": "Microsoft.VisualStudio.Product.Community",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "productPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\devenv.exe",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "state": 4294967295,
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isComplete": true,
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isLaunchable": true,
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isPrerelease": false,
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isRebootRequired": false,
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "displayName": "Visual Studio Community 2022",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "description": "Powerful IDE, free for students, open-source contributors, and individuals",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "channelId": "VisualStudio.17.Release",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "channelUri": "https://aka.ms/vs/17/release/channel",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "enginePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\resources\\app\\ServiceHub\\Services\\Microsoft.VisualStudio.Setup.Service",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installedChannelId": "VisualStudio.17.Release",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installedChannelUri": "https://aka.ms/vs/17/release/channel",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "releaseNotes": "https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.8#17.8.5",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "resolvedInstallationPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "thirdPartyNotices": "https://go.microsoft.com/fwlink/?LinkId=661288",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "updateDate": "2024-01-26T07:26:26.5706453Z",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "catalog": {
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "buildBranch": "d17.8",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "buildVersion": "17.8.34511.84",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "id": "VisualStudio/17.8.5+34511.84",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "localBuild": "build-lab",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "manifestName": "VisualStudio",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "manifestType": "installer",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productDisplayVersion": "17.8.5",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productLine": "Dev17",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productLineVersion": "2022",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productMilestone": "RTW",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productMilestoneIsPreRelease": "False",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productName": "Visual Studio",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productPatchVersion": "5",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productPreReleaseMilestoneSuffix": "1.0",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productSemanticVersion": "17.8.5+34511.84",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "requiredEngineVersion": "3.8.2122.37638"
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     },
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "properties": {
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "campaignId": "3601:ded0bf3909864cd9bb3ebd4d3c7b1972",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "channelManifestId": "VisualStudio.17.Release/17.8.5+34511.84",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "nickname": "",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "setupEngineFilePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\setup.exe"
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     }
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:   }
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: ]
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=VisualStudio_17.0]C:\Program Files\Microsoft Visual Studio\2022\Community\
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] Adding 'VisualStudio_17.0': 'C:\Program Files\Microsoft Visual Studio\2022\Community\'
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Testing container: 'C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\'
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Exists.
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=VisualStudio_IDE_17.0]C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] Adding 'VisualStudio_IDE_17.0': 'C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\'
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Testing leaf: 'C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe'
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Does not exist.
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=VisualStudio]C:\Program Files\Microsoft Visual Studio\2022\Community\
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] Adding 'VisualStudio': 'C:\Program Files\Microsoft Visual Studio\2022\Community\'
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: ##vso[agent.capability name=VisualStudio_IDE]C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] Adding 'VisualStudio_IDE': 'C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\'
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-WindowsKitCapabilities.ps1
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\Windows Kits\Installed Roots', value name ''
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-WindowsSdkCapabilities.ps1
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Microsoft\Microsoft SDKs\Windows'
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\Add-XamarinAndroidCapabilities.ps1
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Checking: hive 'LocalMachine', view 'Registry32', key name 'Software\Novell\Mono for Android', value name 'InstalledVersion'
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Key not found.
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest Visual Studio 17 setup instance.
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[17.0,18.0)' -latest  -format json
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: [
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:   {
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "instanceId": "5d78af9e",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installDate": "2024-01-26T07:26:26Z",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installationName": "VisualStudio/17.8.5+34511.84",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installationPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installationVersion": "17.8.34511.84",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "productId": "Microsoft.VisualStudio.Product.Community",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "productPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\devenv.exe",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "state": 4294967295,
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isComplete": true,
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isLaunchable": true,
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isPrerelease": false,
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "isRebootRequired": false,
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "displayName": "Visual Studio Community 2022",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "description": "Powerful IDE, free for students, open-source contributors, and individuals",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "channelId": "VisualStudio.17.Release",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "channelUri": "https://aka.ms/vs/17/release/channel",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "enginePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\resources\\app\\ServiceHub\\Services\\Microsoft.VisualStudio.Setup.Service",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installedChannelId": "VisualStudio.17.Release",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "installedChannelUri": "https://aka.ms/vs/17/release/channel",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "releaseNotes": "https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.8#17.8.5",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "resolvedInstallationPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "thirdPartyNotices": "https://go.microsoft.com/fwlink/?LinkId=661288",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "updateDate": "2024-01-26T07:26:26.5706453Z",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "catalog": {
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "buildBranch": "d17.8",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "buildVersion": "17.8.34511.84",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "id": "VisualStudio/17.8.5+34511.84",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "localBuild": "build-lab",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "manifestName": "VisualStudio",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "manifestType": "installer",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productDisplayVersion": "17.8.5",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productLine": "Dev17",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productLineVersion": "2022",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productMilestone": "RTW",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productMilestoneIsPreRelease": "False",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productName": "Visual Studio",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productPatchVersion": "5",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productPreReleaseMilestoneSuffix": "1.0",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "productSemanticVersion": "17.8.5+34511.84",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "requiredEngineVersion": "3.8.2122.37638"
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     },
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     "properties": {
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "campaignId": "3601:ded0bf3909864cd9bb3ebd4d3c7b1972",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "channelManifestId": "VisualStudio.17.Release/17.8.5+34511.84",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "nickname": "",
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:       "setupEngineFilePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\setup.exe"
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:     }
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT:   }
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: ]
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Testing container: 'C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Xamarin\Android\'
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Does not exist.
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest Visual Studio 16 setup instance.
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[16.0,17.0)' -latest  -format json
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest BuildTools 16 setup instance.
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[16.0,17.0)' -products Microsoft.VisualStudio.Product.BuildTools -latest  -format json
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest Visual Studio 15 setup instance.
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[15.0,16.0)' -latest  -format json
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Getting latest BuildTools 15 setup instance.
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: & C:\Users\ArminHojbergKetirani\Downloads\bin\powershell\CapabilityHelpers\..\..\..\externals\vswhere\vswhere.exe -version '[15.0,16.0)' -products Microsoft.VisualStudio.Product.BuildTools -latest  -format json
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: []
+[2024-07-17 13:01:04Z INFO PowerShellCapabilitiesProvider] STDOUT: Exit code: 0
+[2024-07-17 13:01:04Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:01:04Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:01:04Z INFO ProcessInvokerWrapper] Exited process 21664 with exit code 0
+[2024-07-17 13:01:04Z INFO ProcessInvokerWrapper] Finished process 21664 with exit code 0, and elapsed time 00:00:04.0079873.
+[2024-07-17 13:01:04Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:01:04Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:01:04Z INFO AgentCapabilitiesProvider] Adding 'Agent.Name': 'NNIT-JW31HW3'
+[2024-07-17 13:01:04Z INFO AgentCapabilitiesProvider] Adding 'Agent.OS': 'Windows_NT'
+[2024-07-17 13:01:04Z INFO AgentCapabilitiesProvider] Adding 'Agent.OSArchitecture': 'X64'
+[2024-07-17 13:01:04Z INFO AgentCapabilitiesProvider] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion', value name 'CurrentMajorVersionNumber': '10'
+[2024-07-17 13:01:04Z INFO AgentCapabilitiesProvider] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion', value name 'CurrentMinorVersionNumber': '0'
+[2024-07-17 13:01:04Z INFO AgentCapabilitiesProvider] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion', value name 'CurrentBuildNumber': '22631'
+[2024-07-17 13:01:04Z INFO AgentCapabilitiesProvider] Adding 'Agent.OSVersion': '10.0.22631'
+[2024-07-17 13:01:04Z INFO AgentCapabilitiesProvider] Adding 'Cmd': 'C:\WINDOWS\system32\cmd.exe'
+[2024-07-17 13:01:04Z INFO AgentCapabilitiesProvider] Adding 'InteractiveSession': 'True'
+[2024-07-17 13:01:04Z INFO AgentCapabilitiesProvider] Adding 'Agent.Version': '3.241.0'
+[2024-07-17 13:01:04Z INFO AgentCapabilitiesProvider] Adding 'Agent.ComputerName': 'NNIT-JW31HW3'
+[2024-07-17 13:01:04Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:01:04Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:01:04Z INFO AgentCapabilitiesProvider] Adding 'Agent.HomeDirectory': 'C:\Users\ArminHøjbergKetirani\Downloads'
+[2024-07-17 13:01:04Z INFO MessageListener] Loading Credentials
+[2024-07-17 13:01:04Z INFO ConfigurationStore] HasCredentials()
+[2024-07-17 13:01:04Z INFO ConfigurationStore] stored True
+[2024-07-17 13:01:04Z INFO CredentialManager] GetCredentialProvider
+[2024-07-17 13:01:04Z INFO CredentialManager] Creating type OAuth
+[2024-07-17 13:01:04Z INFO CredentialManager] Creating credential type: OAuth
+[2024-07-17 13:01:04Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:01:04Z INFO Terminal] WRITE LINE: Connecting to the server.
+[2024-07-17 13:01:04Z INFO MessageListener] Attempt to create session.
+[2024-07-17 13:01:04Z INFO MessageListener] Connecting to the Agent Server...
+[2024-07-17 13:01:04Z INFO AgentServer] Establish connection with 100 seconds timeout.
+[2024-07-17 13:01:04Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:01:05Z WARN VisualStudioServices] Authentication failed with status code 401.
+Cache-Control: no-cache
+Pragma: no-cache
+P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+WWW-Authenticate: Bearer authorization_uri=https://login.microsoftonline.com/8a70a03e-1cc9-4c92-9ec6-6c584cb69a31, Basic realm="https://tfsprodneu1.visualstudio.com/", TFS-Federated
+X-TFS-ProcessId: e1d040e8-ba2d-475d-aa40-82afa3898c5c
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+ActivityId: fc853dd8-7476-470a-aaaf-948f4835e177
+X-TFS-Session: 678a1cb4-00fe-4799-a5a3-b6094c428adb
+X-VSS-E2EID: 2a8aefd0-8bf2-4f7d-9d2c-2f887b216e2c
+X-VSS-SenderDeploymentId: 1f18445b-609a-73c1-2ae2-521b74b4c11d
+X-Frame-Options: SAMEORIGIN
+X-TFS-FedAuthRealm: https://tfsprodneu1.visualstudio.com/
+X-TFS-FedAuthIssuer: https://dev.azure.com/sandbox-arke/
+X-VSS-AuthorizationEndpoint: https://vssps.dev.azure.com/sandbox-arke/
+X-VSS-ResourceTenant: 8a70a03e-1cc9-4c92-9ec6-6c584cb69a31
+X-VSS-S2STargetService: 00000002-0000-8888-8000-000000000000/visualstudio.com
+X-TFS-FedAuthRedirect: https://spsprodneu1.vssps.visualstudio.com/_signin?realm=dev.azure.com&reply_to=https%3A%2F%2Fdev.azure.com%2Fsandbox-arke%2F_apis%2FconnectionData%3FconnectOptions%3D0%26lastChangeId%3D59482134%26lastChangeId64%3D59482134&redirect=1&mkt=en-GB&hid=29dfeac8-743f-4b6f-975d-7a4da20c1981&context=eyJodCI6MiwiaGlkIjoiZWM0ZDhmMzYtNjI0NS00MzUxLWIyOTQtMjUyODMxYmJmMzI1IiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2
+Request-Context: appId=cid-v1:0cc0e688-cf14-42b5-9911-f427a40700f1
+Access-Control-Expose-Headers: Request-Context
+X-Content-Type-Options: nosniff
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: CE5637061AAE4DFCB4DE9D5119AACEDE Ref B: CPH30EDGE0507 Ref C: 2024-07-17T13:01:04Z
+Date: Wed, 17 Jul 2024 13:01:03 GMT
+
+[2024-07-17 13:01:05Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:01:05Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:01:05Z INFO VisualStudioServices] AAD Correlation ID for this token request: Unknown
+[2024-07-17 13:01:05Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:01:05Z INFO AgentServer] Establish connection with 60 seconds timeout.
+[2024-07-17 13:01:05Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:01:05Z INFO AgentServer] Establish connection with 60 seconds timeout.
+[2024-07-17 13:01:05Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:01:05Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:01:05Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:01:05Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:01:05Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:01:05Z INFO MessageListener] VssConnection created
+[2024-07-17 13:01:06Z INFO MessageListener] Session created.
+[2024-07-17 13:01:06Z INFO Terminal] WRITE LINE: 2024-07-17 13:01:06Z: Listening for Jobs
+[2024-07-17 13:01:06Z INFO JobDispatcher] Set agent/worker IPC timeout to 30 seconds.
+[2024-07-17 13:01:08Z INFO MessageListener] Sent GetAgentMessage to keep alive agent 12, session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:01:08Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:01:08Z INFO MessageListener] Message '1' received from session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:01:08Z INFO JobDispatcher] Job request 9 for plan c4c4507c-e8a2-4ed6-ad09-07e1bd413ae9 job 5264e576-3c6f-51f6-f055-fab409685f20 received.
+[2024-07-17 13:01:08Z INFO Terminal] WRITE LINE: 2024-07-17 13:01:08Z: Running job: test
+[2024-07-17 13:01:08Z INFO AgentServer] Refresh JobRequest VssConnection to get on a different AFD node.
+[2024-07-17 13:01:08Z INFO AgentServer] Establish connection with 30 seconds timeout.
+[2024-07-17 13:01:08Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:01:08Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:01:08Z INFO JobDispatcher] Start renew job request 9 for job 5264e576-3c6f-51f6-f055-fab409685f20.
+[2024-07-17 13:01:09Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 17/07/2024 13.11.08
+[2024-07-17 13:01:09Z INFO ConfigurationStore] HasCredentials()
+[2024-07-17 13:01:09Z INFO ConfigurationStore] stored True
+[2024-07-17 13:01:09Z INFO CredentialManager] GetCredentialProvider
+[2024-07-17 13:01:09Z INFO CredentialManager] Creating type OAuth
+[2024-07-17 13:01:09Z INFO CredentialManager] Creating credential type: OAuth
+[2024-07-17 13:01:09Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:01:09Z INFO ConfigurationManager] LoadSettings
+[2024-07-17 13:01:09Z INFO ConfigurationStore] IsConfigured()
+[2024-07-17 13:01:09Z INFO ConfigurationStore] IsConfigured: True
+[2024-07-17 13:01:09Z INFO ConfigurationManager] Is configured: True
+[2024-07-17 13:01:09Z INFO ConfigurationManager] Settings Loaded
+[2024-07-17 13:01:09Z WARN VisualStudioServices] Authentication failed with status code 401.
+Cache-Control: no-cache
+Pragma: no-cache
+P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+WWW-Authenticate: Bearer authorization_uri=https://login.microsoftonline.com/8a70a03e-1cc9-4c92-9ec6-6c584cb69a31, Basic realm="https://tfsprodneu1.visualstudio.com/", TFS-Federated
+X-TFS-ProcessId: e1d040e8-ba2d-475d-aa40-82afa3898c5c
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+ActivityId: fc85062e-7476-470a-aaaf-948f4835e177
+X-TFS-Session: 678a1cb4-00fe-4799-a5a3-b6094c428adb
+X-VSS-E2EID: 70fd1f5c-b739-4a17-a619-b835819dd437
+X-VSS-SenderDeploymentId: 1f18445b-609a-73c1-2ae2-521b74b4c11d
+X-Frame-Options: SAMEORIGIN
+X-TFS-FedAuthRealm: https://tfsprodneu1.visualstudio.com/
+X-TFS-FedAuthIssuer: https://dev.azure.com/sandbox-arke/
+X-VSS-AuthorizationEndpoint: https://vssps.dev.azure.com/sandbox-arke/
+X-VSS-ResourceTenant: 8a70a03e-1cc9-4c92-9ec6-6c584cb69a31
+X-VSS-S2STargetService: 00000002-0000-8888-8000-000000000000/visualstudio.com
+X-TFS-FedAuthRedirect: https://spsprodneu1.vssps.visualstudio.com/_signin?realm=dev.azure.com&reply_to=https%3A%2F%2Fdev.azure.com%2Fsandbox-arke%2F_apis%2FFeatureFlags%2FDistributedTask.Agent.UseMaskingPerformanceEnhancements%3FcheckFeatureExists%3DFalse&redirect=1&mkt=en-GB&hid=29dfeac8-743f-4b6f-975d-7a4da20c1981&context=eyJodCI6MiwiaGlkIjoiZWM0ZDhmMzYtNjI0NS00MzUxLWIyOTQtMjUyODMxYmJmMzI1IiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2
+Request-Context: appId=cid-v1:0cc0e688-cf14-42b5-9911-f427a40700f1
+Access-Control-Expose-Headers: Request-Context
+X-Content-Type-Options: nosniff
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: F60534541A9149DD8F43B22BE172654A Ref B: CPH30EDGE0505 Ref C: 2024-07-17T13:01:08Z
+Date: Wed, 17 Jul 2024 13:01:08 GMT
+
+[2024-07-17 13:01:09Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:01:09Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:01:09Z INFO VisualStudioServices] AAD Correlation ID for this token request: Unknown
+[2024-07-17 13:01:09Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper] Starting process:
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\ArminHøjbergKetirani\Downloads\bin\Agent.Worker.exe'
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2452 2492'
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-07-17 13:01:09Z INFO ProcessInvokerWrapper] Process started with process id 1476, waiting for process exit.
+[2024-07-17 13:01:09Z INFO JobDispatcher] Send job request message to worker for job 5264e576-3c6f-51f6-f055-fab409685f20 (36 KB).
+[2024-07-17 13:01:09Z INFO JobDispatcher] Took 211 ms to send job message to worker
+[2024-07-17 13:01:09Z INFO JobNotification] Entering JobStarted Notification
+[2024-07-17 13:01:09Z INFO JobNotification] Entering StartMonitor
+[2024-07-17 13:01:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:01:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:01:55Z INFO ProcessInvokerWrapper] Exited process 1476 with exit code 100
+[2024-07-17 13:01:55Z INFO ProcessInvokerWrapper] Finished process 1476 with exit code 100, and elapsed time 00:00:46.0279626.
+[2024-07-17 13:01:55Z INFO JobDispatcher] Worker finished for job 5264e576-3c6f-51f6-f055-fab409685f20. Code: 100
+[2024-07-17 13:01:55Z INFO JobDispatcher] finish job request for job 5264e576-3c6f-51f6-f055-fab409685f20 with result: Succeeded
+[2024-07-17 13:01:55Z INFO Terminal] WRITE LINE: 2024-07-17 13:01:55Z: Job test completed with result: Succeeded
+[2024-07-17 13:01:55Z INFO JobDispatcher] Stop renew job request for job 5264e576-3c6f-51f6-f055-fab409685f20.
+[2024-07-17 13:01:55Z INFO JobDispatcher] job renew has been canceled, stop renew job request 9.
+[2024-07-17 13:01:55Z INFO JobNotification] Entering JobCompleted Notification
+[2024-07-17 13:01:55Z INFO JobNotification] Entering EndMonitor
+[2024-07-17 13:01:59Z INFO MessageListener] Sleeping for 12.262 seconds before retrying.
+[2024-07-17 13:02:28Z INFO MessageListener] Sent GetAgentMessage to keep alive agent 12, session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:03:02Z INFO MessageListener] Sleeping for 12.054 seconds before retrying.
+[2024-07-17 13:03:48Z INFO MessageListener] Sent GetAgentMessage to keep alive agent 12, session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:04:04Z INFO MessageListener] Sleeping for 5.409 seconds before retrying.
+[2024-07-17 13:04:59Z INFO MessageListener] Sleeping for 10.247 seconds before retrying.
+[2024-07-17 13:05:08Z INFO MessageListener] Sent GetAgentMessage to keep alive agent 12, session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:05:45Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:05:45Z INFO MessageListener] Message '2' received from session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:05:45Z INFO JobDispatcher] Job request 10 for plan bdf3caec-b8e5-49ed-8fee-7ee27cd5b4dd job 12f1170f-54f2-53f3-20dd-22fc7dff55f9 received.
+[2024-07-17 13:05:45Z INFO JobDispatcher] Job request 5264e576-3c6f-51f6-f055-fab409685f20 processed succeed.
+[2024-07-17 13:05:45Z INFO Terminal] WRITE LINE: 2024-07-17 13:05:45Z: Running job: Job
+[2024-07-17 13:05:45Z INFO AgentServer] Refresh JobRequest VssConnection to get on a different AFD node.
+[2024-07-17 13:05:45Z INFO AgentServer] Establish connection with 30 seconds timeout.
+[2024-07-17 13:05:45Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:05:45Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:05:45Z INFO JobDispatcher] Start renew job request 10 for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9.
+[2024-07-17 13:05:45Z INFO JobDispatcher] Successfully renew job request 10, job is valid till 17/07/2024 13.15.45
+[2024-07-17 13:05:45Z INFO ConfigurationStore] HasCredentials()
+[2024-07-17 13:05:45Z INFO ConfigurationStore] stored True
+[2024-07-17 13:05:45Z INFO CredentialManager] GetCredentialProvider
+[2024-07-17 13:05:45Z INFO CredentialManager] Creating type OAuth
+[2024-07-17 13:05:45Z INFO CredentialManager] Creating credential type: OAuth
+[2024-07-17 13:05:45Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:05:45Z INFO ConfigurationManager] LoadSettings
+[2024-07-17 13:05:45Z INFO ConfigurationStore] IsConfigured()
+[2024-07-17 13:05:45Z INFO ConfigurationStore] IsConfigured: True
+[2024-07-17 13:05:45Z INFO ConfigurationManager] Is configured: True
+[2024-07-17 13:05:45Z INFO ConfigurationManager] Settings Loaded
+[2024-07-17 13:05:45Z WARN VisualStudioServices] Authentication failed with status code 401.
+Cache-Control: no-cache
+Pragma: no-cache
+P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+WWW-Authenticate: Bearer authorization_uri=https://login.microsoftonline.com/8a70a03e-1cc9-4c92-9ec6-6c584cb69a31, Basic realm="https://tfsprodneu1.visualstudio.com/", TFS-Federated
+X-TFS-ProcessId: 1e2f5db6-9348-44c7-ac03-951e2ba6aca8
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+ActivityId: 44a05f72-c487-40bf-8ecc-4ac382dacc83
+X-TFS-Session: 678a1cb4-00fe-4799-a5a3-b6094c428adb
+X-VSS-E2EID: f0dcac81-66f6-42de-83a4-fed5f0c4332a
+X-VSS-SenderDeploymentId: 1f18445b-609a-73c1-2ae2-521b74b4c11d
+X-Frame-Options: SAMEORIGIN
+X-TFS-FedAuthRealm: https://tfsprodneu1.visualstudio.com/
+X-TFS-FedAuthIssuer: https://dev.azure.com/sandbox-arke/
+X-VSS-AuthorizationEndpoint: https://vssps.dev.azure.com/sandbox-arke/
+X-VSS-ResourceTenant: 8a70a03e-1cc9-4c92-9ec6-6c584cb69a31
+X-VSS-S2STargetService: 00000002-0000-8888-8000-000000000000/visualstudio.com
+X-TFS-FedAuthRedirect: https://spsprodneu1.vssps.visualstudio.com/_signin?realm=dev.azure.com&reply_to=https%3A%2F%2Fdev.azure.com%2Fsandbox-arke%2F_apis%2FFeatureFlags%2FDistributedTask.Agent.UseMaskingPerformanceEnhancements%3FcheckFeatureExists%3DFalse&redirect=1&mkt=en-GB&hid=29dfeac8-743f-4b6f-975d-7a4da20c1981&context=eyJodCI6MiwiaGlkIjoiZWM0ZDhmMzYtNjI0NS00MzUxLWIyOTQtMjUyODMxYmJmMzI1IiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2
+Request-Context: appId=cid-v1:0cc0e688-cf14-42b5-9911-f427a40700f1
+Access-Control-Expose-Headers: Request-Context
+X-Content-Type-Options: nosniff
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 11F3C1E90BAF4DA8BD380810D8F2EF53 Ref B: CPH30EDGE0519 Ref C: 2024-07-17T13:05:45Z
+Date: Wed, 17 Jul 2024 13:05:45 GMT
+
+[2024-07-17 13:05:45Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:05:45Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:05:46Z INFO MessageListener] Sent GetAgentMessage to keep alive agent 12, session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:05:46Z INFO VisualStudioServices] AAD Correlation ID for this token request: Unknown
+[2024-07-17 13:05:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper] Starting process:
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\ArminHøjbergKetirani\Downloads\bin\Agent.Worker.exe'
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2492 1828'
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-07-17 13:05:46Z INFO ProcessInvokerWrapper] Process started with process id 492, waiting for process exit.
+[2024-07-17 13:05:46Z INFO JobDispatcher] Send job request message to worker for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9 (36 KB).
+[2024-07-17 13:05:46Z INFO JobDispatcher] Took 195 ms to send job message to worker
+[2024-07-17 13:05:46Z INFO JobNotification] Entering JobStarted Notification
+[2024-07-17 13:05:46Z INFO JobNotification] Entering StartMonitor
+[2024-07-17 13:05:58Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:05:58Z INFO MessageListener] Message '3' received from session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:05:58Z INFO JobDispatcher] Job metadata update received
+[2024-07-17 13:05:58Z INFO JobDispatcher] Send job metadata update message to worker for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9.
+[2024-07-17 13:06:45Z INFO JobDispatcher] Successfully renew job request 10, job is valid till 17/07/2024 13.16.45
+[2024-07-17 13:06:50Z INFO MessageListener] Sleeping for 5.184 seconds before retrying.
+[2024-07-17 13:06:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:06:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:06:53Z INFO ProcessInvokerWrapper] Exited process 492 with exit code 100
+[2024-07-17 13:06:53Z INFO ProcessInvokerWrapper] Finished process 492 with exit code 100, and elapsed time 00:01:06.7713940.
+[2024-07-17 13:06:53Z INFO JobDispatcher] Worker finished for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9. Code: 100
+[2024-07-17 13:06:53Z INFO JobDispatcher] finish job request for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9 with result: Succeeded
+[2024-07-17 13:06:53Z INFO Terminal] WRITE LINE: 2024-07-17 13:06:53Z: Job Job completed with result: Succeeded
+[2024-07-17 13:06:53Z INFO JobDispatcher] Stop renew job request for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9.
+[2024-07-17 13:06:53Z INFO JobDispatcher] job renew has been canceled, stop renew job request 10.
+[2024-07-17 13:06:53Z INFO JobNotification] Entering JobCompleted Notification
+[2024-07-17 13:06:53Z INFO JobNotification] Entering EndMonitor
+[2024-07-17 13:07:06Z INFO MessageListener] Sent GetAgentMessage to keep alive agent 12, session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:07:45Z INFO MessageListener] Sleeping for 14.79 seconds before retrying.
+[2024-07-17 13:08:26Z INFO MessageListener] Sent GetAgentMessage to keep alive agent 12, session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:08:50Z INFO MessageListener] Sleeping for 8.966 seconds before retrying.
+[2024-07-17 13:09:17Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:09:17Z INFO MessageListener] Message '4' received from session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:09:17Z INFO JobDispatcher] Job request 11 for plan 5bd98906-3255-4acf-9bd2-a14452d57f79 job 12f1170f-54f2-53f3-20dd-22fc7dff55f9 received.
+[2024-07-17 13:09:17Z INFO JobDispatcher] Job request 12f1170f-54f2-53f3-20dd-22fc7dff55f9 processed succeed.
+[2024-07-17 13:09:17Z INFO Terminal] WRITE LINE: 2024-07-17 13:09:17Z: Running job: Job
+[2024-07-17 13:09:17Z INFO AgentServer] Refresh JobRequest VssConnection to get on a different AFD node.
+[2024-07-17 13:09:17Z INFO AgentServer] Establish connection with 30 seconds timeout.
+[2024-07-17 13:09:17Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:09:17Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:09:17Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:09:18Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:09:18Z INFO JobDispatcher] Start renew job request 11 for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9.
+[2024-07-17 13:09:18Z INFO JobDispatcher] Successfully renew job request 11, job is valid till 17/07/2024 13.19.17
+[2024-07-17 13:09:18Z INFO ConfigurationStore] HasCredentials()
+[2024-07-17 13:09:18Z INFO ConfigurationStore] stored True
+[2024-07-17 13:09:18Z INFO CredentialManager] GetCredentialProvider
+[2024-07-17 13:09:18Z INFO CredentialManager] Creating type OAuth
+[2024-07-17 13:09:18Z INFO CredentialManager] Creating credential type: OAuth
+[2024-07-17 13:09:18Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:09:18Z INFO ConfigurationManager] LoadSettings
+[2024-07-17 13:09:18Z INFO ConfigurationStore] IsConfigured()
+[2024-07-17 13:09:18Z INFO ConfigurationStore] IsConfigured: True
+[2024-07-17 13:09:18Z INFO ConfigurationManager] Is configured: True
+[2024-07-17 13:09:18Z INFO ConfigurationManager] Settings Loaded
+[2024-07-17 13:09:18Z INFO MessageListener] Sent GetAgentMessage to keep alive agent 12, session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:09:18Z WARN VisualStudioServices] Authentication failed with status code 401.
+Cache-Control: no-cache
+Pragma: no-cache
+P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+WWW-Authenticate: Bearer authorization_uri=https://login.microsoftonline.com/8a70a03e-1cc9-4c92-9ec6-6c584cb69a31, Basic realm="https://tfsprodneu1.visualstudio.com/", TFS-Federated
+X-TFS-ProcessId: 09cb7659-9490-40a3-b1e5-51491e36ec02
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+ActivityId: 53574025-f806-462f-b5b1-5443bd260ca2
+X-TFS-Session: 678a1cb4-00fe-4799-a5a3-b6094c428adb
+X-VSS-E2EID: 3fa22785-103b-41b1-a550-ba037b0bd85a
+X-VSS-SenderDeploymentId: 1f18445b-609a-73c1-2ae2-521b74b4c11d
+X-Frame-Options: SAMEORIGIN
+X-TFS-FedAuthRealm: https://tfsprodneu1.visualstudio.com/
+X-TFS-FedAuthIssuer: https://dev.azure.com/sandbox-arke/
+X-VSS-AuthorizationEndpoint: https://vssps.dev.azure.com/sandbox-arke/
+X-VSS-ResourceTenant: 8a70a03e-1cc9-4c92-9ec6-6c584cb69a31
+X-VSS-S2STargetService: 00000002-0000-8888-8000-000000000000/visualstudio.com
+X-TFS-FedAuthRedirect: https://spsprodneu1.vssps.visualstudio.com/_signin?realm=dev.azure.com&reply_to=https%3A%2F%2Fdev.azure.com%2Fsandbox-arke%2F_apis%2FFeatureFlags%2FDistributedTask.Agent.UseMaskingPerformanceEnhancements%3FcheckFeatureExists%3DFalse&redirect=1&mkt=en-GB&hid=29dfeac8-743f-4b6f-975d-7a4da20c1981&context=eyJodCI6MiwiaGlkIjoiZWM0ZDhmMzYtNjI0NS00MzUxLWIyOTQtMjUyODMxYmJmMzI1IiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2
+Request-Context: appId=cid-v1:0cc0e688-cf14-42b5-9911-f427a40700f1
+Access-Control-Expose-Headers: Request-Context
+X-Content-Type-Options: nosniff
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: A90B131E70B040AD8B5AB128D074742E Ref B: CPH30EDGE0720 Ref C: 2024-07-17T13:09:17Z
+Date: Wed, 17 Jul 2024 13:09:17 GMT
+
+[2024-07-17 13:09:18Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:09:18Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:09:18Z INFO VisualStudioServices] AAD Correlation ID for this token request: Unknown
+[2024-07-17 13:09:18Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper] Starting process:
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\ArminHøjbergKetirani\Downloads\bin\Agent.Worker.exe'
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2608 2500'
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-07-17 13:09:18Z INFO ProcessInvokerWrapper] Process started with process id 25888, waiting for process exit.
+[2024-07-17 13:09:18Z INFO JobDispatcher] Send job request message to worker for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9 (35 KB).
+[2024-07-17 13:09:18Z INFO JobDispatcher] Took 196 ms to send job message to worker
+[2024-07-17 13:09:18Z INFO JobNotification] Entering JobStarted Notification
+[2024-07-17 13:09:18Z INFO JobNotification] Entering StartMonitor
+[2024-07-17 13:09:48Z INFO MessageListener] Sent GetAgentMessage to keep alive agent 12, session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:10:08Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:10:08Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:10:08Z INFO ProcessInvokerWrapper] Exited process 25888 with exit code 100
+[2024-07-17 13:10:08Z INFO ProcessInvokerWrapper] Finished process 25888 with exit code 100, and elapsed time 00:00:49.8628132.
+[2024-07-17 13:10:08Z INFO JobDispatcher] Worker finished for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9. Code: 100
+[2024-07-17 13:10:08Z INFO JobDispatcher] finish job request for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9 with result: Succeeded
+[2024-07-17 13:10:08Z INFO Terminal] WRITE LINE: 2024-07-17 13:10:08Z: Job Job completed with result: Succeeded
+[2024-07-17 13:10:08Z INFO JobDispatcher] Stop renew job request for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9.
+[2024-07-17 13:10:08Z INFO JobDispatcher] job renew has been canceled, stop renew job request 11.
+[2024-07-17 13:10:08Z INFO JobNotification] Entering JobCompleted Notification
+[2024-07-17 13:10:08Z INFO JobNotification] Entering EndMonitor
+[2024-07-17 13:10:08Z INFO MessageListener] Sleeping for 12.916 seconds before retrying.
+[2024-07-17 13:10:21Z INFO MessageListener] Sleeping for 8.716 seconds before retrying.
+[2024-07-17 13:10:30Z INFO MessageListener] Sleeping for 6.852 seconds before retrying.
+[2024-07-17 13:10:37Z INFO MessageListener] Sleeping for 8.844 seconds before retrying.
+[2024-07-17 13:10:46Z INFO MessageListener] Sleeping for 5.557 seconds before retrying.
+[2024-07-17 13:10:52Z INFO MessageListener] Sleeping for 13.437 seconds before retrying.
+[2024-07-17 13:11:05Z INFO MessageListener] Sleeping for 10.551 seconds before retrying.
+[2024-07-17 13:11:08Z INFO MessageListener] Sent GetAgentMessage to keep alive agent 12, session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:12:05Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:12:05Z INFO MessageListener] Message '5' received from session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:12:05Z INFO JobDispatcher] Job request 12 for plan 0506f6cb-f5a4-4708-8316-654a88f5b47a job 12f1170f-54f2-53f3-20dd-22fc7dff55f9 received.
+[2024-07-17 13:12:05Z INFO JobDispatcher] Job request 12f1170f-54f2-53f3-20dd-22fc7dff55f9 processed succeed.
+[2024-07-17 13:12:05Z INFO Terminal] WRITE LINE: 2024-07-17 13:12:05Z: Running job: Job
+[2024-07-17 13:12:05Z INFO AgentServer] Refresh JobRequest VssConnection to get on a different AFD node.
+[2024-07-17 13:12:05Z INFO AgentServer] Establish connection with 30 seconds timeout.
+[2024-07-17 13:12:05Z INFO VisualStudioServices] Starting operation Location.GetConnectionData
+[2024-07-17 13:12:05Z INFO VisualStudioServices] Finished operation Location.GetConnectionData
+[2024-07-17 13:12:05Z INFO JobDispatcher] Start renew job request 12 for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9.
+[2024-07-17 13:12:05Z INFO MessageListener] Sent GetAgentMessage to keep alive agent 12, session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:12:05Z INFO JobDispatcher] Successfully renew job request 12, job is valid till 17/07/2024 13.22.05
+[2024-07-17 13:12:05Z INFO ConfigurationStore] HasCredentials()
+[2024-07-17 13:12:05Z INFO ConfigurationStore] stored True
+[2024-07-17 13:12:05Z INFO CredentialManager] GetCredentialProvider
+[2024-07-17 13:12:05Z INFO CredentialManager] Creating type OAuth
+[2024-07-17 13:12:05Z INFO CredentialManager] Creating credential type: OAuth
+[2024-07-17 13:12:05Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:12:05Z INFO ConfigurationManager] LoadSettings
+[2024-07-17 13:12:05Z INFO ConfigurationStore] IsConfigured()
+[2024-07-17 13:12:05Z INFO ConfigurationStore] IsConfigured: True
+[2024-07-17 13:12:05Z INFO ConfigurationManager] Is configured: True
+[2024-07-17 13:12:05Z INFO ConfigurationManager] Settings Loaded
+[2024-07-17 13:12:05Z WARN VisualStudioServices] Authentication failed with status code 401.
+Cache-Control: no-cache
+Pragma: no-cache
+P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+WWW-Authenticate: Bearer authorization_uri=https://login.microsoftonline.com/8a70a03e-1cc9-4c92-9ec6-6c584cb69a31, Basic realm="https://tfsprodneu1.visualstudio.com/", TFS-Federated
+X-TFS-ProcessId: c3b7d815-2aca-4a80-8ab9-cc9450093f54
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+ActivityId: 60cd9cb1-660c-40fe-98e6-2cfee7c8e4c0
+X-TFS-Session: 678a1cb4-00fe-4799-a5a3-b6094c428adb
+X-VSS-E2EID: 1e8188ad-c160-4b22-a4ad-16c2e3099eec
+X-VSS-SenderDeploymentId: 1f18445b-609a-73c1-2ae2-521b74b4c11d
+X-Frame-Options: SAMEORIGIN
+X-TFS-FedAuthRealm: https://tfsprodneu1.visualstudio.com/
+X-TFS-FedAuthIssuer: https://dev.azure.com/sandbox-arke/
+X-VSS-AuthorizationEndpoint: https://vssps.dev.azure.com/sandbox-arke/
+X-VSS-ResourceTenant: 8a70a03e-1cc9-4c92-9ec6-6c584cb69a31
+X-VSS-S2STargetService: 00000002-0000-8888-8000-000000000000/visualstudio.com
+X-TFS-FedAuthRedirect: https://spsprodneu1.vssps.visualstudio.com/_signin?realm=dev.azure.com&reply_to=https%3A%2F%2Fdev.azure.com%2Fsandbox-arke%2F_apis%2FFeatureFlags%2FDistributedTask.Agent.UseMaskingPerformanceEnhancements%3FcheckFeatureExists%3DFalse&redirect=1&mkt=en-GB&hid=29dfeac8-743f-4b6f-975d-7a4da20c1981&context=eyJodCI6MiwiaGlkIjoiZWM0ZDhmMzYtNjI0NS00MzUxLWIyOTQtMjUyODMxYmJmMzI1IiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2
+Request-Context: appId=cid-v1:0cc0e688-cf14-42b5-9911-f427a40700f1
+Access-Control-Expose-Headers: Request-Context
+X-Content-Type-Options: nosniff
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 3FD9D6412AAF44C8B834A91ADF2B3DD5 Ref B: CPH30EDGE0612 Ref C: 2024-07-17T13:12:05Z
+Date: Wed, 17 Jul 2024 13:12:04 GMT
+
+[2024-07-17 13:12:05Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:12:05Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\ArminHøjbergKetirani\Downloads\.credentials_rsaparams
+[2024-07-17 13:12:06Z INFO VisualStudioServices] AAD Correlation ID for this token request: Unknown
+[2024-07-17 13:12:06Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper] Starting process:
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\ArminHøjbergKetirani\Downloads\bin\Agent.Worker.exe'
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2844 2848'
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\ArminHøjbergKetirani\Downloads\bin'
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper]   ContinueAfterCancelProcessTreeKillAttempt: 'False'
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper]   Sigint timeout: '00:00:07.5000000'
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper]   Sigterm timeout: '00:00:02.5000000'
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper]   Try to use graceful shutdown: False
+[2024-07-17 13:12:06Z INFO ProcessInvokerWrapper] Process started with process id 668, waiting for process exit.
+[2024-07-17 13:12:06Z INFO JobDispatcher] Send job request message to worker for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9 (35 KB).
+[2024-07-17 13:12:06Z INFO JobDispatcher] Took 182 ms to send job message to worker
+[2024-07-17 13:12:06Z INFO JobNotification] Entering JobStarted Notification
+[2024-07-17 13:12:06Z INFO JobNotification] Entering StartMonitor
+[2024-07-17 13:12:56Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:12:56Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-17 13:12:56Z INFO ProcessInvokerWrapper] Exited process 668 with exit code 100
+[2024-07-17 13:12:56Z INFO ProcessInvokerWrapper] Finished process 668 with exit code 100, and elapsed time 00:00:50.0784017.
+[2024-07-17 13:12:56Z INFO JobDispatcher] Worker finished for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9. Code: 100
+[2024-07-17 13:12:56Z INFO JobDispatcher] finish job request for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9 with result: Succeeded
+[2024-07-17 13:12:56Z INFO Terminal] WRITE LINE: 2024-07-17 13:12:56Z: Job Job completed with result: Succeeded
+[2024-07-17 13:12:56Z INFO JobDispatcher] Stop renew job request for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9.
+[2024-07-17 13:12:56Z INFO JobDispatcher] job renew has been canceled, stop renew job request 12.
+[2024-07-17 13:12:56Z INFO JobNotification] Entering JobCompleted Notification
+[2024-07-17 13:12:56Z INFO JobNotification] Entering EndMonitor
+[2024-07-17 13:12:56Z INFO MessageListener] Sleeping for 13.357 seconds before retrying.
+[2024-07-17 13:13:10Z INFO MessageListener] Sleeping for 12.611 seconds before retrying.
+[2024-07-17 13:13:25Z INFO MessageListener] Sent GetAgentMessage to keep alive agent 12, session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:14:12Z INFO MessageListener] Sleeping for 5.318 seconds before retrying.
+[2024-07-17 13:14:18Z INFO MessageListener] Sleeping for 14.84 seconds before retrying.
+[2024-07-17 13:14:45Z INFO MessageListener] Sent GetAgentMessage to keep alive agent 12, session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:15:15Z INFO MessageListener] Sent GetAgentMessage to keep alive agent 12, session '4ee44658-4bff-4002-8f06-50d1dc110e77'.
+[2024-07-17 13:15:23Z INFO MessageListener] Sleeping for 10.179 seconds before retrying.
+[2024-07-17 13:15:46Z INFO HostContext] Agent will be shutdown for UserCancelled
+[2024-07-17 13:15:46Z WARN VisualStudioServices] GET request to https://dev.azure.com/sandbox-arke/_apis/distributedtask/pools/1/messages has been cancelled.
+[2024-07-17 13:15:46Z WARN VisualStudioServices] GET request to https://dev.azure.com/sandbox-arke/_apis/distributedtask/pools/1/messages has been cancelled.
+[2024-07-17 13:15:46Z INFO MessageListener] Get next message has been cancelled.
+[2024-07-17 13:15:46Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2024-07-17 13:15:46Z INFO JobDispatcher] Ensure WorkerDispather for job 12f1170f-54f2-53f3-20dd-22fc7dff55f9 run to finish, cancel any running job.
+[2024-07-17 13:15:46Z INFO JobDispatcher] Job request 12f1170f-54f2-53f3-20dd-22fc7dff55f9 processed succeed.
+[2024-07-17 13:15:47Z INFO AgentProcess] Agent execution been cancelled.
