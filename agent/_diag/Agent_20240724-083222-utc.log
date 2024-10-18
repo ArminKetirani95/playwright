@@ -1,0 +1,121 @@
+[2024-07-24 08:32:22Z INFO AgentProcess] Agent package win-x64.
+[2024-07-24 08:32:22Z INFO AgentProcess] Running on Windows (X64).
+[2024-07-24 08:32:22Z INFO AgentProcess] RuntimeInformation: Microsoft Windows 10.0.22631.
+[2024-07-24 08:32:22Z INFO AgentProcess] Version: 3.241.0
+[2024-07-24 08:32:22Z INFO AgentProcess] Commit: 1a1c1a162a1410f3b637a39e7b8172c8ea1cf2a0
+[2024-07-24 08:32:22Z INFO AgentProcess] Culture: en-DK
+[2024-07-24 08:32:22Z INFO AgentProcess] UI Culture: en-GB
+[2024-07-24 08:32:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\bin'
+[2024-07-24 08:32:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent'
+[2024-07-24 08:32:22Z INFO AgentProcess] Validating directory permissions for: 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent'
+[2024-07-24 08:32:22Z INFO PowerShellExeUtil] Generation: '1'
+[2024-07-24 08:32:22Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\1\PowerShellEngine', value name 'PowerShellVersion': '2.0'
+[2024-07-24 08:32:22Z INFO PowerShellExeUtil] Unsupported version. Skipping.
+[2024-07-24 08:32:22Z INFO PowerShellExeUtil] Generation: '3'
+[2024-07-24 08:32:22Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine', value name 'PowerShellVersion': '5.1.22621.1'
+[2024-07-24 08:32:22Z INFO PowerShellExeUtil] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine', value name 'ApplicationBase': 'C:\Windows\System32\WindowsPowerShell\v1.0'
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework', value name 'InstallRoot': 'C:\Windows\Microsoft.NET\Framework64\'
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'SOFTWARE\Microsoft\NET Framework Setup\NDP' contains sub keys:
+[2024-07-24 08:32:22Z INFO AgentProcess]  'CDF'
+[2024-07-24 08:32:22Z INFO AgentProcess]  'v2.0.50727'
+[2024-07-24 08:32:22Z INFO AgentProcess]  'v3.0'
+[2024-07-24 08:32:22Z INFO AgentProcess]  'v3.5'
+[2024-07-24 08:32:22Z INFO AgentProcess]  'v4'
+[2024-07-24 08:32:22Z INFO AgentProcess]  'v4.0'
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v2.0.50727', value name 'Version': '2.0.50727.4927'
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v2.0.50727', value name 'Install': '1'
+[2024-07-24 08:32:22Z INFO AgentProcess] Testing directory: 'C:\Windows\Microsoft.NET\Framework64\v2.0.50727'
+[2024-07-24 08:32:22Z INFO AgentProcess] Found version: 2.0.50727
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0', value name 'Version': '3.0.30729.4926'
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0', value name 'Install': '1'
+[2024-07-24 08:32:22Z INFO AgentProcess] Testing directory: 'C:\Windows\Microsoft.NET\Framework64\v3.0'
+[2024-07-24 08:32:22Z INFO AgentProcess] Found version: 3.0
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5', value name 'Version': '3.5.30729.4926'
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5', value name 'Install': '1'
+[2024-07-24 08:32:22Z INFO AgentProcess] Testing directory: 'C:\Windows\Microsoft.NET\Framework64\v3.5'
+[2024-07-24 08:32:22Z INFO AgentProcess] Found version: 3.5
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4', value name 'Version' is null.
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4', value name '' is null.
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'SOFTWARE\Microsoft\NET Framework Setup\NDP\v4' contains sub keys:
+[2024-07-24 08:32:22Z INFO AgentProcess]  'Client'
+[2024-07-24 08:32:22Z INFO AgentProcess]  'Full'
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'Version': '4.8.09032'
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'Install': '1'
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'InstallPath': 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\'
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client', value name 'Release': '533320'
+[2024-07-24 08:32:22Z INFO AgentProcess] Type is System.Int32
+[2024-07-24 08:32:22Z INFO AgentProcess] Interpreted version: 4.7.0
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'Version': '4.8.09032'
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'Install': '1'
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'InstallPath': 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\'
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full', value name 'Release': '533320'
+[2024-07-24 08:32:22Z INFO AgentProcess] Type is System.Int32
+[2024-07-24 08:32:22Z INFO AgentProcess] Interpreted version: 4.7.0
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4.0', value name 'Version' is null.
+[2024-07-24 08:32:22Z INFO AgentProcess] Key name 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4.0', value name '': 'deprecated'
+[2024-07-24 08:32:22Z INFO AgentProcess] Found 5 versions:
+[2024-07-24 08:32:22Z INFO AgentProcess]  2.0.50727
+[2024-07-24 08:32:22Z INFO AgentProcess]  3.0
+[2024-07-24 08:32:22Z INFO AgentProcess]  3.5
+[2024-07-24 08:32:22Z INFO AgentProcess]  4.7.0
+[2024-07-24 08:32:22Z INFO AgentProcess]  4.7.0
+[2024-07-24 08:32:22Z INFO AgentProcess] Testing for min NET Framework version: '4.5'
+[2024-07-24 08:32:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\bin'
+[2024-07-24 08:32:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent'
+[2024-07-24 08:32:23Z INFO CommandSettings] Run {
+  "Commit": false,
+  "Diagnostics": false,
+  "RunOnce": false,
+  "StartupType": null,
+  "Help": false,
+  "Version": false
+}
+[2024-07-24 08:32:23Z INFO AgentProcess] Arguments parsed
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\bin'
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent'
+[2024-07-24 08:32:23Z INFO HostContext] Well known config file 'Proxy': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\.proxy'
+[2024-07-24 08:32:23Z INFO VstsAgentWebProxy] No proxy setting found.
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\bin'
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent'
+[2024-07-24 08:32:23Z INFO HostContext] Well known config file 'Certificates': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\.certificates'
+[2024-07-24 08:32:23Z INFO AgentCertificateManager] No certificate setting found.
+[2024-07-24 08:32:23Z INFO Agent] ExecuteCommand
+[2024-07-24 08:32:23Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\bin\Agent.Listener.dll
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\bin'
+[2024-07-24 08:32:23Z INFO ConfigurationStore] binPath: C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\bin
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\bin'
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent'
+[2024-07-24 08:32:23Z INFO ConfigurationStore] RootFolder: C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\bin'
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent'
+[2024-07-24 08:32:23Z INFO HostContext] Well known config file 'Agent': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\.agent'
+[2024-07-24 08:32:23Z INFO ConfigurationStore] ConfigFilePath: C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\.agent
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\bin'
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent'
+[2024-07-24 08:32:23Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\.credentials'
+[2024-07-24 08:32:23Z INFO ConfigurationStore] CredFilePath: C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\.credentials
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\bin'
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent'
+[2024-07-24 08:32:23Z INFO HostContext] Well known config file 'Service': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\.service'
+[2024-07-24 08:32:23Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\.service
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\bin'
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent'
+[2024-07-24 08:32:23Z INFO HostContext] Well known config file 'Autologon': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\.autologon'
+[2024-07-24 08:32:23Z INFO ConfigurationStore] AutoLogonSettingsFilePath: C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\.autologon
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\bin'
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent'
+[2024-07-24 08:32:23Z INFO HostContext] Well known config file 'Options': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\.options'
+[2024-07-24 08:32:23Z INFO ConfigurationStore] RuntimeOptionsFilePath: C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\.options
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\bin'
+[2024-07-24 08:32:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent'
+[2024-07-24 08:32:23Z INFO HostContext] Well known config file 'SetupInfo': 'C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\.setup_info'
+[2024-07-24 08:32:23Z INFO ConfigurationStore] SetupInfoFilePath: C:\Users\ArminHøjbergKetirani\OneDrive - NNITGroup (Corporate)\ARKE\Work\GitProjects\PlaywrightAzureDevops\agent\.setup_info
+[2024-07-24 08:32:23Z INFO ConfigurationManager] LoadSettings
+[2024-07-24 08:32:23Z INFO ConfigurationStore] IsConfigured()
+[2024-07-24 08:32:23Z INFO ConfigurationStore] IsConfigured: False
+[2024-07-24 08:32:23Z INFO ConfigurationManager] Is configured: False
+[2024-07-24 08:32:23Z ERR  Terminal] WRITE ERROR: An error occurred: Not configured
+[2024-07-24 08:32:23Z ERR  AgentProcess] System.InvalidOperationException: Not configured
+   at Microsoft.VisualStudio.Services.Agent.Listener.Configuration.ConfigurationManager.LoadSettings() in D:\a\_work\1\s\src\Agent.Listener\Configuration\ConfigurationManager.cs:line 68
+   at Microsoft.VisualStudio.Services.Agent.Listener.Agent.ExecuteCommand(CommandSettings command) in D:\a\_work\1\s\src\Agent.Listener\Agent.cs:line 176
+   at Microsoft.VisualStudio.Services.Agent.Listener.Program.MainAsync(IHostContext context, String[] args) in D:\a\_work\1\s\src\Agent.Listener\Program.cs:line 163

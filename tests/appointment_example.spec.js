@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test'; // Import necessary functions f
 import path from 'path'; // Import the 'path' module from Node.js
 const { allure } = require('allure-playwright'); // Import the allure module
 import { LOGIN } from '../lib/functions.js';
-import { CONST_URL, CONST_ID_BUTTON_MAKE, CONST_ID_HEADER_MAKEAPPOINTMENT,   CONST_ID_DROPDOWN_FACILITY, CONST_ID_CHECKBOX_HOSPITALREADMISSION,
+import { CONST_URL, CONST_ID_BUTTON_MAKE, CONST_ID_HEADER_MAKEAPPOINTMENT, CONST_ID_DROPDOWN_FACILITY, CONST_ID_CHECKBOX_HOSPITALREADMISSION,
   CONST_ID_RADIOBUTTON_MEDICARE, CONST_ID_DATE_VISITDATE, CONST_ID_TEXTFIELD_COMMENT, CONST_ID_BUTTON_BOOKAPPOINTMENT,
   CONST_ID_HEADER_APPOINTMENTCONFIRMATION } from '../lib/constants.js';
 
@@ -51,10 +51,10 @@ test.describe(`Demo - Herokuapp`, () => {
       // Select the "Hongkong CURA Healthcare Center" option from the dropdown
       await page.selectOption(CONST_ID_DROPDOWN_FACILITY, { label: 'Hongkong CURA Healthcare Center' });
 
-      // Check the checkbox Apply for hospotal readmission
+      // Check the checkbox "Apply for hospotal readmission"
       await page.check(CONST_ID_CHECKBOX_HOSPITALREADMISSION);
 
-      // Click the radio button Medicaid
+      // Click the radio button "Medicaid"
       await page.click(CONST_ID_RADIOBUTTON_MEDICARE);
 
       // Fill out the date field with today's date

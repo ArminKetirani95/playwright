@@ -21,51 +21,50 @@ module.exports = defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+    ['list'],  // Prints results in Jenkins console logs
+    ['html', { outputFolder: 'playwright-report' }]  // Generates HTML report
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    headless: true,  // Ensure tests run in headless mode in CI
+    trace: 'on-first-retry',  // Collect trace for debugging failed tests
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
-
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'], headless: true },  // Run Chromium in headless mode
     },
-
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: { ...devices['Desktop Firefox'], headless: true },  // Run Firefox in headless mode
     },
-
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      use: { ...devices['Desktop Safari'], headless: true },  // Run WebKit in headless mode
     },
-
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
+    //   use: { ...devices['Pixel 5'], headless: true },
     // },
     // {
     //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
+    //   use: { ...devices['iPhone 12'], headless: true },
     // },
 
     /* Test against branded browsers. */
     // {
     //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
+    //   use: { ...devices['Desktop Edge'], channel: 'msedge', headless: true },
     // },
     // {
     //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    //   use: { ...devices['Desktop Chrome'], channel: 'chrome', headless: true },
     // },
   ],
 
@@ -76,4 +75,3 @@ module.exports = defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
-
