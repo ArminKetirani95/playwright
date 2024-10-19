@@ -1,7 +1,5 @@
 // Import modules
 import { test, expect } from '@playwright/test'; // Import necessary functions from Playwright Test
-import path from 'path'; // Import the 'path' module from Node.js
-const { allure } = require('allure-playwright'); // Import the allure module
 import { LOGIN } from '../lib/functions.js';
 import { CONST_URL, CONST_ID_BUTTON_MAKE, CONST_ID_HEADER_MAKEAPPOINTMENT, CONST_ID_DROPDOWN_FACILITY, CONST_ID_CHECKBOX_HOSPITALREADMISSION,
   CONST_ID_RADIOBUTTON_MEDICARE, CONST_ID_DATE_VISITDATE, CONST_ID_TEXTFIELD_COMMENT, CONST_ID_BUTTON_BOOKAPPOINTMENT,
