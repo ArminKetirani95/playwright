@@ -1,0 +1,8 @@
+﻿{
+  "agentId": 12,
+  "agentName": "NNIT-JW31HW3",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://dev.azure.com/sandbox-arke/",
+  "workFolder": "_work"
+}

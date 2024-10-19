@@ -1,0 +1,26 @@
+﻿{
+  "build_artifactstagingdirectory": "1\\a",
+  "agent_builddirectory": "1",
+  "collectionUrl": "https://dev.azure.com/sandbox-arke/",
+  "definitionName": "PlaywrightAzureDevops",
+  "repositoryTrackingInfo": [
+    {
+      "identifier": "self",
+      "repositoryType": "Git",
+      "repositoryUrl": "https://sandbox-arke@dev.azure.com/sandbox-arke/Playwright/_git/PlaywrightAzureDevops",
+      "sourcesDirectory": "1\\s\\PlaywrightAzureDevops"
+    }
+  ],
+  "fileFormatVersion": 3,
+  "lastRunOn": "10/18/2024 17:23:15 +02:00",
+  "repositoryType": "Git",
+  "lastMaintenanceAttemptedOn": "",
+  "lastMaintenanceCompletedOn": "",
+  "build_sourcesdirectory": "1\\s",
+  "common_testresultsdirectory": "1\\TestResults",
+  "collectionId": "29dfeac8-743f-4b6f-975d-7a4da20c1981",
+  "definitionId": "2",
+  "hashKey": "27c55e058ad584ede5fa88a08d0dbaa4643093ea",
+  "repositoryUrl": "https://sandbox-arke@dev.azure.com/sandbox-arke/Playwright/_git/PlaywrightAzureDevops",
+  "system": "build"
+}
