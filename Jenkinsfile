@@ -4,14 +4,18 @@ pipeline {
     stages {
         stage('Install Node.js') {
             steps {
-                // Install Node.js version 18
                 script {
+                    // Install Node.js version 18
                     def nodeVersion = '18.x'
                     if (isUnix()) {
-                        sh "curl -fsSL https://deb.nodesource.com/setup_${nodeVersion} | sudo -E bash -"
-                        sh "sudo apt-get install -y nodejs"
+                        // Install Node.js directly without sudo
+                        sh """
+                        curl -fsSL https://deb.nodesource.com/setup_${nodeVersion} | bash -
+                        apt-get install -y nodejs
+                        """
                     } else {
-                        bat 'choco install nodejs'
+                        // For Windows, install Node.js using Chocolatey
+                        bat 'choco install nodejs -y'
                     }
                 }
             }
