@@ -1,43 +1,20 @@
 pipeline {
-    agent {
-        docker {
-            image 'your-docker-image-name' // Use the Docker image you created
-            args '-v /path/to/project:/app' // Mount your project folder
-        }
-    }
-
+    agent any
     stages {
+        stage('Install Browsers') {
+            steps {
+                bat 'npx playwright install'
+            }
+        }
         stage('Install Dependencies') {
             steps {
-                sh 'npm ci'
+                bat 'npm install playwright'
             }
         }
-
-        stage('Install Playwright Browsers') {
+        stage('Run Tests') {
             steps {
-                sh 'npx playwright install --with-deps'
+                bat 'npx playwright test --reporter=line,allure-playwright'
             }
-        }
-
-        stage('Run Playwright Tests') {
-            steps {
-                sh 'npx playwright test'
-            }
-            environment {
-                CI = 'true' // Set CI environment variable
-            }
-        }
-
-        stage('Publish Playwright Report') {
-            steps {
-                archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
-            }
-        }
-    }
-
-    post {
-        always {
-            echo 'Pipeline finished'
         }
     }
 }
