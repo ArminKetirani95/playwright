@@ -9,7 +9,7 @@
   - [Install Dependencies](#install-dependencies)
   - [Install Playwright](#install-playwright)
   - [Clone Repository](#clone-repository)
-- [CI-CD](#cicd-pipeline)
+- [CI/CD](#cicd-pipeline)
   - [Pipeline Configuration](#pipeline-configuration)
 - [Usage](#usage)
   - [Run tests](#1-run-tests)
@@ -35,34 +35,37 @@ Top Features:
 
 ### Built With
 - [Playwright](https://playwright.dev): A Node.js library for browser automation.
-- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/): A strongly typed programming language that builds on JavaScript.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/): A dynamic programming language that builds on JavaScript.
 
 ## Installation
 To set up the project locally, follow these steps:
-
-### Install Dependencies
-Install all necessary dependencies by running:
-    ```JS
-    npm install
-    ```
-### Install Playwright
-Install Playwright and its dependencies by running:
-    ```JS
-    npx playwright install
-    ```
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (version 16.x)
 - [npm](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
-### Installer Afhængigheder
-Kør følgende kommando for at installere alle nødvendige afhængigheder:
+### Install Dependencies
+Install all necessary dependencies by running:
+    ```JS
+    npm install
+    ```
+
+### Install Playwright
+Install Playwright and its dependencies by running:
+    ```JS
+    npx playwright install
+    ```
 
 ### Clone Repository
     ```JS
     git clone https://sandbox-arke@dev.azure.com/sandbox-arke/Playwright/_git/PlaywrightAzureDevops
     cd PlaywrightAzureDevops
+    ```
+
+### Install Allure Reporter
+    ```JS
+    npm install --save-dev @playwright/test allure-playwright 
     ```
 
 ## CI/CD Pipeline
@@ -100,7 +103,7 @@ To run a single test file, pass in the name of the test file that you want to ru
     npx playwright test tests/your-test-file.spec.ts
     ```
 
-### 5. HTML test rapport
+### 5. HTML test report
 After your test completes, an HTML Reporter will be generated, which shows you a full report of your tests allowing you to filter the report by browsers, passed tests, failed tests, skipped tests and flaky tests. You can click on each test and explore the test's errors as well as each step of the test. By default, the HTML report is opened automatically if some of the tests failed.
     ```JS
     npx playwright show-report
@@ -109,20 +112,20 @@ After your test completes, an HTML Reporter will be generated, which shows you a
 ### 6. Allure Report generation
 Allure is a test report tool that shows a detailed representation of what has been tested and how it performed. Here's how to generate and view Allure reports.
 
-#### 6.1. Create the ”allure-results” folder and generate test results
-First, create the folder where the Allure results will be stored and run the tests with the Allure reporter enabled.
-```JS
-npx playwright test --reporter=line,allure-playwright
-```
+#### 6.1. Run tests with Allure reporting enabled
+Run tests while generating results for Allure.
+  ```JS
+  npx playwright test --reporter="list,allure-playwright"
+  ```
 
 #### 6.2. Convert the test results into an HTML report and delete previous reports
 Convert the generated test results into an HTML report. The --clean flag ensures that previous reports are deleted.
-```JS
-allure generate ./allure-results --clean
-```
+  ```JS
+  allure generate ./allure-results --clean
+  ```
 
 #### 6.3. Open the allure report
 Finally, open the generated Allure report to view the test results.
-```JS
-allure open ./allure-report
-```
+  ```JS
+  allure open ./allure-report
+  ```

@@ -2,12 +2,6 @@
 const { defineConfig, devices } = require('@playwright/test');
 
 /**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// require('dotenv').config();
-
-/**
  * @see https://playwright.dev/docs/test-configuration
  */
 module.exports = defineConfig({
@@ -23,7 +17,8 @@ module.exports = defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['list'],  // Prints results in Jenkins console logs
-    ['html', { outputFolder: 'playwright-report' }]  // Generates HTML report
+    ['html', { outputFolder: 'playwright-report' }],  // Generates HTML report
+    ['allure-playwright'],  // Add Allure Playwright for Allure reporting
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {

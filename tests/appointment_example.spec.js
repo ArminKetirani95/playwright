@@ -43,6 +43,9 @@ test.describe(`Demo - Herokuapp`, () => {
 
       // Validate that the "Make Appointment" header is visible on the page
       expect(await page.isVisible(CONST_ID_HEADER_MAKEAPPOINTMENT)).toBeTruthy();
+
+      // Take a screenshot
+      await page.screenshot({ path: 'test-results/screenshot_make_appointment.png', fullPage: true });
     });
 
     await test.step('Step 2: Fill out the relevant fields and book appointment', async () => {
@@ -68,6 +71,9 @@ test.describe(`Demo - Herokuapp`, () => {
 
       // Validate Appointment Confirmation
       expect(await page.isVisible(CONST_ID_HEADER_APPOINTMENTCONFIRMATION)).toBeTruthy();
+
+      // Take a screenshot
+      await page.screenshot({ path: 'test-results/screenshot_appointment_confirmation.png', fullPage: true });
     });
   });
 });
