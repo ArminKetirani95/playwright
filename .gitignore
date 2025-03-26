@@ -1,6 +1,7 @@
 # Ignore folders and files
 node_modules/
 /test-results/
+/test-report/
 /playwright-report/
 /playwright/.cache/
 /allure-report/
