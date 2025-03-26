@@ -1,8 +1,8 @@
 // Import modules
 import { test, expect } from '@playwright/test';
 import { LOGIN } from '../lib/functions.js';
-import { CONST_URL, CONST_ID_BUTTON_MAKE, CONST_ID_HEADER_MAKEAPPOINTMENT, CONST_ID_DROPDOWN_FACILITY, CONST_ID_CHECKBOX_HOSPITALREADMISSION,
-  CONST_ID_RADIOBUTTON_MEDICARE, CONST_ID_DATE_VISITDATE, CONST_ID_TEXTFIELD_COMMENT, CONST_ID_BUTTON_BOOKAPPOINTMENT,
+import { CONST_ID_BUTTON_MAKE, CONST_ID_DROPDOWN_FACILITY, CONST_ID_DATE_VISITDATE, CONST_ID_CHECKBOX_HOSPITALREADMISSION,
+  CONST_ID_RADIOBUTTON_MEDICARE, CONST_ID_HEADER_MAKEAPPOINTMENT, CONST_ID_TEXTFIELD_COMMENT, CONST_ID_BUTTON_BOOKAPPOINTMENT,
   CONST_ID_HEADER_APPOINTMENTCONFIRMATION } from '../lib/constants.js';
 
 // Define a test to make an appointment
@@ -12,7 +12,7 @@ test.describe(`Demo - Herokuapp`, () => {
       try {
           console.log(`START -> ${testInfo.title}`);
           // Navigate to the web application
-          await page.goto(CONST_URL);
+          await page.goto(process.env.BASE_URL);
       } catch (error) {
           console.error(error);
           throw error;

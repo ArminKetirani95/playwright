@@ -1,30 +1,106 @@
+# Trigger pipeline on changes to the 'main' branch
 trigger:
 - main
 
+# Define the pool of agents to run the pipeline on
 pool:
   name: 'Default'
+
+# Schedules - Trigger nightly builds at 23:59 CET / 22:59 UTC (Standard Time)
+schedules:
+  - cron: "59 21 * * *" 
+    displayName: 'Nightly Build'
+    branches:
+      include:
+        - self
+    always: true
   
 steps:
+# Step 1: Install Node.js
 - task: NodeTool@0
   inputs:
     versionSpec: '18'
   displayName: 'Install Node.js'
 
+# Step 2: Install project dependencies using npm ci
 - script: npm ci
-  displayName: 'npm ci'
+  displayName: 'Install dependencies'
 
+# Step 3: Install Playwright browsers with necessary dependencies
 - script: npx playwright install --with-deps
   displayName: 'Install Playwright browsers'
 
+# Step 4: Run Playwright tests
 - script: npx playwright test
   displayName: 'Run Playwright tests'
   env:
     CI: 'true'
 
+# Step 5: Check for test report existence and look for errors or failures
+- task: CmdLine@2
+  inputs:
+    script: |
+      @echo off
+      if not exist "../test-report" (
+          echo "Test report directory not found. Marking step as failed."
+          exit /b 1
+      )
+      set errors=0
+      findstr /i "failed" "../test-report\index.html" >nul
+      if %errorlevel% equ 0 (
+          echo "One or more tests failed."
+          set errors=1
+      )
+      findstr /i "error" "../test-report\index.html" >nul
+      if %errorlevel% equ 0 (
+          echo "Errors found in test run."
+          set errors=1
+      )
+      exit /b %errors%
+  displayName: 'Check for Test Failures and Errors'
+  condition: always()  # Always check for errors and failures, even if tests fail
+
+# Step 6: Publish the Playwright test report as a pipeline artifact
 - task: PublishPipelineArtifact@1
   displayName: 'Publish Playwright report'
   inputs:
-    targetPath: 'playwright-report'
-    artifact: 'playwright-report'
-    publishLocation: 'pipeline'
-  condition: succeededOrFailed()
+    targetPath: 'playwright-report'  # Path to the Playwright report folder
+    artifact: 'playwright-report'  # Artifact name
+    publishLocation: 'pipeline'  # Publish as a pipeline artifact
+  condition: succeededOrFailed()  # Publish the report even if the tests fail
+
+# Step 7: Publish test results in JUnit format
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '../test-report/results.xml'  # Path to the JUnit test results file
+    failTaskOnFailureToPublishResults: true  # Fail task if publishing results fails
+    failTaskOnMissingResultsFile: true  # Fail task if results file is missing
+    testRunTitle: '$(PROJECT) - $(NODE_ENV)'  # Use the project and environment name as the title
+  condition: always()  # Always publish test results, even if there are failures
+  displayName: 'Publish Test Results'
+
+# Cleanup step to remove unnecessary files and folders (runs after tests)
+- task: CmdLine@2
+  inputs:
+    script: |
+      @echo off
+      echo Cleanup process started...
+      # Delete node_modules to clean up project dependencies
+      if exist "node_modules" (
+          rd /s /q "node_modules"
+          echo Deleted node_modules.
+      )
+      # Delete Playwright binaries from cache
+      if exist "%USERPROFILE%\.cache\ms-playwright" (
+          rd /s /q "%USERPROFILE%\.cache\ms-playwright"
+          echo Deleted Playwright binaries.
+      )
+      # Delete the test-results directory to clean up after tests
+      if exist "test-results" (
+          rd /s /q "test-results"
+          echo Deleted test-results directory.
+      )
+      echo Cleanup complete.
+  displayName: 'Clean up workspace'
+  condition: always()  # Always run this step to clean up, even if other steps fail

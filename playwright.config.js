@@ -1,72 +1,54 @@
 // @ts-check
 const { defineConfig, devices } = require('@playwright/test');
+const dotenv = require('dotenv');
+const path = require('path');
 
-/**
- * @see https://playwright.dev/docs/test-configuration
- */
+// Get the directory of this script
+const __dirname = path.resolve();
+
+// Determine environment (default: test)
+const ENV = process.env.NODE_ENV || 'test';
+
+// Load environment variables from the `.env.<ENV>` file
+const envFilePath = path.resolve(__dirname, `environments/.env.${ENV}`);
+const result = dotenv.config({ path: envFilePath });
+
+// Log an error if loading the .env file fails
+if (result.error) {
+  console.error('Fejl ved indlæsning af .env-fil:', result.error);
+}
+
+// Log environment variables to ensure they are loaded correctly
+console.log(`Miljø: ${ENV}`);
+console.log(`baseURL: ${process.env.BASE_URL}`);
+
+// Playwright config to control test execution, retries, parallelism, and timeouts based on the environment.
 module.exports = defineConfig({
   testDir: './tests',
-  /* Run tests in files in parallel */
-  fullyParallel: true,
-  /* Fail the build on CI if you accidentally left test.only in the source code. */
-  forbidOnly: !!process.env.CI,
-  /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
-  /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+  fullyParallel: true,  // Run tests in parallel
+  forbidOnly: !!process.env.CI,  // Disable `.only` tests in CI to ensure all tests run
+  retries: process.env.CI ? 2 : 0,  // Retry failed tests (2 in CI, 0 in others)
+  workers: process.env.CI ? 1 : undefined,  // Use 1 worker in CI, allow multiple workers outside CI
+  timeout: 60000,  // Global test timeout
+
+  // Define reporters for the test results
   reporter: [
-    ['list'],  // Prints results in Jenkins console logs
-    ['html', { outputFolder: 'playwright-report' }],  // Generates HTML report
-    ['allure-playwright'],  // Add Allure Playwright for Allure reporting
+    ['list'],  // Output a simple list format to the console
+    ['html', { outputFolder: 'playwright-report' }],  // Generate an HTML report in the 'playwright-report' folder
+    ['allure-playwright'],  // Generate an Allure report for detailed test results
   ],
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+
+  // Global configuration for all projects
   use: {
-    headless: true,  // Ensure tests run in headless mode in CI
-    trace: 'on-first-retry',  // Collect trace for debugging failed tests
-    /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://127.0.0.1:3000',
+    baseURL: process.env.BASE_URL,  // Load the base URL from environment variables
+    headless: true,  // Run tests in headless mode (without UI)
+    trace: 'on-first-retry',  // Collect trace information on the first retry
   },
 
-  /* Configure projects for major browsers */
+  // Define projects for running tests on different browsers
   projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'], headless: true },  // Run Chromium in headless mode
-    },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'], headless: true },  // Run Firefox in headless mode
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'], headless: true },  // Run WebKit in headless mode
-    },
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'], headless: true },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'], headless: true },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge', headless: true },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome', headless: true },
-    // },
+    { name: 'chromium', use: { ...devices['Desktop Chrome'], headless: true }, },
+    { name: 'firefox', use: { ...devices['Desktop Firefox'], headless: true }, },
+    { name: 'webkit', use: { ...devices['Desktop Safari'], headless: true }, },
   ],
-
-  /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'npm run start',
-  //   url: 'http://127.0.0.1:3000',
-  //   reuseExistingServer: !process.env.CI,
-  // },
 });
