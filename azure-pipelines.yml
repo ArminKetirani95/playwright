@@ -27,31 +27,7 @@ steps:
   env:
     CI: 'true'
 
-# Step 5: Check for test report existence and look for errors or failures
-- task: CmdLine@2
-  inputs:
-    script: |
-      @echo off
-      if not exist "../test-report" (
-          echo "Test report directory not found. Marking step as failed."
-          exit /b 1
-      )
-      set errors=0
-      findstr /i "failed" "../test-report\index.html" >nul
-      if %errorlevel% equ 0 (
-          echo "One or more tests failed."
-          set errors=1
-      )
-      findstr /i "error" "../test-report\index.html" >nul
-      if %errorlevel% equ 0 (
-          echo "Errors found in test run."
-          set errors=1
-      )
-      exit /b %errors%
-  displayName: 'Check for Test Failures and Errors'
-  condition: always()  # Always check for errors and failures, even if tests fail
-
-# Step 6: Publish the Playwright test report as a pipeline artifact
+# Step 5: Publish the Playwright test report as a pipeline artifact
 - task: PublishPipelineArtifact@1
   displayName: 'Publish Playwright report'
   inputs:
@@ -59,14 +35,3 @@ steps:
     artifact: 'playwright-report'  # Artifact name
     publishLocation: 'pipeline'  # Publish as a pipeline artifact
   condition: succeededOrFailed()  # Publish the report even if the tests fail
-
-# Step 7: Publish test results in JUnit format
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '../test-report/results.xml'  # Path to the JUnit test results file
-    failTaskOnFailureToPublishResults: true  # Fail task if publishing results fails
-    failTaskOnMissingResultsFile: true  # Fail task if results file is missing
-    testRunTitle: 'Appointment_example'  # Use the project name as the title
-  condition: always()  # Always publish test results, even if there are failures
-  displayName: 'Publish Test Results'

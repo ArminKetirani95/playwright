@@ -1,6 +1,7 @@
 # 🎭 Playwright
 
 ## Table of Contents
+## Table of Contents
 - [Build Status](#build-status)
 - [About the Project](#about-the-project)
   - [Built With](#built-with)
@@ -12,12 +13,12 @@
 - [CI/CD Pipeline](#cicd-pipeline)
   - [Pipeline Configuration](#pipeline-configuration)
 - [Usage](#usage)
-  - [Run tests](#1-run-tests)
-  - [Run tests in UI mode](#2-run-tests-in-ui-mode)
-  - [Run tests in headed mode](#3-run-tests-in-headed-mode)
-  - [Run specific tests](#4-run-specific-tests)
-  - [HTML test report](#5-html-test-report)
-  - [Allure Report generation](#6-allure-report-generation)
+  - [Run tests](#run-tests)
+  - [Run tests in UI mode](#run-tests-in-ui-mode)
+  - [Run tests in headed mode](#run-tests-in-headed-mode)
+  - [Run specific tests](#run-specific-tests)
+  - [HTML test report](#html-test-report)
+  - [Allure Report generation](#allure-report-generation)
 
 ## Build Status
 [![Build Status](https://dev.azure.com/sandbox-arke/Playwright/_apis/build/status%2FPlaywrightAzureDevops?branchName=main)](https://dev.azure.com/sandbox-arke/Playwright/_build/latest?definitionId=2&branchName=main)
@@ -41,7 +42,7 @@ Top Features:
 To set up the project locally, follow these steps:
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (version 16.x)
+- [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
@@ -79,52 +80,52 @@ This project features a CI/CD pipeline set up in Azure DevOps. The pipeline runs
 ## Usage
 This section explains how to run and manage tests using Playwright.
 
-### 1. Run tests
+### Run tests
 Tests are run in headless mode meaning no browser will open up when running the tests. Results of the tests and test logs will be shown in the terminal.
 ```JS
 npx playwright test
 ```
 
-### 2. Run tests in UI mode
+### Run tests in UI mode
 Run your tests with UI Mode for a better developer experience with time travel debugging, watch mode and more.
 ```JS
 npx playwright test --ui
 ```
 
-### 3. Run tests in headed mode
+### Run tests in headed mode
 To run your tests in headed mode, use the --headed flag. This will give you the ability to visually see how Playwright interacts with the website.
 ```JS
 npx playwright test --headed
 ```
 
-### 4. Run specific tests
+### Run specific tests
 To run a single test file, pass in the name of the test file that you want to run.
 ```JS
 npx playwright test tests/your-test-file.spec.ts
 ```
 
-### 5. HTML test report
+### HTML test report
 After your test completes, an HTML Reporter will be generated, which shows you a full report of your tests allowing you to filter the report by browsers, passed tests, failed tests, skipped tests and flaky tests. You can click on each test and explore the test's errors as well as each step of the test. By default, the HTML report is opened automatically if some of the tests failed.
 ```JS
 npx playwright show-report
 ```
 
-### 6. Allure Report generation
+### Allure Report generation
 Allure is a test report tool that shows a detailed representation of what has been tested and how it performed. Here's how to generate and view Allure reports.
 
-#### 6.1. Run tests with Allure reporting enabled
+#### Run tests with Allure reporting enabled
 Run tests while generating results for Allure.
 ```JS
 npx playwright test --reporter="list,allure-playwright"
 ```
 
-#### 6.2. Convert the test results into an HTML report and delete previous reports
+#### Convert the test results into an HTML report and delete previous reports
 Convert the generated test results into an HTML report. The --clean flag ensures that previous reports are deleted.
 ```JS
 allure generate ./allure-results --clean
 ```
 
-#### 6.3. Open the allure report
+#### Open the allure report
 Finally, open the generated Allure report to view the test results.
 ```JS
 allure open ./allure-report
