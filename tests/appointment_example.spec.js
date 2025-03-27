@@ -3,7 +3,9 @@ import { test, expect } from '@playwright/test';
 import { LOGIN } from '../lib/functions.js';
 import { CONST_ID_BUTTON_MAKE, CONST_ID_DROPDOWN_FACILITY, CONST_ID_DATE_VISITDATE, CONST_ID_CHECKBOX_HOSPITALREADMISSION,
   CONST_ID_RADIOBUTTON_MEDICARE, CONST_ID_HEADER_MAKEAPPOINTMENT, CONST_ID_TEXTFIELD_COMMENT, CONST_ID_BUTTON_BOOKAPPOINTMENT,
-  CONST_ID_HEADER_APPOINTMENTCONFIRMATION } from '../lib/constants.js';
+  CONST_ID_HEADER_APPOINTMENTCONFIRMATION, CONST_DROPDOWN_FACILITY_OPTIONS, CONST_RADIOBUTTON_PROGRAM_OPTIONS, 
+  CONST_ID_TEXT_FACILITY, CONST_ID_TEXT_HOSPITAL_READMISSION, CONST_ID_TEXT_PROGRAM, CONST_ID_TEXT_VISIT_DATE,
+  CONST_ID_TEXT_COMMENT } from '../lib/constants.js';
 
 // Define a test to make an appointment
 test.describe(`Demo - Herokuapp`, () => {
@@ -33,47 +35,119 @@ test.describe(`Demo - Herokuapp`, () => {
   });
 
   // Test function
-  test('Make appointment', async ({ page }) => {
-    await test.step('Step 1: Enter credentials and login', async () => {
-      // Click on the "Make Appointment" button
-      await page.click(CONST_ID_BUTTON_MAKE);
+  test('Make appointment - Basic', async ({ page }) => {
+    // ----- Step 1: Enter credentials and login -----
+    // Click on the "Make Appointment" button
+    await page.click(CONST_ID_BUTTON_MAKE);
 
-      // Type the username and password with the values "John Doe" and "ThisIsNotAPassword" and then click the "Login" button
-      await LOGIN(page);
+    // Type the username and password with the values "John Doe" and "ThisIsNotAPassword" and then click the "Login" button
+    await LOGIN(page);
 
-      // Validate that the "Make Appointment" header is visible on the page
-      expect(await page.isVisible(CONST_ID_HEADER_MAKEAPPOINTMENT)).toBeTruthy();
+    // Validate that the "Make Appointment" header is visible on the page
+    expect(await page.isVisible(CONST_ID_HEADER_MAKEAPPOINTMENT)).toBeTruthy();
 
-      // Take a screenshot
-      await page.screenshot({ path: 'test-results/screenshot_make_appointment.png', fullPage: true });
-    });
+    // Take a screenshot
+    await page.screenshot({ path: 'test-results/screenshot_make_appointment.png', fullPage: true });
 
-    await test.step('Step 2: Fill out the relevant fields and book appointment', async () => {
-      // Select the "Hongkong CURA Healthcare Center" option from the dropdown
-      await page.selectOption(CONST_ID_DROPDOWN_FACILITY, { label: 'Hongkong CURA Healthcare Center' });
+    // ----- Step 2: Fill out the relevant fields and book appointment -----
+    // Select the "Hongkong CURA Healthcare Center" option from the dropdown
+    await page.selectOption(CONST_ID_DROPDOWN_FACILITY, { label: 'Hongkong CURA Healthcare Center' });
 
-      // Check the checkbox "Apply for hospotal readmission"
-      await page.check(CONST_ID_CHECKBOX_HOSPITALREADMISSION);
+    // Check the checkbox "Apply for hospotal readmission"
+    await page.check(CONST_ID_CHECKBOX_HOSPITALREADMISSION);
 
-      // Click the radio button "Medicaid"
-      await page.click(CONST_ID_RADIOBUTTON_MEDICARE);
+    // Click the radio button "Medicare"
+    await page.click(CONST_ID_RADIOBUTTON_MEDICARE);
 
-      // Fill out the date field with today's date
-      const formattedDate = new Date().toLocaleDateString('en-GB'); // Get today's date and format it as dd/mm/yyyy
-      await page.fill(CONST_ID_DATE_VISITDATE, formattedDate);
-      await page.press(CONST_ID_DATE_VISITDATE, 'Enter');
+    // Fill out the date field with today's date
+    const formattedDate = new Date().toLocaleDateString('en-GB'); // Get today's date and format it as dd/mm/yyyy
+    await page.fill(CONST_ID_DATE_VISITDATE, formattedDate);
+    await page.press(CONST_ID_DATE_VISITDATE, 'Enter');
 
-      // Fill out the comment section with the message 'This is a test'
-      await page.fill(CONST_ID_TEXTFIELD_COMMENT, 'This is a test');
+    // Fill out the comment section with the message 'This is a test'
+    await page.fill(CONST_ID_TEXTFIELD_COMMENT, 'This is a test');
 
-      // Click on the "Book Appointment" button
-      await page.click(CONST_ID_BUTTON_BOOKAPPOINTMENT);
+    // Click on the "Book Appointment" button
+    await page.click(CONST_ID_BUTTON_BOOKAPPOINTMENT);
 
-      // Validate Appointment Confirmation
-      expect(await page.isVisible(CONST_ID_HEADER_APPOINTMENTCONFIRMATION)).toBeTruthy();
+    // Validate Appointment Confirmation
+    expect(await page.isVisible(CONST_ID_HEADER_APPOINTMENTCONFIRMATION)).toBeTruthy();
 
-      // Take a screenshot
-      await page.screenshot({ path: 'test-results/screenshot_appointment_confirmation.png', fullPage: true });
-    });
+    // Take a screenshot
+    await page.screenshot({ path: 'test-results/screenshot_appointment_confirmation.png', fullPage: true });
+  });
+
+  // Test function
+  test('Make appointment - Expanded', async ({ page }) => {
+    // ----- Step 1: Enter credentials and login -----
+    // Click on the "Make Appointment" button
+    await page.click(CONST_ID_BUTTON_MAKE);
+    // Type the username and password with the values "John Doe" and "ThisIsNotAPassword" and then click the "Login" button
+    await LOGIN(page);
+    // Validate that the "Make Appointment" header is visible on the page
+    expect(await page.isVisible(CONST_ID_HEADER_MAKEAPPOINTMENT)).toBeTruthy();
+    // Take a screenshot
+    await page.screenshot({ path: 'test-results/screenshot_make_appointment.png', fullPage: true });
+
+    // ----- Step 2: Fill out the relevant fields and book appointment -----
+    // Select a random "Facility" option from the dropdown
+    const randomFacility = CONST_DROPDOWN_FACILITY_OPTIONS[Math.floor(Math.random() * CONST_DROPDOWN_FACILITY_OPTIONS.length)];
+    await page.selectOption(CONST_ID_DROPDOWN_FACILITY, { label: randomFacility });
+
+    // Check the checkbox "Apply for hospotal readmission"
+    await page.check(CONST_ID_CHECKBOX_HOSPITALREADMISSION);
+
+    // Select a random "Healthcare Program"
+    const randomRadioButton = CONST_RADIOBUTTON_PROGRAM_OPTIONS[Math.floor(Math.random() * CONST_RADIOBUTTON_PROGRAM_OPTIONS.length)];
+    await page.click(randomRadioButton);
+    const expectedProgram = await page.getAttribute(randomRadioButton, 'value'); // Extract the value of the selected radio button
+
+    // Fill out the date field with today's date
+    const formattedDate = new Date().toLocaleDateString('en-GB'); // Get today's date and format it as dd/mm/yyyy
+    await page.fill(CONST_ID_DATE_VISITDATE, formattedDate);
+    await page.press(CONST_ID_DATE_VISITDATE, 'Enter');
+
+    // Fill out the comment section with the message 'This is a test'
+    const textComment = "This is a test";
+    await page.fill(CONST_ID_TEXTFIELD_COMMENT, textComment);
+
+    // Click on the "Book Appointment" button
+    await page.click(CONST_ID_BUTTON_BOOKAPPOINTMENT);
+
+    // Validate Appointment Confirmation
+    expect(await page.isVisible(CONST_ID_HEADER_APPOINTMENTCONFIRMATION)).toBeTruthy();
+
+    // Take a screenshot
+    await page.screenshot({ path: 'test-results/screenshot_appointment_confirmation.png', fullPage: true });
+
+    // ----- Step 3: Validate confirmation details -----
+    // Validate Facility
+    const displayedFacility = await page.textContent(CONST_ID_TEXT_FACILITY);
+    expect(displayedFacility).toBe(randomFacility);
+    console.log(`Facility: ${displayedFacility}`);
+
+    // Validate Apply for hospital readmission
+    const displayedReadmission = await page.textContent(CONST_ID_TEXT_HOSPITAL_READMISSION);
+    const expectedReadmission = 'Yes';
+    expect(displayedReadmission).toBe(expectedReadmission);
+    console.log(`Hospital Readmission: ${displayedReadmission}`);
+
+    // Validate Healthcare Program
+    const displayedProgram = await page.textContent(CONST_ID_TEXT_PROGRAM);
+    expect(displayedProgram).toBe(expectedProgram);
+    console.log(`Healthcare Program: ${displayedProgram}`);
+
+    // Validate Visit Date
+    const displayedVisitDate = await page.textContent(CONST_ID_TEXT_VISIT_DATE);
+    expect(displayedVisitDate).toBe(formattedDate);
+    console.log(`Visit Date: ${displayedVisitDate}`);
+
+    // Validate Comment
+    const displayedComment = await page.textContent(CONST_ID_TEXT_COMMENT);
+    expect(displayedComment).toBe(textComment);
+    console.log(`Comment: ${displayedComment}`);
+
+    // Take a screenshot
+    await page.screenshot({ path: 'test-results/screenshot_validate_details.png', fullPage: true });
   });
 });
