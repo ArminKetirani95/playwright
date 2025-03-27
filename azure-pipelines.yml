@@ -13,28 +13,21 @@ steps:
     versionSpec: '18'
   displayName: 'Install Node.js'
 
-# Step 2: Clean up the source folder to ensure no permission issues
-- script: |
-    echo "Cleaning up the source folder..."
-    rm -rf $(Build.SourcesDirectory)/node_modules
-    echo "Source folder cleaned."
-  displayName: 'Clean up source folder'
-
-# Step 3: Install project dependencies using npm ci
+# Step 2: Install project dependencies using npm ci
 - script: npm ci
   displayName: 'Install dependencies'
 
-# Step 4: Install Playwright browsers with necessary dependencies
+# Step 3: Install Playwright browsers with necessary dependencies
 - script: npx playwright install --with-deps
   displayName: 'Install Playwright browsers'
 
-# Step 5: Run Playwright tests
+# Step 4: Run Playwright tests
 - script: npx playwright test
   displayName: 'Run Playwright tests'
   env:
     CI: 'true'
 
-# Step 6: Publish the Playwright test report as a pipeline artifact
+# Step 5: Publish the Playwright test report as a pipeline artifact
 - task: PublishPipelineArtifact@1
   displayName: 'Publish Playwright report'
   inputs:
