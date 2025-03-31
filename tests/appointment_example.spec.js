@@ -4,7 +4,8 @@ import { LOGIN } from '../lib/functions.js';
 import { CONST_ID_BUTTON_MAKE, CONST_ID_DROPDOWN_FACILITY, CONST_ID_DATE_VISITDATE, CONST_ID_CHECKBOX_HOSPITALREADMISSION,
   CONST_ID_HEADER_MAKEAPPOINTMENT, CONST_ID_TEXTFIELD_COMMENT, CONST_ID_BUTTON_BOOKAPPOINTMENT, CONST_ID_TEXT_COMMENT,
   CONST_ID_HEADER_APPOINTMENTCONFIRMATION, CONST_DROPDOWN_FACILITY_OPTIONS, CONST_RADIOBUTTON_PROGRAM_OPTIONS, 
-  CONST_ID_TEXT_FACILITY, CONST_ID_TEXT_HOSPITAL_READMISSION, CONST_ID_TEXT_PROGRAM, CONST_ID_TEXT_VISIT_DATE } from '../lib/constants.js';
+  CONST_ID_TEXT_FACILITY, CONST_ID_TEXT_HOSPITAL_READMISSION, CONST_ID_TEXT_PROGRAM, CONST_ID_TEXT_VISIT_DATE, 
+  CONST_LOGIN_USERNAME, CONST_LOGIN_PASSWORD } from '../lib/constants.js';
 
 // Define a test to make an appointment
 test.describe(`Demo - Herokuapp`, () => {
@@ -39,8 +40,8 @@ test.describe(`Demo - Herokuapp`, () => {
     // Click on the "Make Appointment" button
     await page.click(CONST_ID_BUTTON_MAKE);
 
-    // Type the username and password with the values "John Doe" and "ThisIsNotAPassword" and then click the "Login" button
-    await LOGIN(page);
+    // Type the username and password and then click the "Login" button
+    await LOGIN(page, CONST_LOGIN_USERNAME, CONST_LOGIN_PASSWORD);
 
     // Validate that the "Make Appointment" header is visible on the page
     expect(await page.isVisible(CONST_ID_HEADER_MAKEAPPOINTMENT)).toBeTruthy();
@@ -55,8 +56,8 @@ test.describe(`Demo - Herokuapp`, () => {
     // Click on the "Make Appointment" button
     await page.click(CONST_ID_BUTTON_MAKE);
 
-    // Type the username and password with the values "John Doe" and "ThisIsNotAPassword" and then click the "Login" button
-    await LOGIN(page);
+    // Type the username and password and then click the "Login" button
+    await LOGIN(page, CONST_LOGIN_USERNAME, CONST_LOGIN_PASSWORD);
 
     // Validate that the "Make Appointment" header is visible on the page
     expect(await page.isVisible(CONST_ID_HEADER_MAKEAPPOINTMENT)).toBeTruthy();
