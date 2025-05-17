@@ -36,6 +36,7 @@ module.exports = defineConfig({
     ['list'],  // Output a simple list format to the console
     ['html', { outputFolder: 'playwright-report' }],  // Generate an HTML report in the 'playwright-report' folder
     ['allure-playwright'],  // Generate an Allure report for detailed test results
+    ['junit', { outputFile: 'test-results.xml' }]  // JUnit reporter
   ],
 
   // Global configuration for all projects
