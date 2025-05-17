@@ -31,7 +31,7 @@ steps:
 - task: UseDotNet@2
   displayName: 'Install .NET 6 runtime for PublishTestResults'
   inputs:
-    packageType: runtime
+    packageType: 'sdk'
     version: '6.x'
     includePreviewVersions: false
 
