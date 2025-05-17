@@ -27,7 +27,15 @@ steps:
   env:
     CI: 'true'
 
-# Step 5: Publish the JUnit test results to the Azure DevOps "Tests" tab
+# Step 5: Install .NET runtime so PublishTestResults can run
+- task: UseDotNet@2
+  displayName: 'Install .NET 6 runtime for PublishTestResults'
+  inputs:
+    packageType: runtime
+    version: '6.x'
+    includePreviewVersions: false
+
+# Step 6: Publish the JUnit test results to the Azure DevOps "Tests" tab
 - task: PublishTestResults@2
   displayName: 'Publish Test Results to Azure DevOps'
   inputs:
@@ -37,7 +45,7 @@ steps:
     testRunTitle: 'Playwright Test Results'
   condition: always() # Always publish results, even if tests fail
 
-# Step 6: Publish the Playwright HTML report as a pipeline artifact
+# Step 7: Publish the Playwright HTML report as a pipeline artifact
 - task: PublishPipelineArtifact@1
   displayName: 'Publish Playwright HTML report'
   inputs:
