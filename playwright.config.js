@@ -43,7 +43,7 @@ module.exports = defineConfig({
   use: {
     baseURL: process.env.BASE_URL,  // Load the base URL from environment variables
     headless: true,  // Run tests in headless mode (without UI)
-    trace: 'on-first-retry',  // Collect trace information on the first retry
+    trace: 'retain-on-failure',  // Collect trace information on the first retry
   },
 
   // Define projects for running tests on different browsers
